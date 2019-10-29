@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Smoke_Test_Suite]" parallel="tests">
+  <parameter name="browserName" value="firefox"/>
+  <listeners>
+    <listener class-name="utils.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="Login_Page_Smoke_Chrome" parallel="methods">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="tests.MainPageTest"/>
+    </classes>
+  </test> <!-- Login_Page_Smoke_Chrome -->
+  <test thread-count="5" name="Login_Page_Smoke_FireFox" parallel="methods">
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="tests.MainPageTest"/>
+    </classes>
+  </test> <!-- Login_Page_Smoke_FireFox -->
+</suite> <!-- Failed suite [Smoke_Test_Suite] -->

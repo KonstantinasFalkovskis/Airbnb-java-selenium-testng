@@ -16,32 +16,45 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import utils.Util;
+import utils.WebEventListener;
 
 
 public class BaseTest {
 
 	public static WebDriver driver;
-	public static Properties prop;
+	public Properties prop;
+	public EventFiringWebDriver e_driver;
+	public WebEventListener eventListener;
+	public Page page;
 	
-	public BaseTest() {
-		try {
-			prop = new Properties();
-			FileInputStream file = new FileInputStream("C:\\Users\\FalcoConstantine\\EclipseProjects\\AirBnb\\src\\main\\"
-					+ "java\\config\\config.properties");
-			prop.load(file);
-		} catch(FileNotFoundException e) {
-			e.printStackTrace();
-		} catch(IOException e) {
-			e.printStackTrace();
-		}
-		
-	}
+//	public BaseTest() {
+//		try {
+//			prop = new Properties();
+//			FileInputStream file = new FileInputStream("C:\\Users\\FalcoConstantine\\EclipseProjects\\AirBnb\\src\\main\\"
+//					+ "java\\config\\config.properties");
+//			prop.load(file);
+//		} catch(FileNotFoundException e) {
+//			e.printStackTrace();
+//		} catch(IOException e) {
+//			e.printStackTrace();
+//		}
+//		
+//	}
 	
-	public void initialization() {
+	@BeforeMethod
+	@Parameters({"browserName"})
+	public void initialization(String browserName) throws InterruptedException {
 		
-		String browserName = prop.getProperty("browser");
+		initialize_properties();
+		
+	//public void initialization() {	
+	//	String browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
 			driver = new ChromeDriver();
@@ -57,6 +70,12 @@ public class BaseTest {
 					} else {
 						System.out.println("no browser defined");
 					}
+		
+			e_driver = new EventFiringWebDriver(driver);
+			eventListener = new WebEventListener();
+			e_driver.register(eventListener);
+			driver = e_driver;
+			
 			
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
@@ -64,7 +83,35 @@ public class BaseTest {
 			driver.manage().timeouts().implicitlyWait(Util.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		
 			driver.get(prop.getProperty("url"));
+			
+			page = new BasePage(driver);
 		
 	}	
+	
+	public Properties initialize_properties() {
+		
+		try {
+			prop = new Properties();
+			FileInputStream file = new FileInputStream("C:\\Users\\FalcoConstantine\\EclipseProjects\\AirBnb\\src\\main\\"
+					+ "java\\config\\config.properties");
+			prop.load(file);
+		} catch(FileNotFoundException e) {
+			e.printStackTrace();
+		} catch(IOException e) {
+			e.printStackTrace();
+		}
+		
+		return prop;
+	}
+	
+	
+	@AfterMethod
+	public void tearDown() {
+		try {
+			page.closeBrowser();
+		} catch (Exception e) {
+			System.out.println("Some exception occurred while quitting the browser");
+		}
+	}
 	
 }
