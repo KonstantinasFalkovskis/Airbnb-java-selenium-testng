@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke Test Suite">
+  
+<listeners>
+	<listener class-name="utils.ExtentReportListener"></listener>
+</listeners>
+  
+  <!--  Start First test -->
+  <test name="LinksSmokeTest_chrome">
+    <classes>
+      <class name="tests.NewPageTest"/>
+    </classes>
+    </test>
+    
+   <!--  End First Test -->
+  
+  
+</suite> 

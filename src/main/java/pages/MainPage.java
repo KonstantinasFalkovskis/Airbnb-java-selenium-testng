@@ -1,5 +1,7 @@
 package pages;
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -28,11 +30,14 @@ public class MainPage extends BasePage{
 	By guests = By.id("lp-guestpicker");
 	By facebook = By.xpath("//div[@class='_jro6t0'][contains(.,'Log in with Facebook')]");
 	
+	//login frame
+	By email = By.xpath("//input[@id='email-login-email']");
+	By password = By.xpath("//input[@id='email-login-password']");
+	By loginBtn = By.xpath("//button[@class= '1o4htsfg']");
+	
 	public String getMainPageTitle() {
 		return getPageTitle();
 	}
-	
-	
 	
 	public WebElement PageLogo() {
 		return getElement(logo);
@@ -42,18 +47,33 @@ public class MainPage extends BasePage{
 		return PageLogo().isDisplayed();
 	}
 	
-	public HomePage loginMethod(String uname, String pwd) {
-		//getUsername().sendKeys(uname);
-		//getPassword().sendKeys(pwd);
-		try {
-			Thread.sleep(6000);
-		//	getLoginButton();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-			log.fatal("Excepption occured");
+	public void loginMethod(String user, String pwd) {
+		getElement(email).sendKeys(user);
+		getElement(password).sendKeys(pwd);
+		
+	}
+	
+	public WebElement getEmail() {
+		return getElement(email);
+	}
+	
+	public WebElement getPassword() {
+		return getElement(password);
+	}
+	
+	
+	
+	public void mainMenu(String menuElement) {
+		
+		List<WebElement> menuArr = driver.findElements(By.xpath("//div[@class='_uec4nrl']//li"));
+		
+		for (WebElement element : menuArr) {
+			if(element.equals(menuElement)){
+				element.click();
+				
+			}
 		}
-		log.info("Login successful");
-		return getInstance(HomePage.class);
+		
 	}
 	
 	
