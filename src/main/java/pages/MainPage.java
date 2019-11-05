@@ -132,6 +132,17 @@ public class MainPage extends BasePage{
 			}
 		}
 	}
+	
+	public void selectDay(String day) {
+		List<WebElement> dayArr = driver.findElements(By.xpath("//*[@id='email-signupuser[birthday_day]']/option"));
+		
+		for(WebElement element : dayArr) {
+			if(element.equals(day)) {
+				element.click();
+			}
+		}
+	
+	}
 
 	public MainPage creatNewUser(String email, String name, String surename, String pwd, String mm,
 			String dd, String yy) {
