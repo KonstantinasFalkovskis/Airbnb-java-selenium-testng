@@ -25,7 +25,12 @@ import utils.Util;
 import utils.WebEventListener;
 
 
-public class BaseTest {
+public class BaseTest{
+
+//	public BaseTest(WebDriver driver) {
+//		super(driver);
+//	}
+
 
 	public static WebDriver driver;
 	public Properties prop;
@@ -83,6 +88,7 @@ public class BaseTest {
 			driver.manage().timeouts().implicitlyWait(Util.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		
 			driver.get(prop.getProperty("url"));
+			//doOpenUrl(prop.getProperty("url"));
 			
 			page = new BasePage(driver);
 		

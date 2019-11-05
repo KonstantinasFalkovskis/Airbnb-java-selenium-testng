@@ -18,12 +18,23 @@ public abstract class Page {
 	public abstract String getPageTitle();
 	public abstract String getPageHeader(By locator);
 	public abstract WebElement getElement(By locator);	
+	
 	public abstract void waitForElementPresent(By locator);
-	public abstract void waitForPageTitle(String title);
+	public abstract void waitForElementClickable(By locator);
+	
 	public abstract void doClick(By locator);
+	public abstract void doClickWithJS(By locator);
+	public abstract void doSmartClick(By locator);
+	
 	public abstract String doGetText(By locator);
+	
 	public abstract void quitBrowser();
 	public abstract void closeBrowser();
+	
+	public abstract void doOpenUrl(String url);
+	public abstract void doSwitchToFrame(By locator, String nameOrId);
+	public abstract void doMoveToElement(WebElement element);
+	public abstract void doSendKeys(By locator, String text);
 	
 	// create a method with Java Generics and return a new page
 			public <TPage extends BasePage> TPage getInstance(Class<TPage> pageClass) {
