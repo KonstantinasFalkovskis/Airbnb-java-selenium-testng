@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke_Test_Suite" parallel="tests" thread-count="2" verbose="3">
+  
+<listeners>
+	<listener class-name="utils.ExtentReportListener"></listener>
+</listeners>
+  
+  <!--  Start First test -->
+  
+  <test name="Login_Page_Smoke_Chrome" parallel="methods" thread-count="5">
+  <parameter name="browser" value ="chrome"/>
+    <classes>
+      <class name="tests.LoginPageTest"/>
+        
+    </classes>
+    </test>
+     
+    
+    <test name="Login_Page_Smoke_FireFox" parallel="methods" thread-count="5">
+     <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.LoginPageTest"/>
+          </classes>
+    </test>
+   
+   
+    <!--  
+    <test name="LoginFunctionalTest">
+    <classes>
+      <class name="login.createAccount"/>
+      <class name="login.loginPage"/>
+      <class name="login.newAccount"/> 
+    </classes>
+  </test> -->
+  
+</suite> 
