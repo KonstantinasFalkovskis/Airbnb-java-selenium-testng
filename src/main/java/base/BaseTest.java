@@ -25,52 +25,47 @@ import utils.Util;
 import utils.WebEventListener;
 
 
-public class BaseTest{
-
-//	public BaseTest(WebDriver driver) {
-//		super(driver);
-//	}
-
+public class BaseTest {
 
 	public static WebDriver driver;
 	public Properties prop;
 	public EventFiringWebDriver e_driver;
 	public WebEventListener eventListener;
-	public Page page;
+	//public Page page;
 	
-//	public BaseTest() {
-//		try {
-//			prop = new Properties();
-//			FileInputStream file = new FileInputStream("C:\\Users\\FalcoConstantine\\EclipseProjects\\AirBnb\\src\\main\\"
-//					+ "java\\config\\config.properties");
-//			prop.load(file);
-//		} catch(FileNotFoundException e) {
-//			e.printStackTrace();
-//		} catch(IOException e) {
-//			e.printStackTrace();
-//		}
-//		
-//	}
+	public BaseTest() {
+		try {
+			prop = new Properties();
+			FileInputStream file = new FileInputStream("C:\\Users\\S7543B\\Work Folders\\Documents\\Eclipse Regression eBroker"
+					+ "\\Labs\\AirBnb\\src\\main\\java\\config\\config.properties");
+			prop.load(file);
+		} catch(FileNotFoundException e) {
+			e.printStackTrace();
+		} catch(IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
 	
 	@BeforeMethod
 	@Parameters({"browserName"})
 	public void initialization(String browserName) throws InterruptedException {
 		
-		initialize_properties();
+	//	initialize_properties();
 		
 	//public void initialization() {	
 	//	String browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\OPT\\Selenium\\chromedriver.exe");
 			driver = new ChromeDriver();
 		} else if (browserName.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "C:\\Selenium\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "C:\\OPT\\Selenium\\geckodriver.exe");
 				driver = new FirefoxDriver();
 				} else if(browserName.equalsIgnoreCase("opera")) {
-					System.setProperty("webdriver.opera.driver", "C:\\Selenium\\operadriver.exe");
+					System.setProperty("webdriver.opera.driver", "C:\\OPT\\Selenium\\operadriver.exe");
 					driver = new OperaDriver();
 						} else if(browserName.equalsIgnoreCase("iexplorer")) {
-							System.setProperty("webdriver.ie.driver", "C:\\Selenium\\iedriver.exe");
+							System.setProperty("webdriver.ie.driver", "C:\\OPT\\Selenium\\iedriver.exe");
 						driver = new InternetExplorerDriver();
 					} else {
 						System.out.println("no browser defined");
@@ -88,36 +83,35 @@ public class BaseTest{
 			driver.manage().timeouts().implicitlyWait(Util.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		
 			driver.get(prop.getProperty("url"));
-			//doOpenUrl(prop.getProperty("url"));
 			
-			page = new BasePage(driver);
+			//page = new BasePage(driver);
 		
 	}	
 	
-	public Properties initialize_properties() {
-		
-		try {
-			prop = new Properties();
-			FileInputStream file = new FileInputStream("C:\\Users\\FalcoConstantine\\EclipseProjects\\AirBnb\\src\\main\\"
-					+ "java\\config\\config.properties");
-			prop.load(file);
-		} catch(FileNotFoundException e) {
-			e.printStackTrace();
-		} catch(IOException e) {
-			e.printStackTrace();
-		}
-		
-		return prop;
-	}
+//	public Properties initialize_properties() {
+//		
+//		try {
+//			prop = new Properties();
+//			FileInputStream file = new FileInputStream("C:\\Users\\S7543B\\Work Folders\\Documents\\Eclipse Regression eBroker"
+//					+ "\\Labs\\AirBnb\\src\\main\\java\\config\\config.properties");
+//			prop.load(file);
+//		} catch(FileNotFoundException e) {
+//			e.printStackTrace();
+//		} catch(IOException e) {
+//			e.printStackTrace();
+//		}
+//		
+//		return prop;
+//	}
 	
 	
-	@AfterMethod
-	public void tearDown() {
-		try {
-			page.closeBrowser();
-		} catch (Exception e) {
-			System.out.println("Some exception occurred while quitting the browser");
-		}
-	}
+//	@AfterMethod
+//	public void tearDown() {
+//		try {
+//		driver.close();
+//		} catch (Exception e) {
+//			System.out.println("Some exception occurred while quitting the browser");
+//		}
+//	}
 	
 }
