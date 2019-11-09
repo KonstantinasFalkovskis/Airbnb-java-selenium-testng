@@ -16,6 +16,7 @@
 	</define>
 	<define name="mainpage">
 		<include name="mainPage_menu"></include>
+		<include name="mainPage_search"></include>
 	</define>
 	<define name="stayspage">
 		<include name="staysPage_menu"></include>

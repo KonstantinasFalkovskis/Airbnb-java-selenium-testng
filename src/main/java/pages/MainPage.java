@@ -18,8 +18,8 @@ public class MainPage extends Base{
 	
 	LanguagePage langPage = new LanguagePage();
 	
-	//-------------------------------------------------------->
-	@FindBy(id = "Koan-magic-carpet-koan-search-bar__input")
+	//-------------------------------------------------------->	
+	@FindBy(xpath = "//input[@id='Koan-magic-carpet-koan-search-bar__input']")
 	WebElement placeToGo;
 	
 	@FindBy(id = "checkin_input")
@@ -106,15 +106,19 @@ public class MainPage extends Base{
 	}
 	
 	/**
-	 *   -- Documentation --
+	 *          -- Documentation --
 	 *   Method for framework activity validation
 	 */
 	public void test() {
 		driver.getTitle();
 	}
 	
+	public void sendtext() {
+		placeToGo.sendKeys("NY");
+	}
+	
 	/**
-	 *    -- Documentation --
+	 *         -- Documentation --
 	 *    Method for main menu smoke test
 	 *    Main menu shall be visible
 	 */
@@ -128,8 +132,33 @@ public class MainPage extends Base{
 		}
 	}
 	
+	/**
+	 *             -- Documentation --
+	 *    Method for stay places search smoke test
+	 *    All elements in search module shall be visible
+	 */
+	public void search_SMOKE() {
+		Assert.assertTrue(placeToGo.isDisplayed());
+		log.info(placeToGo.getText() + " - is visible");
+		System.out.println(placeToGo.getText() + " - is visible");
+		Assert.assertTrue(checkinInputField.isDisplayed());
+		log.info(checkinInputField.getText() + " - is visible");
+		System.out.println(checkinInputField.getText() + " - is visible");
+		Assert.assertTrue(checkoutInputField.isDisplayed());
+		log.info(checkoutInputField.getText() + " - is visible");
+		System.out.println(checkoutInputField.getText() + " - is visible");
+		Assert.assertTrue(guestPicker.isDisplayed());
+		log.info(guestPicker.getText() + " - is visible");
+		System.out.println(guestPicker.getText() + " - is visible");
+		Assert.assertTrue(searchBtn.isDisplayed());
+		log.info(searchBtn.getText() + " - is visible");
+		System.out.println(searchBtn.getText() + " - is visible");
+	}
+	
+	
+	
 	 /**
-	 *    -- Documentation --
+	 *            -- Documentation --
 	 *    Method for main menu smoke test
 	 *    main menu shall be visible and clickable
 	 */

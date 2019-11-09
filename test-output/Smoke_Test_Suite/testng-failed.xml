@@ -4,15 +4,21 @@
   <listeners>
     <listener class-name="utils.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" name="Login_Page_Smoke_Chrome(failed)">
+  <test thread-count="5" name="Main_Page_Smoke_Chrome(failed)">
     <parameter name="browserName" value="chrome"/>
+    <groups>
+      <run>
+        <include name="mainpage"/>
+      </run>
+    </groups>
     <classes>
       <class name="tests.MainPageTest">
         <methods>
+          <include name="mainPageStaysSearchTest_SMOKE"/>
           <include name="initialization"/>
-          <include name="mainPageTest"/>
+          <include name="mainPageMenuTest_SMOKE"/>
         </methods>
       </class> <!-- tests.MainPageTest -->
     </classes>
-  </test> <!-- Login_Page_Smoke_Chrome(failed) -->
+  </test> <!-- Main_Page_Smoke_Chrome(failed) -->
 </suite> <!-- Failed suite [Smoke_Test_Suite] -->
