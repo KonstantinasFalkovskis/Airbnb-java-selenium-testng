@@ -83,13 +83,13 @@ public class Base {
 	
 	}
 	
-//	@AfterMethod(alwaysRun = true)
-//	public void tearDown() {
-//		try {
-//			driver.close();
-//		} catch (Exception e) {
-//			System.out.println("Some exception occurred while quitting the browser");
-//		}
-//	}
+	@AfterMethod(alwaysRun = true)
+	public void tearDown() {
+		try {
+			driver.close();
+		} catch (Exception e) {
+			System.out.println("Some exception occurred while quitting the browser");
+		}
+	}
 
 }

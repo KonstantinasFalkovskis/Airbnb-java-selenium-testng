@@ -13,7 +13,7 @@ public class MainPageTest extends Base{
 	 *  -- Documentation --
 	 *  Pre-test method for framework activity validation
 	 */
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = false)
 	public void mainPageTest() {
 		mainPage.test();
 	}
@@ -22,11 +22,10 @@ public class MainPageTest extends Base{
 	 *   -- Documentation --
 	 *   Test for Main Page main menu smoke test
 	 */
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1, enabled = true, groups = {"smoke","mainPage_menu"})
 	public void mainMenuTest_SMOKE() {
 		mainPage.mainMenu_SMOKE();
 	}
 	
-	//groups = {"smoke_menu","main_page"}
 
 }

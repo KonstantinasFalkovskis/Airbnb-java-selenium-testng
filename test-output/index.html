@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Smoke_Test_Suite">
-                    <span>C:\Users\FalcoConstantine\EclipseWorkspace\Airbnb-java-selenium-testng\test.xml</span>
+                    <span>C:\Users\FalcoConstantine\EclipseWorkspace\Airbnb-java-selenium-testng\test-smoke.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Smoke_Test_Suite">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Smoke_Test_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test_Suite" title="tests.MainPageTest" hash-for-method="mainPageTest">mainPageTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test_Suite" title="tests.MainPageTest" hash-for-method="mainMenuTest_SMOKE">mainMenuTest_SMOKE</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Smoke_Test_Suite -->
@@ -125,9 +125,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="mainPageTest">
-                  </a> <!-- mainPageTest -->
-                  <span class="method-name">mainPageTest</span>
+                  <a name="mainMenuTest_SMOKE">
+                  </a> <!-- mainMenuTest_SMOKE -->
+                  <span class="method-name">mainMenuTest_SMOKE</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +135,7 @@
         </div> <!-- panel Smoke_Test_Suite -->
         <div panel-name="test-xml-Smoke_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\FalcoConstantine\EclipseWorkspace\Airbnb-java-selenium-testng\test.xml</span>
+            <span class="header-content">C:\Users\FalcoConstantine\EclipseWorkspace\Airbnb-java-selenium-testng\test-smoke.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,12 +145,27 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;utils.ExtentReportListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Login_Page_Smoke_Chrome&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Main_Page_Smoke_Chrome&quot;&gt;
     &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
+    &lt;groups&gt;
+      &lt;define name=&quot;all&quot;&gt;
+        &lt;include name=&quot;mainPage_menu&quot;/&gt;
+        &lt;include name=&quot;staysPage_menu&quot;/&gt;
+      &lt;/define&gt; &lt;!-- all --&gt;
+      &lt;define name=&quot;mainpage&quot;&gt;
+        &lt;include name=&quot;mainPage_menu&quot;/&gt;
+      &lt;/define&gt; &lt;!-- mainpage --&gt;
+      &lt;define name=&quot;stayspage&quot;&gt;
+        &lt;include name=&quot;staysPage_menu&quot;/&gt;
+      &lt;/define&gt; &lt;!-- stayspage --&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;mainpage&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.MainPageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Login_Page_Smoke_Chrome --&gt;
+  &lt;/test&gt; &lt;!-- Main_Page_Smoke_Chrome --&gt;
 &lt;/suite&gt; &lt;!-- Smoke_Test_Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -162,7 +177,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Login_Page_Smoke_Chrome (1 class)</span>
+                <span class="test-name">Main_Page_Smoke_Chrome (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -172,6 +187,22 @@
             <span class="header-content">Groups for Smoke_Test_Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">mainPage_menu</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">mainMenuTest_SMOKE</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">mainMenuTest_SMOKE</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Smoke_Test_Suite" class="panel">
@@ -190,14 +221,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'mainPageTest')
+data.setCell(0, 1, 'mainMenuTest_SMOKE')
 data.setCell(0, 2, 'tests.MainPageTest')
-data.setCell(0, 3, 85);
+data.setCell(0, 3, 3656);
 window.suiteTableData['Smoke_Test_Suite']= { tableData: data, tableDiv: 'times-div-Smoke_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 85 ms</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Smoke_Test_Suite">
               </div> <!-- times-div-Smoke_Test_Suite -->
             </div> <!-- times-div -->
@@ -218,7 +249,7 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">tests.MainPageTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">mainMenuTest_SMOKE</span>
+                <span class="ignored-method-name">mainPageTest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -236,9 +267,13 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">mainPageTest</span>
-                <span class="method-start">7599 ms</span>
+                <span class="method-name">mainMenuTest_SMOKE</span>
+                <span class="method-start">7247 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">10906 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

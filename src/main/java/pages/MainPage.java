@@ -105,6 +105,10 @@ public class MainPage extends Base{
 		PageFactory.initElements(driver, this);
 	}
 	
+	/**
+	 *   -- Documentation --
+	 *   Method for framework activity validation
+	 */
 	public void test() {
 		driver.getTitle();
 	}
@@ -118,7 +122,8 @@ public class MainPage extends Base{
 		List<WebElement> menuArr = driver.findElements(By.xpath("/html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li"));
 		for(WebElement element : menuArr) {
 			if(element.isDisplayed()) {
-				log.debug(element.getText() + " - is visible on Main Page");
+				log.info(element.getText() + " - is visible on Main Page");
+				System.out.println(element.getText() + " - is visible on Main Page");
 			}
 		}
 	}
