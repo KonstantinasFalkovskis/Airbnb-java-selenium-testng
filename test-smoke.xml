@@ -7,8 +7,21 @@
 </listeners>
   
   <!--  Start First Test -->
-  <test name="Login_Page_Smoke_Chrome">
+  <test name="Main_Page_Smoke_Chrome">
   <parameter name="browserName" value ="chrome"/>
+  <groups>
+	<define name="all">
+		<include name="main_page"></include>
+		<include name="stays_page"></include>
+		<include name="search_result"></include>
+	</define>
+	<define name="menu">
+		<include name="main_page"></include>
+	</define>
+	<run>
+		<include name="smoke_menu"></include>
+	</run>
+</groups>
     <classes>
       <class name="tests.MainPageTest"/>
     </classes>

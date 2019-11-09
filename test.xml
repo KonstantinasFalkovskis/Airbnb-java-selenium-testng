@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Smoke_Test_Suite" parallel="tests" thread-count="2" verbose="3">
+<suite name="Smoke_Test_Suite">
   
 <listeners>
 	<listener class-name="utils.ExtentReportListener"></listener>
@@ -8,19 +8,11 @@
   
   <!--  Start First Test -->
   
-  <test name="Login_Page_Smoke_Chrome" parallel="methods" thread-count="5">
+  <test name="Login_Page_Smoke_Chrome">
   <parameter name="browserName" value ="chrome"/>
     <classes>
       <class name="tests.MainPageTest"/>
         
     </classes>
-    </test>
-     
- <!--  Start Second Test -->     
-    <test name="Login_Page_Smoke_FireFox" parallel="methods" thread-count="5">
-     <parameter name="browserName" value="firefox"/>
-    <classes>
-      <class name="tests.MainPageTest"/>
-          </classes>
     </test>
 </suite> 

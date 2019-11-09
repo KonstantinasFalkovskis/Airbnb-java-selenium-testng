@@ -16,6 +16,8 @@ public class MainPage extends Base{
 	
 	Logger log = Logger.getLogger(MainPage.class.getName());
 	
+	LanguagePage langPage = new LanguagePage();
+	
 	//-------------------------------------------------------->
 	@FindBy(id = "Koan-magic-carpet-koan-search-bar__input")
 	WebElement placeToGo;
@@ -103,18 +105,36 @@ public class MainPage extends Base{
 		PageFactory.initElements(driver, this);
 	}
 	
-	
-	
-	
-	public String pageTitle() {
-		return driver.getTitle();
+	public void test() {
+		driver.getTitle();
 	}
 	
-	public void mainMenu(String menuTxt) {
+	/**
+	 *    -- Documentation --
+	 *    Method for main menu smoke test
+	 *    Main menu shall be visible
+	 */
+	public void mainMenu_SMOKE() {
 		List<WebElement> menuArr = driver.findElements(By.xpath("/html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li"));
 		for(WebElement element : menuArr) {
-			if(element.getText().equals(menuTxt)) {
+			if(element.isDisplayed()) {
+				log.debug(element.getText() + " - is visible on Main Page");
+			}
+		}
+	}
+	
+	 /**
+	 *    -- Documentation --
+	 *    Method for main menu smoke test
+	 *    main menu shall be visible and clickable
+	 */
+	public void mainMenuSmoke(String menuTxt) {
+		List<WebElement> menuArr = driver.findElements(By.xpath("/html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li"));
+		for(int index = 0; index <= menuArr.size(); index++) {
+			WebElement element = driver.findElement(By.xpath("/html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[" + index +"]"));
+			if(index <= 2) {
 				element.click();
+				log.info(element.getText());
 			}
 		}
 	}

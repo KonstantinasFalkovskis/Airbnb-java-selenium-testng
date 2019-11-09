@@ -38,3 +38,51 @@
 07/11/2019 23:18:14 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
 07/11/2019 23:18:14 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
 07/11/2019 23:18:14 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 12:11:42 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Before navigating to: 'https://www.airbnb.com/?locale=en&country_override=US'
+09/11/2019 12:11:45 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Navigated to:'https://www.airbnb.com/?locale=en&country_override=US'
+09/11/2019 12:11:48 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 12:11:48 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 12:11:48 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 12:11:48 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 12:11:48 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 12:11:48 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 12:11:48 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 12:11:48 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 12:11:48 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 12:11:48 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 12:45:48 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Before navigating to: 'https://www.airbnb.com/?locale=en&country_override=US'
+09/11/2019 12:45:50 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Navigated to:'https://www.airbnb.com/?locale=en&country_override=US'
+09/11/2019 12:45:53 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 12:45:53 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 12:45:53 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 12:45:53 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 12:45:53 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 12:45:53 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 12:45:53 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 12:45:53 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 12:45:53 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 12:45:53 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 12:49:18 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Before navigating to: 'https://www.airbnb.com/?locale=en&country_override=US'
+09/11/2019 12:49:20 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Navigated to:'https://www.airbnb.com/?locale=en&country_override=US'
+09/11/2019 12:49:22 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 12:49:22 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 12:49:22 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 12:49:22 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 12:49:22 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 12:49:23 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 12:49:23 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 12:49:23 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 12:49:23 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 12:49:23 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 12:51:25 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Before navigating to: 'https://www.airbnb.com/?locale=en&country_override=US'
+09/11/2019 12:51:27 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Navigated to:'https://www.airbnb.com/?locale=en&country_override=US'
+09/11/2019 12:51:27 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 12:51:27 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 12:51:27 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 12:51:27 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 12:51:27 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 12:51:28 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 12:51:28 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 12:51:28 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 12:51:28 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 12:51:28 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

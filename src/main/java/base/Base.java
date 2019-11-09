@@ -49,7 +49,7 @@ public class Base {
 		}
 	}
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	@Parameters({"browserName"})
 	public void initialization(String browserName) throws InterruptedException {
 		if (browserName.equals("chrome")) {
@@ -83,13 +83,13 @@ public class Base {
 	
 	}
 	
-	@AfterMethod
-	public void tearDown() {
-		try {
-			driver.close();
-		} catch (Exception e) {
-			System.out.println("Some exception occurred while quitting the browser");
-		}
-	}
+//	@AfterMethod(alwaysRun = true)
+//	public void tearDown() {
+//		try {
+//			driver.close();
+//		} catch (Exception e) {
+//			System.out.println("Some exception occurred while quitting the browser");
+//		}
+//	}
 
 }

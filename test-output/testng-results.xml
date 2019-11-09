@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Smoke_Test_Suite" duration-ms="10063" started-at="2019-11-07T23:18:03 EET" finished-at="2019-11-07T23:18:13 EET">
+  <suite name="Smoke_Test_Suite" duration-ms="7730" started-at="2019-11-09T12:54:17 EET" finished-at="2019-11-09T12:54:25 EET">
     <groups>
     </groups>
-    <test name="Login_Page_Smoke_Chrome" duration-ms="10063" started-at="2019-11-07T23:18:03 EET" finished-at="2019-11-07T23:18:13 EET">
+    <test name="Login_Page_Smoke_Chrome" duration-ms="7730" started-at="2019-11-09T12:54:17 EET" finished-at="2019-11-09T12:54:25 EET">
       <class name="tests.MainPageTest">
-        <test-method status="PASS" signature="initialization(java.lang.String)[pri:0, instance:tests.MainPageTest@2173f6d9]" name="initialization" is-config="true" duration-ms="7772" started-at="2019-11-07T23:18:03 EET" finished-at="2019-11-07T23:18:11 EET">
+        <test-method status="PASS" signature="initialization(java.lang.String)[pri:0, instance:tests.MainPageTest@f4168b8]" name="initialization" is-config="true" duration-ms="7597" started-at="2019-11-09T12:54:17 EET" finished-at="2019-11-09T12:54:25 EET">
           <params>
             <param index="0">
               <value>
@@ -18,14 +18,10 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="PASS" signature="firstTest()[pri:0, instance:tests.MainPageTest@2173f6d9]" name="firstTest" duration-ms="78" started-at="2019-11-07T23:18:11 EET" finished-at="2019-11-07T23:18:11 EET">
+        <test-method status="PASS" signature="mainPageTest()[pri:1, instance:tests.MainPageTest@f4168b8]" name="mainPageTest" duration-ms="85" started-at="2019-11-09T12:54:25 EET" finished-at="2019-11-09T12:54:25 EET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- firstTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MainPageTest@2173f6d9]" name="tearDown" is-config="true" duration-ms="2150" started-at="2019-11-07T23:18:11 EET" finished-at="2019-11-07T23:18:13 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
+        </test-method> <!-- mainPageTest -->
       </class> <!-- tests.MainPageTest -->
     </test> <!-- Login_Page_Smoke_Chrome -->
   </suite> <!-- Smoke_Test_Suite -->

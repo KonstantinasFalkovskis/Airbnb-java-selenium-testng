@@ -7,12 +7,26 @@ import pages.MainPage;
 
 public class MainPageTest extends Base{
 	
-	MainPage mainPage;
+	MainPage mainPage = new MainPage();
 	
-	@Test
-	public void firstTest() {
-		mainPage = new MainPage();
-		System.out.println(mainPage.pageTitle());
+	/**
+	 *  -- Documentation --
+	 *  Pre-test method for framework activity validation
+	 */
+	@Test(priority = 1, enabled = true)
+	public void mainPageTest() {
+		mainPage.test();
 	}
+	
+	/**
+	 *   -- Documentation --
+	 *   Test for Main Page main menu smoke test
+	 */
+	@Test(priority = 1, enabled = false)
+	public void mainMenuTest_SMOKE() {
+		mainPage.mainMenu_SMOKE();
+	}
+	
+	//groups = {"smoke_menu","main_page"}
 
 }
