@@ -3,15 +3,20 @@ package pages;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import org.testng.Assert;
 
 import base.Base;
 
 public class MainPage extends Base{
 	
-	//--------------------------------------------------------
+	Logger log = Logger.getLogger(MainPage.class.getName());
+	
+	//-------------------------------------------------------->
 	@FindBy(id = "Koan-magic-carpet-koan-search-bar__input")
 	WebElement placeToGo;
 	
@@ -35,7 +40,7 @@ public class MainPage extends Base{
 	
 	
 	//calendar
-	//---------------------------------------------------------
+	//--------------------------------------------------------->
 	@FindBy(xpath = "//div[@class='_1h5uiygl']")
 	WebElement arrowRight;
 	
@@ -51,7 +56,7 @@ public class MainPage extends Base{
 	
 	
 	//childrens
-	//-----------------------------------------------------------
+	//----------------------------------------------------------->
 	@FindBy(xpath = "//div[@class='_e296pg']//div//div[1]//div[1]//div[1]//div[1]//div[2]//div[1]//div[1]//button[1]")
 	WebElement childrenDecreaseBtn;
 	
@@ -65,7 +70,33 @@ public class MainPage extends Base{
 	@FindBy(xpath = "//div[@class='_slilk2']//div//div[1]//div[1]//div[1]//div[1]//div[2]//div[1]//div[3]//button[1]")
 	WebElement infantsIncreaseBtn;
 
-		
+	
+	//help desc screen
+	//----------------------------------------------------------->
+	@FindBy(xpath = "//input[@id='help-field-guide-search-input']")
+	WebElement guidHelpInputField;
+	
+	@FindBy(xpath = "//div[@class='_eflz7d']//div//div[2]")
+	WebElement backLink;
+	
+	@FindBy(xpath = "//a[@class='_12jvhwr']")
+	WebElement giveFeedbackLink;
+	
+	@FindBy(xpath = "//a[@class='_6niksfg']")
+	WebElement visitHelpCenterBtn;
+	
+	@FindBy(xpath = "//div[@class='_s1tlw0m']")
+	WebElement articleHeader;
+	
+	
+	//main elements
+	//----------------------------------------------------------->
+	@FindBy(xpath = "//div[@class='_luvunc']//button[@class='_111s5i9']")
+	WebElement closeBtn;
+	
+	@FindBy(xpath = "//button[@class='_98kere2']")
+	WebElement helpCloseBtn; 
+	
 	
 	
 	public MainPage() {
@@ -95,8 +126,27 @@ public class MainPage extends Base{
 				
 			}
 		}
-	
 	}
 	
+	/**
+	 * -- Documentation --
+	 * 1. Method for helpful articles finding
+	 *    by given word or sentence
+	 * 2. Validate article header
+	 * @param article
+	 */
+	public void helpDescArticlesList(String article) {
+		List<WebElement> articlesArr = driver.findElements(By.xpath("/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/section[1]/div"));
+		for (WebElement element : articlesArr) {
+			if(element.getText().equals(article)) {
+				element.click();
+				log.debug(article + " -> is clickable");
+				Assert.assertEquals(articleHeader.getText(), article);
+				log.info(article + " - is visible");
+			}
+		}
+	}
+	
+
 			
 }
