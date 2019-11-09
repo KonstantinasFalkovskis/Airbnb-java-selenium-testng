@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke_Test_Suite">
+  
+<listeners>
+	<listener class-name="utils.ExtentReportListener"></listener>
+</listeners>
+  
+  <!--  Start First Test -->
+  <test name="Login_Page_Smoke_Chrome">
+  <parameter name="browserName" value ="chrome"/>
+    <classes>
+      <class name="tests.MainPageTest"/>
+    </classes>
+    </test>
+</suite> 

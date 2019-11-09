@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Smoke_Test_Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="utils.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="2" verbose="3" name="Login_Page_Smoke_FireFox(failed)" parallel="methods">
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="tests.MainPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initialization"/>
+          <include name="firstTest"/>
+        </methods>
+      </class> <!-- tests.MainPageTest -->
+    </classes>
+  </test> <!-- Login_Page_Smoke_FireFox(failed) -->
+</suite> <!-- Failed suite [Smoke_Test_Suite] -->
