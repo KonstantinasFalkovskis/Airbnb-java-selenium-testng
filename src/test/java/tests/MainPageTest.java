@@ -1,10 +1,12 @@
 package tests;
 
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import base.Base;
 import pages.MainPage;
+import utils.Util;
 
 public class MainPageTest extends Base{
 	
@@ -70,5 +72,13 @@ public class MainPageTest extends Base{
 		mainPage.mainPageSearchModul_REGRESSION(place, table, date, adults, childrens, infants);
 	}
 	
-	
+	/**
+	 * Data provider
+	 * @return
+	 */
+	@DataProvider
+	public Object [][] getTestData() {
+		Object data [][] = Util.getTestData(sheetName);
+		return data;
+	}
 }
