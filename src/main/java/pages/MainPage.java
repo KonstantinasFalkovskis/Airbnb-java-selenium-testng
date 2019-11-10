@@ -5,7 +5,6 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -13,12 +12,17 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import base.Base;
+import utils.CalendarUtils;
+import utils.ClickUtils;
 
 public class MainPage extends Base{
 	
 	Logger log = Logger.getLogger(MainPage.class.getName());
 	
 	LanguagePage langPage = new LanguagePage();
+	CalendarUtils calendar = new CalendarUtils();
+	ClickUtils clickUtils = new ClickUtils();
+	
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	Actions builder = new Actions(driver);
 	
@@ -54,6 +58,7 @@ public class MainPage extends Base{
 	WebElement arrowLeft;
 	
 	//adults
+	//---------------------------------------------------------->
 	@FindBy(xpath = "//div[@class='_9cfq872']//div//div[1]//div[1]//div[1]//div[1]//div[2]//div[1]//div[1]//button[1]")
 	WebElement adultsDecreaseBtn;
 	
@@ -214,8 +219,39 @@ public class MainPage extends Base{
 	
 	
 	
+	/**
+	 *                 -- Documentation --
+	 * Method for stay places searching. 
+	 * 1. User place the destination
+	 * 2. CalendarUtil.java class is calling twice. User select check-in and check-out terms 
+	 *    (check-in starts from any day of next month and check-out is defining 
+	 *    for one week - 7 days)
+	 * 3. Guest section will be fill-out (Adults shall be filled. Children and infants are optional)
+	 * 4. Data for search module is coming from data.xlsx file search sheet
+	 * @param place
+	 */
+	public void mainPageSearchModul_REGRESSION(String place, WebElement table, String date, String adults, String childrens, String infants) {
+		placeToGo.clear();
+		placeToGo.sendKeys(place);
+		destination(place);
+		checkinInputField.click();
+		arrowRight.click();
+		calendar.getTableBodyRowByText(table, date); // for check-in date defining
+		calendar.getTableBodyRowByText(table, date); // for check-out date defining
+		guestPicker.click();
+		clickUtils.doMultiClick(adultsIncreaseBtn, adults);
+		clickUtils.doMultiClick(childrenIncreaseBtn, childrens);
+		clickUtils.doMultiClick(infantsIncreaseBtn, infants);
+		saveBtn.click();
+		searchBtn.click();
+	}
+
 	
-	
+	/**
+	 *         -- Documentation --
+	 * Method for destination list validation     
+	 * @param place
+	 */
 	public void destination(String place) {
 		List<WebElement> placesArr = driver.findElements(By.xpath("/html/body/div[3]/div/main/section/div/div/div[1]/div/div/div/div/div/div[2]/div/form/div[1]/div/div/ul/li/ul/li"));
 		for(WebElement element : placesArr) {
@@ -225,6 +261,11 @@ public class MainPage extends Base{
 		}
 	}
 	
+	/**
+	 *            -- Documentation --
+	 * Method for particular destination selecting
+	 * @param element
+	 */
 	public void selectDestination(WebElement element) {
 		//1. could be click on element from list
 		builder.click(element).build().perform();

@@ -9,13 +9,23 @@ import base.Base;
 public class ClickUtils extends Base{
 	
 	JavascriptExecutor js = (JavascriptExecutor) driver;
+	//Actions builder = new Actions(driver);
 	
-	public void doMultiClick(WebElement element, int clickCount) {
+	public void doMultiClick(WebElement element, String persons) {
+		
+		//wrapper
+		int clickCount = Integer.parseInt(persons);
+		
 		for(int i = 0; i <= clickCount; i++ ) {
+			if(i > 0) {
 			try {
 				doClick(element);
 			} catch(WebDriverException e) {
 				doClickWithJS(element);
+				}
+			} else { // if no person is selecting
+				//builder.keyDown(Keys.ENTER).keyUp(Keys.ENTER).build().perform();
+				break;
 			}
 		}
 	}
