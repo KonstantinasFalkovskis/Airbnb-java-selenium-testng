@@ -2,12 +2,14 @@ package pages;
 
 import java.util.List;
 
-import org.openqa.selenium.By;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import org.testng.Assert;
 
 import base.Base;
@@ -17,6 +19,8 @@ public class MainPage extends Base{
 	Logger log = Logger.getLogger(MainPage.class.getName());
 	
 	LanguagePage langPage = new LanguagePage();
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	Actions builder = new Actions(driver);
 	
 	//-------------------------------------------------------->	
 	@FindBy(xpath = "//input[@id='Koan-magic-carpet-koan-search-bar__input']")
@@ -72,6 +76,10 @@ public class MainPage extends Base{
 	@FindBy(xpath = "//div[@class='_slilk2']//div//div[1]//div[1]//div[1]//div[1]//div[2]//div[1]//div[3]//button[1]")
 	WebElement infantsIncreaseBtn;
 
+	//Rent screen
+	//---------------------------------------------------------->
+	@FindBy(xpath = "//button[@class='_1o4htsfg']")
+	WebElement getStarted;
 	
 	//help desc screen
 	//----------------------------------------------------------->
@@ -95,6 +103,9 @@ public class MainPage extends Base{
 	//----------------------------------------------------------->
 	@FindBy(xpath = "//div[@class='_luvunc']//button[@class='_111s5i9']")
 	WebElement closeBtn;
+	
+	@FindBy(xpath = "//button[@class='_1rp5252']")
+	WebElement closeBtnForLogin;
 	
 	@FindBy(xpath = "//button[@class='_98kere2']")
 	WebElement helpCloseBtn; 
@@ -155,31 +166,70 @@ public class MainPage extends Base{
 		System.out.println(searchBtn.getText() + " - is visible");
 	}
 	
-	
-	
 	 /**
 	 *            -- Documentation --
-	 *    Method for main menu smoke test
-	 *    main menu shall be visible and clickable
+	 *    Method for main menu functional test
+	 *    Every main menu tab shall be clickable
+	 *    Windows shall to have possibility to be closed
 	 */
-	public void mainMenuSmoke(String menuTxt) {
+	public void mainMenu_FUNCTIONAL() {
 		List<WebElement> menuArr = driver.findElements(By.xpath("/html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li"));
-		for(int index = 0; index <= menuArr.size(); index++) {
+		for(int index = 1; index <= menuArr.size(); index++) {
 			WebElement element = driver.findElement(By.xpath("/html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[" + index +"]"));
 			if(index <= 2) {
 				element.click();
-				log.info(element.getText());
+				log.info(element.getText() + " - menu element is clickable");
+				System.out.println(element.getText() + " - menu element is clickable");
+				closeBtn.click();
+				log.info("Close is clicked. Window is closed.");
+				System.out.println("Close button is clicked. Window is closed.");
+			} else if(3 <= index && index <= 4) {
+					element.click();
+//					log.info(element.getText() + " - menu element is clickable");
+//					System.out.println(element.getText() + " - menu element is clickable");
+//					new WebDriverWait(driver, Util.IMPLICIT_WAIT).ignoring(StaleElementReferenceException.class).until(ExpectedConditions.elementToBeClickable(getStarted));
+					JavascriptExecutor js = (JavascriptExecutor) driver;
+					js.executeScript("window.history.go(-1)");
+					//driver.navigate().back();
+//					log.info(element.getText() + " - is closed.");
+//					System.out.println(element.getText() + " - is closed.");
+			} else if(index == 5) {
+				element.click();
+				log.info(element.getText() + " - menu element is clickable");
+				System.out.println(element.getText() + " - menu element is clickable");
+				helpCloseBtn.click();
+				log.info("Close is clicked. Window is closed.");
+				System.out.println("Close button is clicked. Window is closed.");
+			} else if(index > 5) {
+				element.click();
+				log.info(element.getText() + " - menu element is clickable");
+				System.out.println(element.getText() + " - menu element is clickable");
+				closeBtnForLogin.click();
+				log.info("Close is clicked. Window is closed.");
+				System.out.println("Close button is clicked. Window is closed.");
 			}
 		}
 	}
 	
-	public void whereDoYouGoing(String place) {
+	
+	
+	
+	
+	
+	public void destination(String place) {
 		List<WebElement> placesArr = driver.findElements(By.xpath("/html/body/div[3]/div/main/section/div/div/div[1]/div/div/div/div/div/div[2]/div/form/div[1]/div/div/ul/li/ul/li"));
 		for(WebElement element : placesArr) {
 			if(element.getText().equals(place)) {
-				
+				selectDestination(element);
 			}
 		}
+	}
+	
+	public void selectDestination(WebElement element) {
+		//1. could be click on element from list
+		builder.click(element).build().perform();
+		//2. could be pressed KeyDown + Enter
+		//builder.keyDown(Keys.ARROW_DOWN).keyUp(Keys.ARROW_DOWN).click(element).keyDown(Keys.ENTER).keyUp(Keys.ENTER).build().perform();
 	}
 	
 	/**
