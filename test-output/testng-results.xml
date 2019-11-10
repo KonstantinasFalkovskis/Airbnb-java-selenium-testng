@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
+<testng-results skipped="0" failed="0" ignored="4" total="5" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Smoke_Test_Suite" duration-ms="22961" started-at="2019-11-09T20:11:54 EET" finished-at="2019-11-09T20:12:17 EET">
+  <suite name="Functional_Test_Suite" duration-ms="30639" started-at="2019-11-10T09:00:18 EET" finished-at="2019-11-10T09:00:49 EET">
     <groups>
-      <group name="mainPage_search">
-        <method signature="MainPageTest.mainPageStaysSearchTest_SMOKE()[pri:2, instance:tests.MainPageTest@42f93a98]" name="mainPageStaysSearchTest_SMOKE" class="tests.MainPageTest"/>
-      </group> <!-- mainPage_search -->
-      <group name="mainPage_menu">
-        <method signature="MainPageTest.mainPageMenuTest_SMOKE()[pri:1, instance:tests.MainPageTest@42f93a98]" name="mainPageMenuTest_SMOKE" class="tests.MainPageTest"/>
-      </group> <!-- mainPage_menu -->
-      <group name="smoke">
-        <method signature="MainPageTest.mainPageMenuTest_SMOKE()[pri:1, instance:tests.MainPageTest@42f93a98]" name="mainPageMenuTest_SMOKE" class="tests.MainPageTest"/>
-        <method signature="MainPageTest.mainPageStaysSearchTest_SMOKE()[pri:2, instance:tests.MainPageTest@42f93a98]" name="mainPageStaysSearchTest_SMOKE" class="tests.MainPageTest"/>
-      </group> <!-- smoke -->
+      <group name="mainPage_menu_functional">
+        <method signature="MainPageTest.mainPageMenuTest_FUNCTIONAL()[pri:3, instance:tests.MainPageTest@42f93a98]" name="mainPageMenuTest_FUNCTIONAL" class="tests.MainPageTest"/>
+      </group> <!-- mainPage_menu_functional -->
+      <group name="functional">
+        <method signature="MainPageTest.mainPageMenuTest_FUNCTIONAL()[pri:3, instance:tests.MainPageTest@42f93a98]" name="mainPageMenuTest_FUNCTIONAL" class="tests.MainPageTest"/>
+      </group> <!-- functional -->
     </groups>
-    <test name="Main_Page_Smoke_Chrome" duration-ms="22961" started-at="2019-11-09T20:11:54 EET" finished-at="2019-11-09T20:12:17 EET">
+    <test name="Main_Page_Functional_Chrome" duration-ms="30639" started-at="2019-11-10T09:00:18 EET" finished-at="2019-11-10T09:00:49 EET">
       <class name="tests.MainPageTest">
-        <test-method status="PASS" signature="initialization(java.lang.String)[pri:0, instance:tests.MainPageTest@42f93a98]" name="initialization" is-config="true" duration-ms="6603" started-at="2019-11-09T20:11:54 EET" finished-at="2019-11-09T20:12:01 EET">
+        <test-method status="PASS" signature="initialization(java.lang.String)[pri:0, instance:tests.MainPageTest@42f93a98]" name="initialization" is-config="true" duration-ms="10124" started-at="2019-11-10T09:00:18 EET" finished-at="2019-11-10T09:00:28 EET">
           <params>
             <param index="0">
               <value>
@@ -28,34 +24,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="PASS" signature="mainPageMenuTest_SMOKE()[pri:1, instance:tests.MainPageTest@42f93a98]" name="mainPageMenuTest_SMOKE" duration-ms="2852" started-at="2019-11-09T20:12:01 EET" finished-at="2019-11-09T20:12:04 EET">
+        <test-method status="PASS" signature="mainPageMenuTest_FUNCTIONAL()[pri:3, instance:tests.MainPageTest@42f93a98]" name="mainPageMenuTest_FUNCTIONAL" duration-ms="15732" started-at="2019-11-10T09:00:28 EET" finished-at="2019-11-10T09:00:44 EET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mainPageMenuTest_SMOKE -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MainPageTest@42f93a98]" name="tearDown" is-config="true" duration-ms="2347" started-at="2019-11-09T20:12:04 EET" finished-at="2019-11-09T20:12:06 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="initialization(java.lang.String)[pri:0, instance:tests.MainPageTest@42f93a98]" name="initialization" is-config="true" duration-ms="5635" started-at="2019-11-09T20:12:06 EET" finished-at="2019-11-09T20:12:12 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialization -->
-        <test-method status="PASS" signature="mainPageStaysSearchTest_SMOKE()[pri:2, instance:tests.MainPageTest@42f93a98]" name="mainPageStaysSearchTest_SMOKE" duration-ms="3135" started-at="2019-11-09T20:12:12 EET" finished-at="2019-11-09T20:12:15 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mainPageStaysSearchTest_SMOKE -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MainPageTest@42f93a98]" name="tearDown" is-config="true" duration-ms="2325" started-at="2019-11-09T20:12:15 EET" finished-at="2019-11-09T20:12:17 EET">
+        </test-method> <!-- mainPageMenuTest_FUNCTIONAL -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MainPageTest@42f93a98]" name="tearDown" is-config="true" duration-ms="4707" started-at="2019-11-10T09:00:44 EET" finished-at="2019-11-10T09:00:49 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.MainPageTest -->
-    </test> <!-- Main_Page_Smoke_Chrome -->
-  </suite> <!-- Smoke_Test_Suite -->
+    </test> <!-- Main_Page_Functional_Chrome -->
+  </suite> <!-- Functional_Test_Suite -->
 </testng-results>

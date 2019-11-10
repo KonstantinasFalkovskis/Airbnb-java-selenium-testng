@@ -468,3 +468,494 @@
 09/11/2019 20:12:18 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
 09/11/2019 20:12:18 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
 09/11/2019 20:12:18 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 20:57:42 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Before navigating to: 'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 20:57:45 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Navigated to:'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 20:57:45 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+09/11/2019 20:57:45 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+09/11/2019 20:57:45 | Status: INFO | ClassName: pages.MainPage | Log text: English (US) - is visible on Main Page
+09/11/2019 20:57:47 | Status: INFO | ClassName: pages.MainPage | Log text: $ USD - is visible on Main Page
+09/11/2019 20:57:47 | Status: INFO | ClassName: pages.MainPage | Log text: Host a home - is visible on Main Page
+09/11/2019 20:57:48 | Status: INFO | ClassName: pages.MainPage | Log text: Host an experience - is visible on Main Page
+09/11/2019 20:57:48 | Status: INFO | ClassName: pages.MainPage | Log text: Help - is visible on Main Page
+09/11/2019 20:57:48 | Status: INFO | ClassName: pages.MainPage | Log text: Sign up - is visible on Main Page
+09/11/2019 20:57:48 | Status: INFO | ClassName: pages.MainPage | Log text: Log in - is visible on Main Page
+09/11/2019 20:57:54 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Before navigating to: 'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 20:57:56 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Navigated to:'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 20:57:56 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //input[@id='Koan-magic-carpet-koan-search-bar__input']
+09/11/2019 20:57:56 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //input[@id='Koan-magic-carpet-koan-search-bar__input']
+09/11/2019 20:57:56 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //input[@id='Koan-magic-carpet-koan-search-bar__input']
+09/11/2019 20:57:57 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //input[@id='Koan-magic-carpet-koan-search-bar__input']
+09/11/2019 20:57:57 | Status: INFO | ClassName: pages.MainPage | Log text:  - is visible
+09/11/2019 20:57:57 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //input[@id='Koan-magic-carpet-koan-search-bar__input']
+09/11/2019 20:57:58 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //input[@id='Koan-magic-carpet-koan-search-bar__input']
+09/11/2019 20:57:58 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.id: checkin_input
+09/11/2019 20:57:58 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.id: checkin_input
+09/11/2019 20:57:59 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.id: checkin_input
+09/11/2019 20:57:59 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.id: checkin_input
+09/11/2019 20:57:59 | Status: INFO | ClassName: pages.MainPage | Log text:  - is visible
+09/11/2019 20:57:59 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.id: checkin_input
+09/11/2019 20:57:59 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.id: checkin_input
+09/11/2019 20:57:59 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.id: checkout_input
+09/11/2019 20:57:59 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.id: checkout_input
+09/11/2019 20:57:59 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.id: checkout_input
+09/11/2019 20:57:59 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.id: checkout_input
+09/11/2019 20:57:59 | Status: INFO | ClassName: pages.MainPage | Log text:  - is visible
+09/11/2019 20:57:59 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.id: checkout_input
+09/11/2019 20:57:59 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.id: checkout_input
+09/11/2019 20:57:59 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.id: lp-guestpicker
+09/11/2019 20:57:59 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.id: lp-guestpicker
+09/11/2019 20:57:59 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.id: lp-guestpicker
+09/11/2019 20:57:59 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.id: lp-guestpicker
+09/11/2019 20:57:59 | Status: INFO | ClassName: pages.MainPage | Log text: Guests - is visible
+09/11/2019 20:57:59 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.id: lp-guestpicker
+09/11/2019 20:57:59 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.id: lp-guestpicker
+09/11/2019 20:57:59 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //button[@class='_1vs0x720']
+09/11/2019 20:57:59 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //button[@class='_1vs0x720']
+09/11/2019 20:57:59 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //button[@class='_1vs0x720']
+09/11/2019 20:57:59 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //button[@class='_1vs0x720']
+09/11/2019 20:57:59 | Status: INFO | ClassName: pages.MainPage | Log text: Search - is visible
+09/11/2019 20:57:59 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //button[@class='_1vs0x720']
+09/11/2019 20:57:59 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //button[@class='_1vs0x720']
+09/11/2019 20:58:02 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 20:58:02 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 20:58:02 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 20:58:02 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 20:58:02 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 20:58:02 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 20:58:02 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 20:58:02 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 20:58:02 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 20:58:02 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 20:58:27 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Before navigating to: 'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 20:58:28 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Navigated to:'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 20:58:28 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+09/11/2019 20:58:28 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+09/11/2019 20:58:28 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[0]
+09/11/2019 20:58:47 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 20:58:47 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 20:58:47 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 20:58:47 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 20:58:47 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 20:58:48 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 20:58:48 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 20:58:48 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 20:58:48 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 20:58:48 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 21:03:37 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Before navigating to: 'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 21:03:39 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Navigated to:'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 21:03:39 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+09/11/2019 21:03:39 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+09/11/2019 21:03:39 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]
+09/11/2019 21:03:39 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]
+09/11/2019 21:03:39 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (068d242064febbc61cdcd200b8da4fc6)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]]
+09/11/2019 21:03:41 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (068d242064febbc61cdcd200b8da4fc6)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]]
+09/11/2019 21:03:41 | Status: INFO | ClassName: pages.MainPage | Log text: English (US) - menu element is clickable
+09/11/2019 21:03:42 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:03:42 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:03:42 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (068d242064febbc61cdcd200b8da4fc6)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:03:42 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (068d242064febbc61cdcd200b8da4fc6)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:03:42 | Status: INFO | ClassName: pages.MainPage | Log text: Close is clicked. Window is closed.
+09/11/2019 21:03:42 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]
+09/11/2019 21:03:42 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]
+09/11/2019 21:03:42 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (068d242064febbc61cdcd200b8da4fc6)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]]
+09/11/2019 21:03:42 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (068d242064febbc61cdcd200b8da4fc6)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]]
+09/11/2019 21:03:43 | Status: INFO | ClassName: pages.MainPage | Log text: $ USD - menu element is clickable
+09/11/2019 21:03:43 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:03:43 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:03:43 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (068d242064febbc61cdcd200b8da4fc6)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:03:43 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (068d242064febbc61cdcd200b8da4fc6)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:03:43 | Status: INFO | ClassName: pages.MainPage | Log text: Close is clicked. Window is closed.
+09/11/2019 21:03:43 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]
+09/11/2019 21:03:43 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]
+09/11/2019 21:03:43 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (068d242064febbc61cdcd200b8da4fc6)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]]
+09/11/2019 21:03:46 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (068d242064febbc61cdcd200b8da4fc6)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]]
+09/11/2019 21:03:50 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 21:03:50 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 21:03:50 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 21:03:50 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 21:03:50 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 21:03:51 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 21:03:51 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 21:03:51 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 21:03:51 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 21:03:51 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 21:13:36 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Before navigating to: 'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 21:13:37 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Navigated to:'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 21:13:37 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+09/11/2019 21:13:37 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+09/11/2019 21:13:37 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]
+09/11/2019 21:13:37 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]
+09/11/2019 21:13:37 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (42b5119145562bb672907a0e58ea2a6e)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]]
+09/11/2019 21:13:39 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (42b5119145562bb672907a0e58ea2a6e)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]]
+09/11/2019 21:13:39 | Status: INFO | ClassName: pages.MainPage | Log text: English (US) - menu element is clickable
+09/11/2019 21:13:40 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:13:40 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:13:40 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (42b5119145562bb672907a0e58ea2a6e)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:13:40 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (42b5119145562bb672907a0e58ea2a6e)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:13:40 | Status: INFO | ClassName: pages.MainPage | Log text: Close is clicked. Window is closed.
+09/11/2019 21:13:40 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]
+09/11/2019 21:13:40 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]
+09/11/2019 21:13:40 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (42b5119145562bb672907a0e58ea2a6e)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]]
+09/11/2019 21:13:40 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (42b5119145562bb672907a0e58ea2a6e)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]]
+09/11/2019 21:13:40 | Status: INFO | ClassName: pages.MainPage | Log text: € EUR - menu element is clickable
+09/11/2019 21:13:40 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:13:40 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:13:40 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (42b5119145562bb672907a0e58ea2a6e)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:13:41 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (42b5119145562bb672907a0e58ea2a6e)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:13:41 | Status: INFO | ClassName: pages.MainPage | Log text: Close is clicked. Window is closed.
+09/11/2019 21:13:41 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]
+09/11/2019 21:13:41 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]
+09/11/2019 21:13:41 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (42b5119145562bb672907a0e58ea2a6e)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]]
+09/11/2019 21:13:44 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (42b5119145562bb672907a0e58ea2a6e)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]]
+09/11/2019 21:13:49 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 21:13:49 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 21:13:49 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 21:13:49 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 21:13:49 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 21:13:50 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 21:13:50 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 21:13:50 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 21:13:50 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 21:13:50 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 21:29:32 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Before navigating to: 'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 21:29:34 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Navigated to:'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 21:29:34 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+09/11/2019 21:29:34 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+09/11/2019 21:29:34 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]
+09/11/2019 21:29:34 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]
+09/11/2019 21:29:34 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (7caa662af3e7575cc82b08433e6e2b21)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]]
+09/11/2019 21:29:37 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (7caa662af3e7575cc82b08433e6e2b21)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]]
+09/11/2019 21:29:37 | Status: INFO | ClassName: pages.MainPage | Log text: English (US) - menu element is clickable
+09/11/2019 21:29:37 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:29:37 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:29:37 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (7caa662af3e7575cc82b08433e6e2b21)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:29:38 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (7caa662af3e7575cc82b08433e6e2b21)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:29:38 | Status: INFO | ClassName: pages.MainPage | Log text: Close is clicked. Window is closed.
+09/11/2019 21:29:38 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]
+09/11/2019 21:29:38 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]
+09/11/2019 21:29:38 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (7caa662af3e7575cc82b08433e6e2b21)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]]
+09/11/2019 21:29:38 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (7caa662af3e7575cc82b08433e6e2b21)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]]
+09/11/2019 21:29:38 | Status: INFO | ClassName: pages.MainPage | Log text: $ USD - menu element is clickable
+09/11/2019 21:29:38 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:29:38 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:29:38 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (7caa662af3e7575cc82b08433e6e2b21)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:29:38 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (7caa662af3e7575cc82b08433e6e2b21)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:29:38 | Status: INFO | ClassName: pages.MainPage | Log text: Close is clicked. Window is closed.
+09/11/2019 21:29:38 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]
+09/11/2019 21:29:38 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]
+09/11/2019 21:29:38 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (7caa662af3e7575cc82b08433e6e2b21)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]]
+09/11/2019 21:29:41 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (7caa662af3e7575cc82b08433e6e2b21)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]]
+09/11/2019 21:29:46 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 21:29:46 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 21:29:46 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 21:29:46 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 21:29:46 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 21:29:46 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 21:29:46 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 21:29:46 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 21:29:46 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 21:29:46 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 21:34:27 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Before navigating to: 'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 21:34:30 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Navigated to:'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 21:34:30 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+09/11/2019 21:34:30 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+09/11/2019 21:34:30 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]
+09/11/2019 21:34:30 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]
+09/11/2019 21:34:30 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (f615640c23d4f06c8800f907e77d7f54)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]]
+09/11/2019 21:34:33 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (f615640c23d4f06c8800f907e77d7f54)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]]
+09/11/2019 21:34:33 | Status: INFO | ClassName: pages.MainPage | Log text: English (US) - menu element is clickable
+09/11/2019 21:34:33 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:34:33 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:34:33 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (f615640c23d4f06c8800f907e77d7f54)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:34:33 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (f615640c23d4f06c8800f907e77d7f54)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:34:33 | Status: INFO | ClassName: pages.MainPage | Log text: Close is clicked. Window is closed.
+09/11/2019 21:34:33 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]
+09/11/2019 21:34:33 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]
+09/11/2019 21:34:33 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (f615640c23d4f06c8800f907e77d7f54)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]]
+09/11/2019 21:34:33 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (f615640c23d4f06c8800f907e77d7f54)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]]
+09/11/2019 21:34:33 | Status: INFO | ClassName: pages.MainPage | Log text: $ USD - menu element is clickable
+09/11/2019 21:34:33 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:34:33 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:34:33 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (f615640c23d4f06c8800f907e77d7f54)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:34:34 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (f615640c23d4f06c8800f907e77d7f54)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:34:34 | Status: INFO | ClassName: pages.MainPage | Log text: Close is clicked. Window is closed.
+09/11/2019 21:34:34 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]
+09/11/2019 21:34:34 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]
+09/11/2019 21:34:34 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (f615640c23d4f06c8800f907e77d7f54)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]]
+09/11/2019 21:34:36 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (f615640c23d4f06c8800f907e77d7f54)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]]
+09/11/2019 21:34:38 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[4]
+09/11/2019 21:34:57 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 21:34:57 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 21:34:57 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 21:34:57 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 21:34:57 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 21:34:58 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 21:34:58 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 21:34:58 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 21:34:58 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 21:34:58 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 21:40:07 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Before navigating to: 'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 21:40:09 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Navigated to:'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 21:40:09 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+09/11/2019 21:40:09 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+09/11/2019 21:40:09 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]
+09/11/2019 21:40:09 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]
+09/11/2019 21:40:09 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (7a21ed6a6a57d2aa39fc21f36ac7959d)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]]
+09/11/2019 21:40:11 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (7a21ed6a6a57d2aa39fc21f36ac7959d)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]]
+09/11/2019 21:40:11 | Status: INFO | ClassName: pages.MainPage | Log text: English (US) - menu element is clickable
+09/11/2019 21:40:12 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:40:12 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:40:12 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (7a21ed6a6a57d2aa39fc21f36ac7959d)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:40:12 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (7a21ed6a6a57d2aa39fc21f36ac7959d)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:40:12 | Status: INFO | ClassName: pages.MainPage | Log text: Close is clicked. Window is closed.
+09/11/2019 21:40:12 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]
+09/11/2019 21:40:12 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]
+09/11/2019 21:40:12 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (7a21ed6a6a57d2aa39fc21f36ac7959d)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]]
+09/11/2019 21:40:12 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (7a21ed6a6a57d2aa39fc21f36ac7959d)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]]
+09/11/2019 21:40:12 | Status: INFO | ClassName: pages.MainPage | Log text: $ USD - menu element is clickable
+09/11/2019 21:40:12 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:40:12 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:40:12 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (7a21ed6a6a57d2aa39fc21f36ac7959d)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:40:13 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (7a21ed6a6a57d2aa39fc21f36ac7959d)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:40:13 | Status: INFO | ClassName: pages.MainPage | Log text: Close is clicked. Window is closed.
+09/11/2019 21:40:13 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]
+09/11/2019 21:40:13 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]
+09/11/2019 21:40:13 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (7a21ed6a6a57d2aa39fc21f36ac7959d)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]]
+09/11/2019 21:40:15 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (7a21ed6a6a57d2aa39fc21f36ac7959d)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]]
+09/11/2019 21:40:17 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[4]
+09/11/2019 21:40:34 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 21:40:34 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 21:40:34 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 21:40:34 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 21:40:34 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 21:40:35 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 21:40:35 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 21:40:35 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 21:40:35 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 21:40:35 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 21:59:14 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Before navigating to: 'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 21:59:16 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Navigated to:'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 21:59:16 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+09/11/2019 21:59:17 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+09/11/2019 21:59:17 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]
+09/11/2019 21:59:17 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]
+09/11/2019 21:59:17 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (137c20fc6ae88845b690971eb5806ee8)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]]
+09/11/2019 21:59:20 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (137c20fc6ae88845b690971eb5806ee8)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]]
+09/11/2019 21:59:20 | Status: INFO | ClassName: pages.MainPage | Log text: English (US) - menu element is clickable
+09/11/2019 21:59:20 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:59:20 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:59:20 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (137c20fc6ae88845b690971eb5806ee8)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:59:20 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (137c20fc6ae88845b690971eb5806ee8)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:59:20 | Status: INFO | ClassName: pages.MainPage | Log text: Close is clicked. Window is closed.
+09/11/2019 21:59:20 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]
+09/11/2019 21:59:20 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]
+09/11/2019 21:59:20 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (137c20fc6ae88845b690971eb5806ee8)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]]
+09/11/2019 21:59:20 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (137c20fc6ae88845b690971eb5806ee8)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]]
+09/11/2019 21:59:20 | Status: INFO | ClassName: pages.MainPage | Log text: $ USD - menu element is clickable
+09/11/2019 21:59:20 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:59:20 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 21:59:20 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (137c20fc6ae88845b690971eb5806ee8)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:59:21 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (137c20fc6ae88845b690971eb5806ee8)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 21:59:21 | Status: INFO | ClassName: pages.MainPage | Log text: Close is clicked. Window is closed.
+09/11/2019 21:59:21 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]
+09/11/2019 21:59:21 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]
+09/11/2019 21:59:21 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (137c20fc6ae88845b690971eb5806ee8)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]]
+09/11/2019 21:59:24 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (137c20fc6ae88845b690971eb5806ee8)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]]
+09/11/2019 21:59:29 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 21:59:29 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 21:59:29 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 21:59:29 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 21:59:29 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 21:59:30 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 21:59:30 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 21:59:30 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 21:59:30 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 21:59:30 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 22:01:02 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Before navigating to: 'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 22:01:03 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Navigated to:'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 22:01:03 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+09/11/2019 22:01:03 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+09/11/2019 22:01:03 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]
+09/11/2019 22:01:03 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]
+09/11/2019 22:01:03 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (f2fead9a1c065c8b4fe9e188dfbbb442)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]]
+09/11/2019 22:01:05 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (f2fead9a1c065c8b4fe9e188dfbbb442)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]]
+09/11/2019 22:01:05 | Status: INFO | ClassName: pages.MainPage | Log text: English (US) - menu element is clickable
+09/11/2019 22:01:05 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 22:01:06 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 22:01:06 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (f2fead9a1c065c8b4fe9e188dfbbb442)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 22:01:06 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (f2fead9a1c065c8b4fe9e188dfbbb442)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 22:01:06 | Status: INFO | ClassName: pages.MainPage | Log text: Close is clicked. Window is closed.
+09/11/2019 22:01:06 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]
+09/11/2019 22:01:06 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]
+09/11/2019 22:01:06 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (f2fead9a1c065c8b4fe9e188dfbbb442)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]]
+09/11/2019 22:01:06 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (f2fead9a1c065c8b4fe9e188dfbbb442)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]]
+09/11/2019 22:01:06 | Status: INFO | ClassName: pages.MainPage | Log text: € EUR - menu element is clickable
+09/11/2019 22:01:06 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 22:01:06 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 22:01:06 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (f2fead9a1c065c8b4fe9e188dfbbb442)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 22:01:06 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (f2fead9a1c065c8b4fe9e188dfbbb442)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 22:01:06 | Status: INFO | ClassName: pages.MainPage | Log text: Close is clicked. Window is closed.
+09/11/2019 22:01:06 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]
+09/11/2019 22:01:06 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]
+09/11/2019 22:01:06 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (f2fead9a1c065c8b4fe9e188dfbbb442)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]]
+09/11/2019 22:01:09 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (f2fead9a1c065c8b4fe9e188dfbbb442)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]]
+09/11/2019 22:01:12 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 22:01:12 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 22:01:12 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 22:01:12 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 22:01:12 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 22:01:12 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 22:01:12 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 22:01:12 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 22:01:12 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 22:01:12 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 22:12:01 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Before navigating to: 'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 22:12:03 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Navigated to:'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 22:12:03 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+09/11/2019 22:12:03 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+09/11/2019 22:12:03 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]
+09/11/2019 22:12:03 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]
+09/11/2019 22:12:03 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (479850ba4ad9be526907f7c6db612a2c)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]]
+09/11/2019 22:12:05 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (479850ba4ad9be526907f7c6db612a2c)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]]
+09/11/2019 22:12:06 | Status: INFO | ClassName: pages.MainPage | Log text: English (US) - menu element is clickable
+09/11/2019 22:12:06 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 22:12:06 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 22:12:06 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (479850ba4ad9be526907f7c6db612a2c)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 22:12:06 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (479850ba4ad9be526907f7c6db612a2c)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 22:12:06 | Status: INFO | ClassName: pages.MainPage | Log text: Close is clicked. Window is closed.
+09/11/2019 22:12:06 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]
+09/11/2019 22:12:07 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]
+09/11/2019 22:12:07 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (479850ba4ad9be526907f7c6db612a2c)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]]
+09/11/2019 22:12:08 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (479850ba4ad9be526907f7c6db612a2c)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]]
+09/11/2019 22:12:08 | Status: INFO | ClassName: pages.MainPage | Log text: $ USD - menu element is clickable
+09/11/2019 22:12:08 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 22:12:08 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 22:12:08 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (479850ba4ad9be526907f7c6db612a2c)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 22:12:08 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (479850ba4ad9be526907f7c6db612a2c)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+09/11/2019 22:12:08 | Status: INFO | ClassName: pages.MainPage | Log text: Close is clicked. Window is closed.
+09/11/2019 22:12:08 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]
+09/11/2019 22:12:08 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]
+09/11/2019 22:12:08 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (479850ba4ad9be526907f7c6db612a2c)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]]
+09/11/2019 22:12:10 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (479850ba4ad9be526907f7c6db612a2c)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]]
+09/11/2019 22:12:11 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[4]
+09/11/2019 22:12:11 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[4]
+09/11/2019 22:12:11 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (479850ba4ad9be526907f7c6db612a2c)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[4]]
+09/11/2019 22:12:15 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (479850ba4ad9be526907f7c6db612a2c)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[4]]
+09/11/2019 22:12:16 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[5]
+09/11/2019 22:12:17 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[5]
+09/11/2019 22:12:17 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (479850ba4ad9be526907f7c6db612a2c)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[5]]
+09/11/2019 22:12:17 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (479850ba4ad9be526907f7c6db612a2c)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[5]]
+09/11/2019 22:12:18 | Status: INFO | ClassName: pages.MainPage | Log text: Help - menu element is clickable
+09/11/2019 22:12:18 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //button[@class='_98kere2']
+09/11/2019 22:12:18 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //button[@class='_98kere2']
+09/11/2019 22:12:18 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (479850ba4ad9be526907f7c6db612a2c)] -> xpath: //button[@class='_98kere2']]
+09/11/2019 22:12:18 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (479850ba4ad9be526907f7c6db612a2c)] -> xpath: //button[@class='_98kere2']]
+09/11/2019 22:12:18 | Status: INFO | ClassName: pages.MainPage | Log text: Close is clicked. Window is closed.
+09/11/2019 22:12:18 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[6]
+09/11/2019 22:12:18 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[6]
+09/11/2019 22:12:18 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (479850ba4ad9be526907f7c6db612a2c)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[6]]
+09/11/2019 22:12:18 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (479850ba4ad9be526907f7c6db612a2c)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[6]]
+09/11/2019 22:12:18 | Status: INFO | ClassName: pages.MainPage | Log text: Sign up - menu element is clickable
+09/11/2019 22:12:18 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+09/11/2019 22:12:35 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 22:12:35 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 22:12:35 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 22:12:35 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 22:12:35 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 22:12:35 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 22:12:35 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 22:12:35 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 22:12:35 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 22:12:35 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 22:16:06 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Before navigating to: 'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 22:16:08 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Navigated to:'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+09/11/2019 22:16:08 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+09/11/2019 22:16:08 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+09/11/2019 22:16:08 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]
+09/11/2019 22:16:08 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]
+09/11/2019 22:16:08 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (75bbe3300b60eef4bbe244aa61181ae9)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]]
+09/11/2019 22:16:11 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (75bbe3300b60eef4bbe244aa61181ae9)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]]
+09/11/2019 22:16:11 | Status: INFO | ClassName: pages.MainPage | Log text: English (US) - menu element is clickable
+09/11/2019 22:16:11 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //button[@class='_1rp5252']
+09/11/2019 22:16:28 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 22:16:28 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 22:16:28 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 22:16:28 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 22:16:28 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+09/11/2019 22:16:28 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+09/11/2019 22:16:28 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+09/11/2019 22:16:28 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+09/11/2019 22:16:28 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09/11/2019 22:16:28 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+10/11/2019 09:00:24 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Before navigating to: 'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+10/11/2019 09:00:28 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Navigated to:'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+10/11/2019 09:00:28 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+10/11/2019 09:00:29 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
+10/11/2019 09:00:29 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]
+10/11/2019 09:00:29 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]
+10/11/2019 09:00:29 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]]
+10/11/2019 09:00:31 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[1]]
+10/11/2019 09:00:31 | Status: INFO | ClassName: pages.MainPage | Log text: English (US) - menu element is clickable
+10/11/2019 09:00:31 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+10/11/2019 09:00:31 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+10/11/2019 09:00:31 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+10/11/2019 09:00:31 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+10/11/2019 09:00:31 | Status: INFO | ClassName: pages.MainPage | Log text: Close is clicked. Window is closed.
+10/11/2019 09:00:31 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]
+10/11/2019 09:00:31 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]
+10/11/2019 09:00:31 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]]
+10/11/2019 09:00:32 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[2]]
+10/11/2019 09:00:32 | Status: INFO | ClassName: pages.MainPage | Log text: € EUR - menu element is clickable
+10/11/2019 09:00:32 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+10/11/2019 09:00:32 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //div[@class='_luvunc']//button[@class='_111s5i9']
+10/11/2019 09:00:32 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+10/11/2019 09:00:32 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: //div[@class='_luvunc']//button[@class='_111s5i9']]
+10/11/2019 09:00:32 | Status: INFO | ClassName: pages.MainPage | Log text: Close is clicked. Window is closed.
+10/11/2019 09:00:32 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]
+10/11/2019 09:00:32 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]
+10/11/2019 09:00:32 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]]
+10/11/2019 09:00:35 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[3]]
+10/11/2019 09:00:36 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[4]
+10/11/2019 09:00:36 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[4]
+10/11/2019 09:00:36 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[4]]
+10/11/2019 09:00:40 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[4]]
+10/11/2019 09:00:40 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[5]
+10/11/2019 09:00:41 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[5]
+10/11/2019 09:00:41 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[5]]
+10/11/2019 09:00:42 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[5]]
+10/11/2019 09:00:42 | Status: INFO | ClassName: pages.MainPage | Log text: Help - menu element is clickable
+10/11/2019 09:00:42 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //button[@class='_98kere2']
+10/11/2019 09:00:42 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //button[@class='_98kere2']
+10/11/2019 09:00:42 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: //button[@class='_98kere2']]
+10/11/2019 09:00:43 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: //button[@class='_98kere2']]
+10/11/2019 09:00:43 | Status: INFO | ClassName: pages.MainPage | Log text: Close is clicked. Window is closed.
+10/11/2019 09:00:43 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[6]
+10/11/2019 09:00:43 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[6]
+10/11/2019 09:00:43 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[6]]
+10/11/2019 09:00:43 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[6]]
+10/11/2019 09:00:43 | Status: INFO | ClassName: pages.MainPage | Log text: Sign up - menu element is clickable
+10/11/2019 09:00:43 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //button[@class='_1rp5252']
+10/11/2019 09:00:43 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //button[@class='_1rp5252']
+10/11/2019 09:00:43 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: //button[@class='_1rp5252']]
+10/11/2019 09:00:44 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: //button[@class='_1rp5252']]
+10/11/2019 09:00:44 | Status: INFO | ClassName: pages.MainPage | Log text: Close is clicked. Window is closed.
+10/11/2019 09:00:44 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[7]
+10/11/2019 09:00:44 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[7]
+10/11/2019 09:00:44 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[7]]
+10/11/2019 09:00:44 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[7]]
+10/11/2019 09:00:44 | Status: INFO | ClassName: pages.MainPage | Log text: Log in - menu element is clickable
+10/11/2019 09:00:44 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: //button[@class='_1rp5252']
+10/11/2019 09:00:44 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Found Element By : By.xpath: //button[@class='_1rp5252']
+10/11/2019 09:00:44 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to click on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: //button[@class='_1rp5252']]
+10/11/2019 09:00:44 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Clicked on: [[ChromeDriver: chrome on XP (3a65eca43bde52315326407aed8690c2)] -> xpath: //button[@class='_1rp5252']]
+10/11/2019 09:00:44 | Status: INFO | ClassName: pages.MainPage | Log text: Close is clicked. Window is closed.
+10/11/2019 09:00:49 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+10/11/2019 09:00:49 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+10/11/2019 09:00:49 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+10/11/2019 09:00:49 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+10/11/2019 09:00:49 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+10/11/2019 09:00:50 | Status: DEBUG | ClassName: freemarker.cache | Log text: Couldn't find template in cache for "Extent.ftl"("ru_RU", UTF-8, parsed); will try to load it.
+10/11/2019 09:00:50 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru_RU.ftl"): Not found
+10/11/2019 09:00:50 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
+10/11/2019 09:00:50 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
+10/11/2019 09:00:50 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
