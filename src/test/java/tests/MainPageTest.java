@@ -1,6 +1,5 @@
 package tests;
 
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -27,7 +26,13 @@ public class MainPageTest extends Base{
 	@Test(priority = 2, enabled = false)
 	public void keys() {
 		mainPage = new MainPage();
-		mainPage.sendtext();
+		//mainPage.sendtext();
+	}
+	
+	@Test(priority = 5, enabled = false, groups = {"regression", "mainPage_test_regression"}, dataProvider = "getTestData")
+	public void test(String smb) {
+		mainPage = new MainPage();
+		mainPage.sendtext(smb);
 	}
 	//---------------------------------------------------->
 	
@@ -65,11 +70,12 @@ public class MainPageTest extends Base{
 	 *            -- Documentation --
 	 *   Test for Main Page search module regression test
 	 *   Data are coming from data.xlsx file
+	 * @throws InterruptedException 
 	 */
-	@Test(priority = 4, enabled = true, groups = {"regression", "mainPage_search_regression"}, dataProvider = "getData")
-	public void mainPageSearchModuleTest_REGRESSION(String place, WebElement table, String date, String adults, String childrens, String infants) {
+	@Test(priority = 4, enabled = true, groups = {"regression", "mainPage_search_regression"}, dataProvider = "getTestData")
+	public void mainPageSearchModuleTest_REGRESSION(String shortname, String destination, String checkin, String checkout) {
 		mainPage = new MainPage();
-		mainPage.mainPageSearchModul_REGRESSION(place, table, date, adults, childrens, infants);
+		mainPage.mainPageSearchModul_REGRESSION(shortname, destination, checkin, checkout);
 	}
 	
 	/**

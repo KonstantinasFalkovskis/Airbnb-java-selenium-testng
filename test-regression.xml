@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="FUNCTIONAL_TEST_SUITE">
- 
+<suite name="REGRESSION_TEST_SUITE">
+
+    
 <listeners>
 	<listener class-name="utils.ExtentReportListener"></listener>
 </listeners>
 
+  
   <!--  Start First Test -->
-  <test name="Main_Page_Functional_Chrome">
+  <test name="Main_Page_Regression_Chrome">
   <parameter name="browserName" value ="chrome"/>
   <groups>
 	<define name="all">
-		<include name="mainPage_menu_functional"></include>
-		<include name="staysPage_menu_functional"></include>
+		<include name="mainPage_menu_regression"></include>
+		<include name="mainPage_search_regression"></include>
 	</define>
 	<define name="mainpage">
-		<include name="mainPage_menu_functional"></include>
-		<include name="mainPage_search_functional"></include>
+		<include name="mainPage_menu_regression"></include>
+		<include name="mainPage_search_regression"></include>
+		<include name="mainPage_test_regression"></include>
 	</define>
 	<define name="stayspage">
-		<include name="staysPage_menu_functional"></include>
+		<include name="staysPage_menu_regression"></include>
 	</define>
 	<run>
 		<include name="mainpage"></include>

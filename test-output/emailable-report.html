@@ -8,11 +8,39 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Functional_Test_Suite</th></tr>
-<tr><td><a href="#t0">Main_Page_Functional_Chrome</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">30 639</td><td>mainPage_menu_functional, mainpage, mainPage_search_functional</td><td></td></tr>
+<tr><th colspan="7">ALL_Tests_Running_Suite</th></tr>
+<tr><td><a href="#t0">MAIN_PAGE_TESTS_Chrome</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">117 564</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Functional_Test_Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Main_Page_Functional_Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.MainPageTest</td><td><a href="#m0">mainPageMenuTest_FUNCTIONAL</a></td><td rowspan="1">1573369228861</td><td rowspan="1">15732</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ALL_Tests_Running_Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">MAIN_PAGE_TESTS_Chrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.MainPageTest</td><td><a href="#m0">mainPageMenuTest_FUNCTIONAL</a></td><td rowspan="1">1573504439893</td><td rowspan="1">4260</td></tr><tr><th colspan="4">MAIN_PAGE_TESTS_Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">tests.MainPageTest</td><td><a href="#m1">mainPageMenuTest_SMOKE</a></td><td rowspan="1">1573504416294</td><td rowspan="1">2919</td></tr><tr class="passedeven"><td><a href="#m2">mainPageSearchModuleTest_REGRESSION</a></td><td rowspan="1">1573504452013</td><td rowspan="1">65488</td></tr><tr class="passedeven"><td><a href="#m3">mainPageStaysSearchTest_SMOKE</a></td><td rowspan="1">1573504428391</td><td rowspan="1">2570</td></tr></tbody>
 </table>
-<h2>Main_Page_Functional_Chrome</h2><h3 id="m0">tests.MainPageTest#mainPageMenuTest_FUNCTIONAL</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>MAIN_PAGE_TESTS_Chrome</h2><h3 id="m0">tests.MainPageTest#mainPageMenuTest_FUNCTIONAL</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;li class=&quot;_1g2dfiu&quot;&gt;...&lt;/li&gt; is not clickable at point (1246, 40). Other element would receive the click: &lt;div class=&quot;_ffihrj&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=78.0.3904.87)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;FALCOCONSTANTIN&apos;, ip: &apos;169.254.43.175&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\FALCOC~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49872}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.87, webStorageEnabled: true}
+Session ID: aa7efea2600f7d113cc45a27544f2546
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:403)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:416)
+	at pages.MainPage.mainMenu_FUNCTIONAL(MainPage.java:202)
+	at tests.MainPageTest.mainPageMenuTest_FUNCTIONAL(MainPageTest.java:66)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.MainPageTest#mainPageMenuTest_SMOKE</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.MainPageTest#mainPageSearchModuleTest_REGRESSION</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Berlin</td><td>Berlin, Germany</td><td>10</td><td>17</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.MainPageTest#mainPageStaysSearchTest_SMOKE</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

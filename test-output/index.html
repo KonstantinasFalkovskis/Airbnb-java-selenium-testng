@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Functional_Test_Suite">
-              <span class="suite-name border-passed">Functional_Test_Suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-ALL_Tests_Running_Suite">
+              <span class="suite-name border-failed">ALL_Tests_Running_Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Functional_Test_Suite">
-                    <span>C:\Users\FalcoConstantine\EclipseWorkspace\Airbnb-java-selenium-testng\test-functional.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-ALL_Tests_Running_Suite">
+                    <span>C:\Users\FalcoConstantine\EclipseWorkspace\Airbnb-java-selenium-testng\test.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Functional_Test_Suite">
+                  <a href="#" class="navigator-link " panel-name="testlist-ALL_Tests_Running_Suite">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Functional_Test_Suite">
-                    <span>2 groups</span>
+                  <a href="#" class="navigator-link " panel-name="group-ALL_Tests_Running_Suite">
+                    <span>7 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Functional_Test_Suite">
+                  <a href="#" class="navigator-link " panel-name="times-ALL_Tests_Running_Suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Functional_Test_Suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-ALL_Tests_Running_Suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Functional_Test_Suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-ALL_Tests_Running_Suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Functional_Test_Suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-ALL_Tests_Running_Suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,21 +91,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-ALL_Tests_Running_Suite" class="hide-methods failed suite-ALL_Tests_Running_Suite"> (hide)</a> <!-- hide-methods failed suite-ALL_Tests_Running_Suite -->
+                      <a href="#" panel-name="suite-ALL_Tests_Running_Suite" class="show-methods failed suite-ALL_Tests_Running_Suite"> (show)</a> <!-- show-methods failed suite-ALL_Tests_Running_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-ALL_Tests_Running_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ALL_Tests_Running_Suite" title="tests.MainPageTest" hash-for-method="mainPageMenuTest_FUNCTIONAL">mainPageMenuTest_FUNCTIONAL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-ALL_Tests_Running_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Functional_Test_Suite" class="hide-methods passed suite-Functional_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Functional_Test_Suite -->
-                      <a href="#" panel-name="suite-Functional_Test_Suite" class="show-methods passed suite-Functional_Test_Suite"> (show)</a> <!-- show-methods passed suite-Functional_Test_Suite -->
+                      <a href="#" panel-name="suite-ALL_Tests_Running_Suite" class="hide-methods passed suite-ALL_Tests_Running_Suite"> (hide)</a> <!-- hide-methods passed suite-ALL_Tests_Running_Suite -->
+                      <a href="#" panel-name="suite-ALL_Tests_Running_Suite" class="show-methods passed suite-ALL_Tests_Running_Suite"> (show)</a> <!-- show-methods passed suite-ALL_Tests_Running_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Functional_Test_Suite">
+                    <div class="method-list-content passed suite-ALL_Tests_Running_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Functional_Test_Suite" title="tests.MainPageTest" hash-for-method="mainPageMenuTest_FUNCTIONAL">mainPageMenuTest_FUNCTIONAL</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-ALL_Tests_Running_Suite" title="tests.MainPageTest" hash-for-method="mainPageMenuTest_SMOKE">mainPageMenuTest_SMOKE</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Functional_Test_Suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ALL_Tests_Running_Suite" title="tests.MainPageTest" hash-for-method="mainPageSearchModuleTest_REGRESSION(Berlin, Berlin, Germany, 10, 17)">mainPageSearchModuleTest_REGRESSION(Berlin, Berlin, Germany, 10, 17)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ALL_Tests_Running_Suite" title="tests.MainPageTest" hash-for-method="mainPageStaysSearchTest_SMOKE">mainPageStaysSearchTest_SMOKE</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-ALL_Tests_Running_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,10 +140,10 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Functional_Test_Suite" class="panel Functional_Test_Suite">
-          <div class="suite-Functional_Test_Suite-class-passed">
+        <div panel-name="suite-ALL_Tests_Running_Suite" class="panel ALL_Tests_Running_Suite">
+          <div class="suite-ALL_Tests_Running_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">tests.MainPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,64 +152,105 @@
                   <a name="mainPageMenuTest_FUNCTIONAL">
                   </a> <!-- mainPageMenuTest_FUNCTIONAL -->
                   <span class="method-name">mainPageMenuTest_FUNCTIONAL</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;li class=&quot;_1g2dfiu&quot;&gt;...&lt;/li&gt; is not clickable at point (1246, 40). Other element would receive the click: &lt;div class=&quot;_ffihrj&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=78.0.3904.87)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;FALCOCONSTANTIN&apos;, ip: &apos;169.254.43.175&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\FALCOC~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49872}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.87, webStorageEnabled: true}
+Session ID: aa7efea2600f7d113cc45a27544f2546
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:403)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:416)
+	at pages.MainPage.mainMenu_FUNCTIONAL(MainPage.java:202)
+	at tests.MainPageTest.mainPageMenuTest_FUNCTIONAL(MainPageTest.java:66)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Functional_Test_Suite-class-passed -->
-        </div> <!-- panel Functional_Test_Suite -->
-        <div panel-name="test-xml-Functional_Test_Suite" class="panel">
+          </div> <!-- suite-ALL_Tests_Running_Suite-class-failed -->
+          <div class="suite-ALL_Tests_Running_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.MainPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="mainPageMenuTest_SMOKE">
+                  </a> <!-- mainPageMenuTest_SMOKE -->
+                  <span class="method-name">mainPageMenuTest_SMOKE</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mainPageSearchModuleTest_REGRESSION(Berlin, Berlin, Germany, 10, 17)">
+                  </a> <!-- mainPageSearchModuleTest_REGRESSION(Berlin, Berlin, Germany, 10, 17) -->
+                  <span class="method-name">mainPageSearchModuleTest_REGRESSION</span>
+                  <span class="parameters">(Berlin, Berlin, Germany, 10, 17)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mainPageStaysSearchTest_SMOKE">
+                  </a> <!-- mainPageStaysSearchTest_SMOKE -->
+                  <span class="method-name">mainPageStaysSearchTest_SMOKE</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ALL_Tests_Running_Suite-class-passed -->
+        </div> <!-- panel ALL_Tests_Running_Suite -->
+        <div panel-name="test-xml-ALL_Tests_Running_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\FalcoConstantine\EclipseWorkspace\Airbnb-java-selenium-testng\test-functional.xml</span>
+            <span class="header-content">C:\Users\FalcoConstantine\EclipseWorkspace\Airbnb-java-selenium-testng\test.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Functional_Test_Suite&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;ALL_Tests_Running_Suite&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;utils.ExtentReportListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Main_Page_Functional_Chrome&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;MAIN_PAGE_TESTS_Chrome&quot;&gt;
     &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
-    &lt;groups&gt;
-      &lt;define name=&quot;all&quot;&gt;
-        &lt;include name=&quot;mainPage_menu_functional&quot;/&gt;
-        &lt;include name=&quot;staysPage_menu_functional&quot;/&gt;
-      &lt;/define&gt; &lt;!-- all --&gt;
-      &lt;define name=&quot;mainpage&quot;&gt;
-        &lt;include name=&quot;mainPage_menu_functional&quot;/&gt;
-        &lt;include name=&quot;mainPage_search_functional&quot;/&gt;
-      &lt;/define&gt; &lt;!-- mainpage --&gt;
-      &lt;define name=&quot;stayspage&quot;&gt;
-        &lt;include name=&quot;staysPage_menu_functional&quot;/&gt;
-      &lt;/define&gt; &lt;!-- stayspage --&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;mainpage&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.MainPageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Main_Page_Functional_Chrome --&gt;
-&lt;/suite&gt; &lt;!-- Functional_Test_Suite --&gt;
+  &lt;/test&gt; &lt;!-- MAIN_PAGE_TESTS_Chrome --&gt;
+&lt;/suite&gt; &lt;!-- ALL_Tests_Running_Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Functional_Test_Suite" class="panel">
+        <div panel-name="testlist-ALL_Tests_Running_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Functional_Test_Suite</span>
+            <span class="header-content">Tests for ALL_Tests_Running_Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Main_Page_Functional_Chrome (1 class)</span>
+                <span class="test-name">MAIN_PAGE_TESTS_Chrome (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Functional_Test_Suite" class="panel">
+        <div panel-name="group-ALL_Tests_Running_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Functional_Test_Suite</span>
+            <span class="header-content">Groups for ALL_Tests_Running_Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
@@ -204,57 +269,111 @@
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">mainPage_menu_smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">mainPageMenuTest_SMOKE</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">mainPage_search_regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">mainPageSearchModuleTest_REGRESSION</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">mainPage_search_smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">mainPageStaysSearchTest_SMOKE</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">mainPageSearchModuleTest_REGRESSION</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">mainPageMenuTest_SMOKE</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">mainPageStaysSearchTest_SMOKE</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Functional_Test_Suite" class="panel">
+        <div panel-name="times-ALL_Tests_Running_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Functional_Test_Suite</span>
+            <span class="header-content">Times for ALL_Tests_Running_Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Functional_Test_Suite');
-function tableData_Functional_Test_Suite() {
+suiteTableInitFunctions.push('tableData_ALL_Tests_Running_Suite');
+function tableData_ALL_Tests_Running_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'mainPageMenuTest_FUNCTIONAL')
+data.setCell(0, 1, 'mainPageSearchModuleTest_REGRESSION')
 data.setCell(0, 2, 'tests.MainPageTest')
-data.setCell(0, 3, 15732);
-window.suiteTableData['Functional_Test_Suite']= { tableData: data, tableDiv: 'times-div-Functional_Test_Suite'}
+data.setCell(0, 3, 65488);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'mainPageMenuTest_FUNCTIONAL')
+data.setCell(1, 2, 'tests.MainPageTest')
+data.setCell(1, 3, 4260);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'mainPageMenuTest_SMOKE')
+data.setCell(2, 2, 'tests.MainPageTest')
+data.setCell(2, 3, 2919);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'mainPageStaysSearchTest_SMOKE')
+data.setCell(3, 2, 'tests.MainPageTest')
+data.setCell(3, 3, 2570);
+window.suiteTableData['ALL_Tests_Running_Suite']= { tableData: data, tableDiv: 'times-div-ALL_Tests_Running_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
-              <div id="times-div-Functional_Test_Suite">
-              </div> <!-- times-div-Functional_Test_Suite -->
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-ALL_Tests_Running_Suite">
+              </div> <!-- times-div-ALL_Tests_Running_Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Functional_Test_Suite" class="panel">
+        <div panel-name="reporter-ALL_Tests_Running_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Functional_Test_Suite</span>
+            <span class="header-content">Reporter output for ALL_Tests_Running_Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Functional_Test_Suite" class="panel">
+        <div panel-name="ignored-methods-ALL_Tests_Running_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">tests.MainPageTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">mainPageStaysSearchTest_SMOKE</span>
+                <span class="ignored-method-name">test</span>
                 <br/>
                 <span class="ignored-method-name">keys</span>
-                <br/>
-                <span class="ignored-method-name">mainPageMenuTest_SMOKE</span>
                 <br/>
                 <span class="ignored-method-name">mainPageTest</span>
                 <br/>
@@ -262,7 +381,7 @@ return data;
             </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Functional_Test_Suite" class="panel">
+        <div panel-name="chronological-ALL_Tests_Running_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -274,12 +393,50 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">mainPageMenuTest_FUNCTIONAL</span>
-                <span class="method-start">10126 ms</span>
+                <span class="method-name">mainPageMenuTest_SMOKE</span>
+                <span class="method-start">14093 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25863 ms</span>
+                <span class="method-start">17018 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(chrome)</span>
+                <span class="method-start">19313 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">mainPageStaysSearchTest_SMOKE</span>
+                <span class="method-start">26190 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">28761 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(chrome)</span>
+                <span class="method-start">30954 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">mainPageMenuTest_FUNCTIONAL</span>
+                <span class="method-start">37692 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">41956 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(chrome)</span>
+                <span class="method-start">43161 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">mainPageSearchModuleTest_REGRESSION(Berlin, Berlin, Germany, 10, 17)</span>
+                <span class="method-start">49812 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">115304 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

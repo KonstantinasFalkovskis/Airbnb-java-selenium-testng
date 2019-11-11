@@ -1,10 +1,12 @@
 package pages;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -14,6 +16,7 @@ import org.testng.Assert;
 import base.Base;
 import utils.CalendarUtils;
 import utils.ClickUtils;
+import utils.Util;
 
 public class MainPage extends Base{
 	
@@ -35,6 +38,9 @@ public class MainPage extends Base{
 	
 	@FindBy(id = "checkout_input")
 	WebElement checkoutInputField;
+
+	@FindBy(xpath ="/html/body/div[3]/div/main/section/div/div/div[1]/div/div/div/div/div/div[2]/div/form/div[2]/div/div/div/div[3]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/table")
+	WebElement calendarTable;
 	
 	@FindBy(id = "lp-guestpicker")
 	WebElement guestPicker;
@@ -47,6 +53,9 @@ public class MainPage extends Base{
 	
 	@FindBy(xpath = "//button[@class='_b0ybw8s']")
 	WebElement saveBtn;
+	
+	@FindBy(xpath = "//a[@class='_1g2dfiu']")
+	WebElement logo;
 	
 	
 	//calendar
@@ -123,14 +132,15 @@ public class MainPage extends Base{
 	
 	/**
 	 *          -- Documentation --
-	 *   Method for framework activity validation
+	 *   Methods for framework activity validation
 	 */
 	public void test() {
 		driver.getTitle();
 	}
 	
-	public void sendtext() {
-		placeToGo.sendKeys("NY");
+	public void sendtext(String smb) {
+		placeToGo.clear();
+		placeToGo.sendKeys(smb);
 	}
 	
 	/**
@@ -216,7 +226,9 @@ public class MainPage extends Base{
 		}
 	}
 	
-	
+	public void selectGuests() {
+		
+	}
 	
 	
 	/**
@@ -229,19 +241,17 @@ public class MainPage extends Base{
 	 * 3. Guest section will be fill-out (Adults shall be filled. Children and infants are optional)
 	 * 4. Data for search module is coming from data.xlsx file search sheet
 	 * @param place
+	 * @throws InterruptedException 
 	 */
-	public void mainPageSearchModul_REGRESSION(String place, WebElement table, String date, String adults, String childrens, String infants) {
+	public void mainPageSearchModul_REGRESSION(String shortname, String destination, String checkin, String checkout){
 		placeToGo.clear();
-		placeToGo.sendKeys(place);
-		destination(place);
-		checkinInputField.click();
+		placeToGo.sendKeys(shortname);
+		destination(destination);
 		arrowRight.click();
-		calendar.getTableBodyRowByText(table, date); // for check-in date defining
-		calendar.getTableBodyRowByText(table, date); // for check-out date defining
+		dataPicker(checkin);
+		logo.click();
 		guestPicker.click();
-		clickUtils.doMultiClick(adultsIncreaseBtn, adults);
-		clickUtils.doMultiClick(childrenIncreaseBtn, childrens);
-		clickUtils.doMultiClick(infantsIncreaseBtn, infants);
+		guestPicker();
 		saveBtn.click();
 		searchBtn.click();
 	}
@@ -249,16 +259,30 @@ public class MainPage extends Base{
 	
 	/**
 	 *         -- Documentation --
-	 * Method for destination list validation     
+	 * Main destination selecting method     
 	 * @param place
 	 */
-	public void destination(String place) {
+	public void destination(String destination) {
 		List<WebElement> placesArr = driver.findElements(By.xpath("/html/body/div[3]/div/main/section/div/div/div[1]/div/div/div/div/div/div[2]/div/form/div[1]/div/div/ul/li/ul/li"));
-		for(WebElement element : placesArr) {
-			if(element.getText().equals(place)) {
-				selectDestination(element);
-			}
+		for(int i = 1; i <= placesArr.size(); i++) {
+			WebElement element = driver.findElement(By.xpath("/html/body/div[3]/div/main/section/div/div/div[1]/div/div/div/div/div/div[2]/div/form/div[1]/div/div/ul/li/ul/li[" + i + "]/div[2]/div/span"));
+			if(element.getText().equals(destination)) {
+				element.click();
+				break;
+			} 
 		}
+	}
+	
+	/**
+	 *         -- Documentation --
+	 * Updated method for destination list selecting
+	 * cause of List of WebElements could not to find and match
+	 * the names of element and given destination name     
+	 * @param place
+	 */
+	public void destinationUpdated() {
+		builder.moveToElement(placeToGo).sendKeys(Keys.ENTER).build().perform();
+		//builder.keyDown(Keys.ENTER).keyUp(Keys.ENTER).build().perform();
 	}
 	
 	/**
@@ -268,9 +292,64 @@ public class MainPage extends Base{
 	 */
 	public void selectDestination(WebElement element) {
 		//1. could be click on element from list
-		builder.click(element).build().perform();
+		builder.moveToElement(element).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).build().perform(); //
 		//2. could be pressed KeyDown + Enter
-		//builder.keyDown(Keys.ARROW_DOWN).keyUp(Keys.ARROW_DOWN).click(element).keyDown(Keys.ENTER).keyUp(Keys.ENTER).build().perform();
+		//builder.keyDown(Keys.ARROW_DOWN).keyUp(Keys.ARROW_DOWN).keyDown(Keys.ENTER).keyUp(Keys.ENTER).build().perform();
+	}
+	
+	/**
+	 * 		 -- Documentation --
+	 * Method for calendar value selecting
+	 * from table according check-in value
+	 * @param checkin
+	 */
+	public void dataPicker(String checkin) {
+	List<WebElement> rowsArr = driver.findElements(By.xpath("/html/body/div[3]/div/main/section/div/div/div[1]/div/div/div/div/div/div[2]/div/form/div[2]/div/div/div/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/table/tbody/tr"));
+		for(int i = 0; i <= rowsArr.size(); i++) {
+			List<WebElement> colsArr = driver.findElements(By.xpath("html/body/div[3]/div/main/section/div/div/div[1]/div/div/div/div/div/div[2]/div/form/div[2]/div/div/div/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/table/tbody/tr[" + i + "]/td"));	
+				for(int j = 1; j <= colsArr.size(); j++) {
+					WebElement col_element = driver.findElement(By.xpath("html/body/div[3]/div/main/section/div/div/div[1]/div/div/div/div/div/div[2]/div/form/div[2]/div/div/div/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/table/tbody/tr[" + i + "]/td[" + j +"]"));
+					System.out.println(" >> " + col_element.getText());	
+					if(col_element.getText().equals(checkin)) {
+						col_element.click();
+						break;
+					}	
+				}
+			}
+		}
+	
+	/**
+	 * 		 -- Documentation --
+	 * Method for calendar value selecting
+	 * from table according check-out value
+	 * @param checkout
+	 */
+	public void dataPicker2(String checkout) {
+		List<WebElement> rowsArr = driver.findElements(By.xpath("/html/body/div[3]/div/main/section/div/div/div[1]/div/div/div/div/div/div[2]/div/form/div[2]/div/div/div/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/table/tbody/tr"));
+			for(int i = 1; i <= rowsArr.size(); i++) {
+				List<WebElement> colsArr = driver.findElements(By.xpath("html/body/div[3]/div/main/section/div/div/div[1]/div/div/div/div/div/div[2]/div/form/div[2]/div/div/div/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/table/tbody/tr[" + i + "]/td"));	
+					for(int j = 1; j <= colsArr.size(); j++) {
+						WebElement col_element = driver.findElement(By.xpath("html/body/div[3]/div/main/section/div/div/div[1]/div/div/div/div/div/div[2]/div/form/div[2]/div/div/div/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/table/tbody/tr[" + i + "]/td[" + j +"]"));
+							if(col_element.getText().equals(checkout)) {
+							col_element.click();
+							break;
+						} 
+					}
+				
+				}
+			}
+	
+	
+	/**
+	 * 				-- Documentation --
+	 *  Method for guest pick from drop down list 
+	 */
+	public void guestPicker() {
+		List<WebElement> elemArr = driver.findElements(By.xpath("/html[1]/body[1]/div[3]/div[1]/main[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div"));
+		for(int i = 1; i <= elemArr.size(); i++) {   
+			WebElement element = driver.findElement(By.xpath("/html[1]/body[1]/div[3]/div[1]/main[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[" + i + "]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]"));
+			element.click();
+		}
 	}
 	
 	/**
@@ -291,7 +370,6 @@ public class MainPage extends Base{
 			}
 		}
 	}
-	
 
 			
 }

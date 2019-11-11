@@ -87,6 +87,7 @@ public class Base {
 	public void tearDown() {
 		try {
 			driver.close();
+			driver.manage().deleteAllCookies();
 		} catch (Exception e) {
 			System.out.println("Some exception occurred while quitting the browser");
 		}

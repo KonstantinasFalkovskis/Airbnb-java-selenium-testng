@@ -11,12 +11,13 @@ public class ClickUtils extends Base{
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	//Actions builder = new Actions(driver);
 	
-	public void doMultiClick(WebElement element, String persons) {
+	public void doMultiClick(WebElement element, String arr) {
 		
 		//wrapper
-		int clickCount = Integer.parseInt(persons);
+		//Integer arr = Integer.valueOf(count);	
+		Integer num = Integer.parseInt(arr);	
 		
-		for(int i = 0; i <= clickCount; i++ ) {
+		for(int i = 0; i <= num; i++ ) {
 			if(i > 0) {
 			try {
 				doClick(element);
