@@ -5,8 +5,12 @@
     <classes>
       <class name="tests.MainPageTest">
         <methods>
+          <include name="mainPageStaysSearchTest_SMOKE"/>
+          <include name="tearDown"/>
+          <include name="mainPageSearchModuleTest_REGRESSION"/>
           <include name="initialization"/>
-          <include name="mainPageTest"/>
+          <include name="mainPageMenuTest_SMOKE"/>
+          <include name="mainPageMenuTest_FUNCTIONAL"/>
         </methods>
       </class> <!-- tests.MainPageTest -->
     </classes>

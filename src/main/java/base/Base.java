@@ -25,6 +25,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import utils.Util;
 import utils.WebEventListener;
 
@@ -35,6 +36,7 @@ public class Base {
 	public WebDriverWait wait;
 	public EventFiringWebDriver e_driver;
 	public WebEventListener eventListener;
+	String browserName;
 	
 	public Base() {
 		try {
@@ -49,20 +51,28 @@ public class Base {
 		}
 	}
 	
-	@BeforeMethod(alwaysRun = true)
-	@Parameters({"browserName"})
-	public void initialization(String browserName) throws InterruptedException {
+	//@BeforeMethod(alwaysRun = true)
+	//@Parameters({"browserName"})
+	@BeforeMethod
+	//public void initialization(String browserName) throws InterruptedException {
+	public void initialization() {
+		browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+			//driver = new ChromeDriver();
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		} else if (browserName.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "C:\\Selenium\\geckodriver.exe");
+		//	System.setProperty("webdriver.gecko.driver", "C:\\Selenium\\geckodriver.exe");
+			WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
 				} else if(browserName.equalsIgnoreCase("opera")) {
-					System.setProperty("webdriver.opera.driver", "C:\\Selenium\\operadriver.exe");
+					//System.setProperty("webdriver.opera.driver", "C:\\Selenium\\operadriver.exe");
+					WebDriverManager.operadriver().setup();
 					driver = new OperaDriver();
 						} else if(browserName.equalsIgnoreCase("iexplorer")) {
-							System.setProperty("webdriver.ie.driver", "C:\\Selenium\\iedriver.exe");
+							//System.setProperty("webdriver.ie.driver", "C:\\Selenium\\iedriver.exe");
+						WebDriverManager.iedriver().setup();	
 						driver = new InternetExplorerDriver();
 					} else {
 						System.out.println("no browser defined");

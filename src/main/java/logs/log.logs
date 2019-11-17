@@ -135,3 +135,6 @@
 17/11/2019 10:00:47 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent_ru.ftl"): Not found
 17/11/2019 10:00:47 | Status: DEBUG | ClassName: freemarker.cache | Log text: TemplateLoader.findTemplateSource("Extent.ftl"): Found
 17/11/2019 10:00:47 | Status: DEBUG | ClassName: freemarker.cache | Log text: Loading template for "Extent.ftl"("ru_RU", UTF-8, parsed) from "jar:file:/C:/Users/FalcoConstantine/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+17/11/2019 11:04:43 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Before navigating to: 'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+17/11/2019 11:04:47 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Navigated to:'https://www.airbnb.com/?locale=en&country_override=US&display_currency=EUR'
+17/11/2019 11:04:47 | Status: DEBUG | ClassName: utils.WebEventListener | Log text: Trying to find Element By : By.xpath: /html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li
