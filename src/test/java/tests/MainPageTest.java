@@ -1,3 +1,6 @@
+/**
+ * Test class
+ */
 package tests;
 
 import org.testng.annotations.DataProvider;

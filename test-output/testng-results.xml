@@ -1,289 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="4" failed="0" ignored="3" total="7" passed="0">
+<testng-results skipped="0" failed="0" ignored="3" total="7" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="783" started-at="2019-11-17T11:03:55 EET" finished-at="2019-11-17T11:03:56 EET">
+  <suite name="Default suite" duration-ms="143420" started-at="2019-11-17T12:48:22 EET" finished-at="2019-11-17T12:50:45 EET">
     <groups>
       <group name="mainPage_menu_functional">
-        <method signature="MainPageTest.mainPageMenuTest_FUNCTIONAL()[pri:3, instance:tests.MainPageTest@467aecef]" name="mainPageMenuTest_FUNCTIONAL" class="tests.MainPageTest"/>
+        <method signature="MainPageTest.mainPageMenuTest_FUNCTIONAL()[pri:3, instance:tests.MainPageTest@46e8a539]" name="mainPageMenuTest_FUNCTIONAL" class="tests.MainPageTest"/>
       </group> <!-- mainPage_menu_functional -->
       <group name="functional">
-        <method signature="MainPageTest.mainPageMenuTest_FUNCTIONAL()[pri:3, instance:tests.MainPageTest@467aecef]" name="mainPageMenuTest_FUNCTIONAL" class="tests.MainPageTest"/>
+        <method signature="MainPageTest.mainPageMenuTest_FUNCTIONAL()[pri:3, instance:tests.MainPageTest@46e8a539]" name="mainPageMenuTest_FUNCTIONAL" class="tests.MainPageTest"/>
       </group> <!-- functional -->
       <group name="mainPage_menu_smoke">
-        <method signature="MainPageTest.mainPageMenuTest_SMOKE()[pri:1, instance:tests.MainPageTest@467aecef]" name="mainPageMenuTest_SMOKE" class="tests.MainPageTest"/>
+        <method signature="MainPageTest.mainPageMenuTest_SMOKE()[pri:1, instance:tests.MainPageTest@46e8a539]" name="mainPageMenuTest_SMOKE" class="tests.MainPageTest"/>
       </group> <!-- mainPage_menu_smoke -->
       <group name="mainPage_search_smoke">
-        <method signature="MainPageTest.mainPageStaysSearchTest_SMOKE()[pri:2, instance:tests.MainPageTest@467aecef]" name="mainPageStaysSearchTest_SMOKE" class="tests.MainPageTest"/>
+        <method signature="MainPageTest.mainPageStaysSearchTest_SMOKE()[pri:2, instance:tests.MainPageTest@46e8a539]" name="mainPageStaysSearchTest_SMOKE" class="tests.MainPageTest"/>
       </group> <!-- mainPage_search_smoke -->
       <group name="regression">
-        <method signature="MainPageTest.mainPageSearchModuleTest_REGRESSION(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:tests.MainPageTest@467aecef]" name="mainPageSearchModuleTest_REGRESSION" class="tests.MainPageTest"/>
+        <method signature="MainPageTest.mainPageSearchModuleTest_REGRESSION(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:tests.MainPageTest@46e8a539]" name="mainPageSearchModuleTest_REGRESSION" class="tests.MainPageTest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="MainPageTest.mainPageMenuTest_SMOKE()[pri:1, instance:tests.MainPageTest@467aecef]" name="mainPageMenuTest_SMOKE" class="tests.MainPageTest"/>
-        <method signature="MainPageTest.mainPageStaysSearchTest_SMOKE()[pri:2, instance:tests.MainPageTest@467aecef]" name="mainPageStaysSearchTest_SMOKE" class="tests.MainPageTest"/>
+        <method signature="MainPageTest.mainPageMenuTest_SMOKE()[pri:1, instance:tests.MainPageTest@46e8a539]" name="mainPageMenuTest_SMOKE" class="tests.MainPageTest"/>
+        <method signature="MainPageTest.mainPageStaysSearchTest_SMOKE()[pri:2, instance:tests.MainPageTest@46e8a539]" name="mainPageStaysSearchTest_SMOKE" class="tests.MainPageTest"/>
       </group> <!-- smoke -->
       <group name="mainPage_search_regression">
-        <method signature="MainPageTest.mainPageSearchModuleTest_REGRESSION(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:tests.MainPageTest@467aecef]" name="mainPageSearchModuleTest_REGRESSION" class="tests.MainPageTest"/>
+        <method signature="MainPageTest.mainPageSearchModuleTest_REGRESSION(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:tests.MainPageTest@46e8a539]" name="mainPageSearchModuleTest_REGRESSION" class="tests.MainPageTest"/>
       </group> <!-- mainPage_search_regression -->
     </groups>
-    <test name="Default test" duration-ms="783" started-at="2019-11-17T11:03:55 EET" finished-at="2019-11-17T11:03:56 EET">
+    <test name="Default test" duration-ms="143420" started-at="2019-11-17T12:48:22 EET" finished-at="2019-11-17T12:50:45 EET">
       <class name="tests.MainPageTest">
-        <test-method status="FAIL" signature="initialization(java.lang.String)[pri:0, instance:tests.MainPageTest@467aecef]" name="initialization" is-config="true" duration-ms="-1573981435627" started-at="2019-11-17T11:03:55 EET" finished-at="1970-01-01T02:00:00 EET">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated initialization.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated initialization.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:458)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:372)
-at org.testng.internal.Parameters.createParameters(Parameters.java:729)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:164)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:275)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:510)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="initialization()[pri:0, instance:tests.MainPageTest@46e8a539]" name="initialization" is-config="true" duration-ms="8079" started-at="2019-11-17T12:48:22 EET" finished-at="2019-11-17T12:48:30 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="SKIP" signature="mainPageMenuTest_SMOKE()[pri:1, instance:tests.MainPageTest@467aecef]" name="mainPageMenuTest_SMOKE" duration-ms="0" started-at="2019-11-17T11:03:55 EET" finished-at="2019-11-17T11:03:55 EET">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated initialization.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated initialization.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:458)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:372)
-at org.testng.internal.Parameters.createParameters(Parameters.java:729)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:164)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:275)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:510)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="mainPageMenuTest_SMOKE()[pri:1, instance:tests.MainPageTest@46e8a539]" name="mainPageMenuTest_SMOKE" duration-ms="15212" started-at="2019-11-17T12:48:30 EET" finished-at="2019-11-17T12:48:46 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mainPageMenuTest_SMOKE -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MainPageTest@467aecef]" name="tearDown" is-config="true" duration-ms="3" started-at="2019-11-17T11:03:55 EET" finished-at="2019-11-17T11:03:55 EET">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MainPageTest@46e8a539]" name="tearDown" is-config="true" duration-ms="269" started-at="2019-11-17T12:48:46 EET" finished-at="2019-11-17T12:48:46 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="initialization(java.lang.String)[pri:0, instance:tests.MainPageTest@467aecef]" name="initialization" is-config="true" duration-ms="-1573981435662" started-at="2019-11-17T11:03:55 EET" finished-at="1970-01-01T02:00:00 EET">
+        <test-method status="PASS" signature="initialization()[pri:0, instance:tests.MainPageTest@46e8a539]" name="initialization" is-config="true" duration-ms="7391" started-at="2019-11-17T12:48:46 EET" finished-at="2019-11-17T12:48:53 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="SKIP" signature="mainPageStaysSearchTest_SMOKE()[pri:2, instance:tests.MainPageTest@467aecef]" name="mainPageStaysSearchTest_SMOKE" duration-ms="0" started-at="2019-11-17T11:03:55 EET" finished-at="2019-11-17T11:03:55 EET">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated initialization.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated initialization.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:458)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:372)
-at org.testng.internal.Parameters.createParameters(Parameters.java:729)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:164)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:275)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:510)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="mainPageStaysSearchTest_SMOKE()[pri:2, instance:tests.MainPageTest@46e8a539]" name="mainPageStaysSearchTest_SMOKE" duration-ms="2140" started-at="2019-11-17T12:48:53 EET" finished-at="2019-11-17T12:48:56 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mainPageStaysSearchTest_SMOKE -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MainPageTest@467aecef]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-11-17T11:03:55 EET" finished-at="2019-11-17T11:03:55 EET">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MainPageTest@46e8a539]" name="tearDown" is-config="true" duration-ms="2328" started-at="2019-11-17T12:48:56 EET" finished-at="2019-11-17T12:48:58 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="initialization(java.lang.String)[pri:0, instance:tests.MainPageTest@467aecef]" name="initialization" is-config="true" duration-ms="-1573981435671" started-at="2019-11-17T11:03:55 EET" finished-at="1970-01-01T02:00:00 EET">
+        <test-method status="PASS" signature="initialization()[pri:0, instance:tests.MainPageTest@46e8a539]" name="initialization" is-config="true" duration-ms="7530" started-at="2019-11-17T12:48:58 EET" finished-at="2019-11-17T12:49:05 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="SKIP" signature="mainPageMenuTest_FUNCTIONAL()[pri:3, instance:tests.MainPageTest@467aecef]" name="mainPageMenuTest_FUNCTIONAL" duration-ms="0" started-at="2019-11-17T11:03:55 EET" finished-at="2019-11-17T11:03:55 EET">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated initialization.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated initialization.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:458)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:372)
-at org.testng.internal.Parameters.createParameters(Parameters.java:729)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:164)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:275)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:510)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="mainPageMenuTest_FUNCTIONAL()[pri:3, instance:tests.MainPageTest@46e8a539]" name="mainPageMenuTest_FUNCTIONAL" duration-ms="15041" started-at="2019-11-17T12:49:05 EET" finished-at="2019-11-17T12:49:20 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mainPageMenuTest_FUNCTIONAL -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MainPageTest@467aecef]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-11-17T11:03:55 EET" finished-at="2019-11-17T11:03:55 EET">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MainPageTest@46e8a539]" name="tearDown" is-config="true" duration-ms="2323" started-at="2019-11-17T12:49:20 EET" finished-at="2019-11-17T12:49:23 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="initialization(java.lang.String)[pri:0, instance:tests.MainPageTest@467aecef]" name="initialization" is-config="true" duration-ms="-1573981436355" started-at="2019-11-17T11:03:56 EET" finished-at="1970-01-01T02:00:00 EET">
+        <test-method status="PASS" signature="initialization()[pri:0, instance:tests.MainPageTest@46e8a539]" name="initialization" is-config="true" duration-ms="6567" started-at="2019-11-17T12:49:24 EET" finished-at="2019-11-17T12:49:31 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="SKIP" signature="mainPageSearchModuleTest_REGRESSION(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:tests.MainPageTest@467aecef]" name="mainPageSearchModuleTest_REGRESSION" duration-ms="0" started-at="2019-11-17T11:03:56 EET" data-provider="getTestData" finished-at="2019-11-17T11:03:56 EET">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated initialization.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated initialization.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:458)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:372)
-at org.testng.internal.Parameters.createParameters(Parameters.java:729)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:164)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:275)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:510)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="mainPageSearchModuleTest_REGRESSION(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:tests.MainPageTest@46e8a539]" name="mainPageSearchModuleTest_REGRESSION" duration-ms="72347" started-at="2019-11-17T12:49:31 EET" data-provider="getTestData" finished-at="2019-11-17T12:50:43 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Berlin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Berlin, Germany]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[17]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mainPageSearchModuleTest_REGRESSION -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MainPageTest@467aecef]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-11-17T11:03:56 EET" finished-at="2019-11-17T11:03:56 EET">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MainPageTest@46e8a539]" name="tearDown" is-config="true" duration-ms="2169" started-at="2019-11-17T12:50:43 EET" finished-at="2019-11-17T12:50:45 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

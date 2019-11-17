@@ -20,8 +20,8 @@ public class Util extends Base{
 	
 	public static long PAGE_LOAD_WAIT = 20;
 	public static long IMPLICIT_WAIT = 15;
-	
-	public static String TESTDATA_SHEET_PATH = "C:\\Users\\FalcoConstantine\\EclipseWorkspace\\Airbnb-java-selenium-testng\\src\\main\\java\\data\\data.xlsx";
+	static String currentDir = System.getProperty("user.dir");
+	public static String TESTDATA_SHEET_PATH = currentDir + "/src/main/java/data/data.xlsx";
 
 	static Workbook book;
 	static Sheet sheet;
