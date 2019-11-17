@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Functional_Test_Suite]">
+  <listeners>
+    <listener class-name="utils.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="Main_Page_Functional_Chrome(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <groups>
+      <run>
+        <include name="mainpage"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.MainPageTest">
+        <methods>
+          <include name="initialization"/>
+          <include name="mainPageMenuTest_FUNCTIONAL"/>
+        </methods>
+      </class> <!-- tests.MainPageTest -->
+    </classes>
+  </test> <!-- Main_Page_Functional_Chrome(failed) -->
+</suite> <!-- Failed suite [Functional_Test_Suite] -->
