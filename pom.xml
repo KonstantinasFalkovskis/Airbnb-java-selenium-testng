@@ -32,14 +32,14 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.20</version>
 				<configuration>
-					<forkCount>4</forkCount>
+					<forkCount>2</forkCount>
 					<reuseForks>true</reuseForks>
 					<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/test/java/resources/testrunner/test-smoke.xml</suiteXmlFile>
-						<suiteXmlFile>src/test/java/resources/testrunner/test-regression.xml</suiteXmlFile>
-						<suiteXmlFile>src/test/java/resources/testrunner/test-functional.xml</suiteXmlFile>
-						<suiteXmlFile>src/test/java/resources/testrunner/test-all.xml</suiteXmlFile>
+						<suiteXmlFile>src/main/java/resources/testrunner/test-smoke.xml</suiteXmlFile>
+						<suiteXmlFile>src/main/java/resources/testrunner/test-regression.xml</suiteXmlFile>
+						<suiteXmlFile>src/main/java/resources/testrunner/test-functional.xml</suiteXmlFile>
+						<suiteXmlFile>src/main/java/resources/testrunner/test-all.xml</suiteXmlFile>
 					</suiteXmlFiles>
 
 					<argLine>
