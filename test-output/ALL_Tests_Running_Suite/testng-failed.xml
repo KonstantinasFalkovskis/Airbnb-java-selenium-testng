@@ -10,8 +10,8 @@
       <class name="tests.MainPageTest">
         <methods>
           <include name="tearDown"/>
+          <include name="mainPageSearchModuleTest_REGRESSION" invocation-numbers="0"/>
           <include name="initialization"/>
-          <include name="mainPageMenuTest_FUNCTIONAL"/>
         </methods>
       </class> <!-- tests.MainPageTest -->
     </classes>
