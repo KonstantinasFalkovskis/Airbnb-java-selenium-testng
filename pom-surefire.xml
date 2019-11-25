@@ -36,7 +36,7 @@
 					<reuseForks>true</reuseForks>
 					<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
 					<suiteXmlFiles>
-						<suiteXmlFile>test.xml</suiteXmlFile>
+						<suiteXmlFile>src/main/java/resources/testrunner/test-all.xml</suiteXmlFile>
 					</suiteXmlFiles>
 
 					<argLine>
@@ -78,14 +78,14 @@
 
 
 		</plugins>
-		<!--  
+
 		<resources>
 			<resource>
 				<directory>src/main/resources</directory>
 				<filtering>true</filtering>
 			</resource>
 		</resources>
-		-->
+
 	</build>
 
   <dependencies>
