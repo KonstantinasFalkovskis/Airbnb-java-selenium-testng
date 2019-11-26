@@ -1,7 +1,7 @@
 #!groovy
 node {
 	stage('Git checkout') { 
-		git branch: 'qa', credentialsId: '1a95d5c2-06a5-4972-866a-51a87849f98f', url:'https://github.com/BushnevYuri/e2e-automation-pipeline.git'
+		git branch: 'qa', credentialsId: '1a95d5c2-06a5-4972-866a-51a87849f98f', url:'https://github.com/KonstantinasFalkovskis/Airbnb-java-selenium-testng.git'
 	}
 	stage('Smoke') {
 		try {

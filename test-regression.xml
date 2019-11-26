@@ -18,8 +18,6 @@
 	</define>
 	<define name="mainpage">
 		<include name="mainPage_menu_regression"></include>
-		<include name="mainPage_search_regression"></include>
-		<include name="mainPage_test_regression"></include>
 	</define>
 	<define name="stayspage">
 		<include name="staysPage_menu_regression"></include>
