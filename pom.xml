@@ -36,7 +36,9 @@
 					<reuseForks>true</reuseForks>
 					<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
 					<suiteXmlFiles>
-						<suiteXmlFile>test.xml</suiteXmlFile>
+						<suiteXmlFile>test-smoke.xml</suiteXmlFile>
+						<suiteXmlFile>test-functional.xml</suiteXmlFile>
+						<suiteXmlFile>test-regression.xml</suiteXmlFile>
 					</suiteXmlFiles>
 
 					<argLine>
