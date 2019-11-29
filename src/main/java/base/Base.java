@@ -41,9 +41,7 @@ public class Base {
 	public Base() {
 		try {
 			prop = new Properties();
-			//FileInputStream file = new FileInputStream("C:\\Users\\FalcoConstantine\\EclipseWorkspace\\Airbnb-java-selenium-testng\\src\\"
-			//		+ "main\\java\\config\\config.properties");
-			FileInputStream file = new FileInputStream(System.getProperty("user.dir")
+					FileInputStream file = new FileInputStream(System.getProperty("user.dir")
 					+ "/src/main/java/config/config.properties");
 			prop.load(file);
 		} catch(FileNotFoundException e) {
@@ -53,32 +51,22 @@ public class Base {
 		}
 	}
 	
-	//@BeforeMethod(alwaysRun = true)
-	//@Parameters({"browserName"})
-	//public void initialization(String browserName) throws InterruptedException {
 	@BeforeMethod(alwaysRun = true)
 	public void initialization() {
 		browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
-			//System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
-			//driver = new ChromeDriver();
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		} else if (browserName.equals("firefox")) {
-		//	System.setProperty("webdriver.gecko.driver", "C:\\Selenium\\geckodriver.exe");
 			WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
 				} else if(browserName.equalsIgnoreCase("opera")) {
-					//System.setProperty("webdriver.opera.driver", "C:\\Selenium\\operadriver.exe");
 					WebDriverManager.operadriver().setup();
 					driver = new OperaDriver();
 						} else if(browserName.equalsIgnoreCase("iexplorer")) {
-							//System.setProperty("webdriver.ie.driver", "C:\\Selenium\\iedriver.exe");
 						WebDriverManager.iedriver().setup();	
 						driver = new InternetExplorerDriver();
-					} else {
-//						WebDriverManager.safaridriver().setup();	
-//						driver = new SafariDriver();
+					} else {					
 						System.out.println("no browser defined");
 					}
 		
@@ -88,8 +76,8 @@ public class Base {
 			driver = e_driver;
 			
 			
-			//driver.manage().window().maximize();
-			driver.manage().window().fullscreen();
+			driver.manage().window().maximize();
+			//driver.manage().window().fullscreen();
 			driver.manage().deleteAllCookies();
 			driver.manage().timeouts().pageLoadTimeout(Util.PAGE_LOAD_WAIT, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(Util.IMPLICIT_WAIT, TimeUnit.SECONDS);
@@ -102,7 +90,6 @@ public class Base {
 	public void tearDown() {
 		try {
 			driver.close();
-	//		driver.manage().deleteAllCookies();
 		} catch (Exception e) {
 			System.out.println("Some exception occurred while quitting the browser");
 		}

@@ -1,7 +1,6 @@
 package pages;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
@@ -14,16 +13,13 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import base.Base;
-import utils.CalendarUtils;
 import utils.ClickUtils;
-import utils.Util;
 
 public class MainPage extends Base{
 	
 	Logger log = Logger.getLogger(MainPage.class.getName());
 	
 	LanguagePage langPage = new LanguagePage();
-	CalendarUtils calendar = new CalendarUtils();
 	ClickUtils clickUtils = new ClickUtils();
 	
 	JavascriptExecutor js = (JavascriptExecutor) driver;

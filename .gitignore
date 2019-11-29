@@ -1,1 +1,10 @@
-
+.settings
+target/*
+target/classes
+*/logs
+test-output
+allure-results
+.gitignore
+*/config
+src
+screenshots
