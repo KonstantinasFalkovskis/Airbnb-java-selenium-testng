@@ -51,7 +51,7 @@ public class MainPage extends Base{
 	@FindBy(xpath = "//button[@class='_b0ybw8s']")
 	WebElement saveBtn;
 	
-	@FindBy(xpath = "//a[@class='_1g2dfiu_777']")
+	@FindBy(xpath = "//a[@class='_1g2dfiu']")
 	WebElement logo;
 	
 	
@@ -147,7 +147,7 @@ public class MainPage extends Base{
 	 */
 	@Step("Getting during main page main menu and validate visibility")
 	public void mainMenu_SMOKE() {
-		List<WebElement> menuArr = driver.findElements(By.xpath("/html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li"));
+		List<WebElement> menuArr = driver.findElements(By.xpath("/html/body/div[3_7]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li"));
 		for(WebElement element : menuArr) {
 			if(element.isDisplayed()) {
 				log.info(element.getText() + " - is visible on Main Page");
