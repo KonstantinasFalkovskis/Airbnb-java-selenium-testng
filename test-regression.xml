@@ -2,6 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="REGRESSION_TEST_SUITE">
 
+<listeners>
+	<listener class-name="utils.TestsAlluretListener"></listener>
+</listeners>
+
   <test name="Main_Page_Regression_Chrome">
   <parameter name="browserName" value ="chrome"/>
   <groups>
