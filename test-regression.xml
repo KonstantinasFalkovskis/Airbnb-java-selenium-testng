@@ -3,7 +3,7 @@
 <suite name="REGRESSION_TEST_SUITE">
 
 <listeners>
-	<listener class-name="utils.TestsAlluretListener"></listener>
+	<listener class-name="utils.TestsAllureListener"></listener>
 </listeners>
 
   <test name="Main_Page_Regression_Chrome">
