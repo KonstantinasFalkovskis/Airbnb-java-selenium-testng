@@ -75,7 +75,7 @@ public class MainPageTest extends Base{
 	 *   Data are coming from data.xlsx file
 	 * @throws InterruptedException 
 	 */
-	@Test(priority = 4, enabled = true, groups = {"regression","mainPage_menu_regression"}, dataProvider = "getTestData")
+	@Test(priority = 4, enabled = false, groups = {"regression","mainPage_menu_regression"}, dataProvider = "getTestData")
 	public void mainPageSearchModuleTest_REGRESSION(String shortname, String destination, String checkin, String checkout) {
 		mainPage = new MainPage();
 		mainPage.mainPageSearchModul_REGRESSION(shortname, destination, checkin, checkout);
