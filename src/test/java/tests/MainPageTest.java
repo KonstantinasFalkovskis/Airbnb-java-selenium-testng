@@ -4,7 +4,7 @@
 package tests;
 
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Listeners;
+//import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import base.Base;
@@ -13,10 +13,10 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 import pages.MainPage;
-import utils.TestAllureListener;
+//import utils.TestAllureListener;
 import utils.Util;
 
-@Listeners({TestAllureListener.class})
+//@Listeners({TestAllureListener.class})
 public class MainPageTest extends Base{
 	
 	MainPage mainPage;
