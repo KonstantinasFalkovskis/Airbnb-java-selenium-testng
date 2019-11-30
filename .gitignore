@@ -1,10 +1,7 @@
 .settings
-target/*
+target
 target/classes
-*/logs
-allure-results
+logs
 .gitignore
-*/config
+config
 screenshots
-.git
-log4j.properties
