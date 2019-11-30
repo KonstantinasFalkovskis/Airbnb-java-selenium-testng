@@ -37,7 +37,7 @@ public class TestAllureListener implements ITestListener {
 	@Override
 	public void onStart(ITestContext iTestContext) {
 		System.out.println("I am in onStart method " + iTestContext.getName());
-		iTestContext.setAttribute("WebDriver", Base.driver);
+		iTestContext.setAttribute("WebDriver", Base.getDriver());
 	}
 
 	@Override
@@ -59,7 +59,7 @@ public class TestAllureListener implements ITestListener {
 	public void onTestFailure(ITestResult iTestResult) {
 		System.out.println("I am in onTestFailure method " + getTestMethodName(iTestResult) + " failed");
 		Object testClass = iTestResult.getInstance();
-		WebDriver driver = Base.driver;
+		WebDriver driver = Base.getDriver();
 		// Allure ScreenShotRobot and SaveTestLog
 		if (driver instanceof WebDriver) {
 			System.out.println("Screenshot captured for test case:" + getTestMethodName(iTestResult));

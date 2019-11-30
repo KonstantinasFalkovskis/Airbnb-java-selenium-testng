@@ -35,6 +35,9 @@ public class Base {
 	public WebDriverWait wait;
 	public EventFiringWebDriver e_driver;
 	public WebEventListener eventListener;
+	
+	public static ThreadLocal<WebDriver> tdriver = new ThreadLocal<WebDriver>();
+	
 	String browserName;
 	
 	public Base() {
@@ -50,8 +53,12 @@ public class Base {
 		}
 	}
 	
+	public static synchronized WebDriver getDriver() {
+		return tdriver.get();
+	}
+	
 	@BeforeMethod(alwaysRun = true)
-	public void initialization() {
+	public WebDriver initialization() {
 		browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -82,6 +89,9 @@ public class Base {
 			driver.manage().timeouts().implicitlyWait(Util.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		
 			driver.get(prop.getProperty("url"));
+			
+			tdriver.set(driver);
+			return getDriver();
 	
 	}
 	
