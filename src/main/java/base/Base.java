@@ -52,11 +52,11 @@ public class Base {
 			e.printStackTrace();
 		}
 	}
-	
+	//----
 	public static synchronized WebDriver getDriver() {
 		return tdriver.get();
 	}
-	
+	//---
 	@BeforeMethod(alwaysRun = true)
 	public WebDriver initialization() {
 		browserName = prop.getProperty("browser");
@@ -89,10 +89,10 @@ public class Base {
 			driver.manage().timeouts().implicitlyWait(Util.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		
 			driver.get(prop.getProperty("url"));
-			
+			//---
 			tdriver.set(driver);
 			return getDriver();
-	
+			//---
 	}
 	
 	@AfterMethod(alwaysRun = true)
