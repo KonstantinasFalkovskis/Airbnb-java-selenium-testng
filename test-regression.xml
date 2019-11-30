@@ -6,8 +6,10 @@
   <parameter name="browserName" value ="chrome"/>
   <groups>
 	<define name="all">
+		<include name="mainPage_menu_smoke"></include>
+		<include name="mainPage_search_smoke"></include>
+		<include name="mainPage_menu_functional"></include>
 		<include name="mainPage_menu_regression"></include>
-		<include name="mainPage_search_regression"></include>
 	</define>
 	<define name="mainpage">
 		<include name="mainPage_menu_regression"></include>
@@ -16,7 +18,7 @@
 		<include name="staysPage_menu_regression"></include>
 	</define>
 	<run>
-		<include name="mainpage"></include>
+		<include name="all"></include>
 	</run>
 </groups>
     <classes>

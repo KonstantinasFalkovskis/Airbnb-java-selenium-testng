@@ -13,6 +13,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import base.Base;
+import io.qameta.allure.Step;
 import utils.ClickUtils;
 
 public class MainPage extends Base{
@@ -144,6 +145,7 @@ public class MainPage extends Base{
 	 *    Method for main menu smoke test
 	 *    Main menu shall be visible
 	 */
+	@Step("Getting during main page main menu and validate visibility")
 	public void mainMenu_SMOKE() {
 		List<WebElement> menuArr = driver.findElements(By.xpath("/html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li"));
 		for(WebElement element : menuArr) {
@@ -159,6 +161,7 @@ public class MainPage extends Base{
 	 *    Method for stay places search smoke test
 	 *    All elements in search module shall be visible
 	 */
+	@Step("Getting during search module and varifying search elements visibility")
 	public void search_SMOKE() {
 		Assert.assertTrue(placeToGo.isDisplayed());
 		log.info(placeToGo.getText() + " - is visible");
@@ -183,6 +186,7 @@ public class MainPage extends Base{
 	 *    Every main menu tab shall be clickable
 	 *    Windows shall to have possibility to be closed
 	 */
+	@Step("Verifying main page main menu functionality is it clickable or not")
 	public void mainMenu_FUNCTIONAL() {
 		List<WebElement> menuArr = driver.findElements(By.xpath("/html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li"));
 		for(int index = 1; index <= menuArr.size(); index++) {
@@ -239,6 +243,7 @@ public class MainPage extends Base{
 	 * @param place
 	 * @throws InterruptedException 
 	 */
+	@Step("Validate search module functionality by provided data: short name {0}, destination {1}, checkin {2}, checkout {3}")
 	public void mainPageSearchModul_REGRESSION(String shortname, String destination, String checkin, String checkout){
 		placeToGo.clear();
 		placeToGo.sendKeys(shortname);

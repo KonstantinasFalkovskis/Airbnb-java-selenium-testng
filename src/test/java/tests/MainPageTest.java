@@ -7,6 +7,10 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import base.Base;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 import pages.MainPage;
 import utils.Util;
 
@@ -43,7 +47,10 @@ public class MainPageTest extends Base{
 	 *            -- Documentation --
 	 *   Test for Main Page main menu smoke test
 	 */
-	@Test(priority = 1, enabled = true, groups = {"smoke","mainPage_menu_smoke"})
+	@Test(priority = 1, enabled = true, groups = {"smoke","mainPage_menu_smoke"}, description = "Verifying main page menu")
+	@Severity(SeverityLevel.NORMAL)
+	@Description("Test case description : verifying menu on the Main Page")
+	@Story("Story name: To check main page main menu functionality on the top of main page")
 	public void mainPageMenuTest_SMOKE() {
 		mainPage = new MainPage();
 		mainPage.mainMenu_SMOKE();
@@ -53,7 +60,10 @@ public class MainPageTest extends Base{
 	 *            -- Documentation --
 	 *   Test for Main Page search module smoke test
 	 */
-	@Test(priority = 2, enabled = true, groups = {"smoke","mainPage_search_smoke"})
+	@Test(priority = 2, enabled = true, groups = {"smoke","mainPage_search_smoke"}, description = "Verifying main page search")
+	@Severity(SeverityLevel.NORMAL)
+	@Description("Test case description: verifying search visibility on the Main Page")
+	@Story("Story name: To check search module visibility of the main page")
 	public void mainPageStaysSearchTest_SMOKE() {
 		mainPage = new MainPage();
 		mainPage.search_SMOKE();
@@ -64,6 +74,9 @@ public class MainPageTest extends Base{
 	 *   Test for Main Page main menu functional test
 	 */
 	@Test(priority = 3, enabled = true, groups = {"functional","mainPage_menu_functional"})
+	@Severity(SeverityLevel.NORMAL)
+	@Description("Test case description: verifying search functionality on the Main Page")
+	@Story("Story name: To check search module functionality of the main page")
 	public void mainPageMenuTest_FUNCTIONAL() {
 		mainPage = new MainPage();
 		mainPage.mainMenu_FUNCTIONAL();
@@ -75,7 +88,10 @@ public class MainPageTest extends Base{
 	 *   Data are coming from data.xlsx file
 	 * @throws InterruptedException 
 	 */
-	@Test(priority = 4, enabled = false, groups = {"regression","mainPage_menu_regression"}, dataProvider = "getTestData")
+	@Test(priority = 4, enabled = true, groups = {"regression","mainPage_menu_regression"}, dataProvider = "getTestData")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Test case description: verifying search function on the Main Page")
+	@Story("Story name: To check search functionality of the main page")
 	public void mainPageSearchModuleTest_REGRESSION(String shortname, String destination, String checkin, String checkout) {
 		mainPage = new MainPage();
 		mainPage.mainPageSearchModul_REGRESSION(shortname, destination, checkin, checkout);
