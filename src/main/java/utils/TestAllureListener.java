@@ -10,14 +10,6 @@ import org.testng.ITestResult;
 import base.Base;
 import io.qameta.allure.Attachment;
 
-
-/**
- * 
- * @author NaveenKhunteta
- *
- */
-
-
 public class TestAllureListener implements ITestListener {
 
 	private static String getTestMethodName(ITestResult iTestResult) {
