@@ -51,7 +51,7 @@ public class MainPage extends Base{
 	@FindBy(xpath = "//button[@class='_b0ybw8s']")
 	WebElement saveBtn;
 	
-	@FindBy(xpath = "//a[@class='_1g2dfiu_11']")
+	@FindBy(xpath = "//a[@class='_1g2dfiu']")
 	WebElement logo;
 	
 	
