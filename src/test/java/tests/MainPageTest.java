@@ -41,7 +41,7 @@ public class MainPageTest extends Base{
 		mainPage.search_SMOKE();
 	}
 	
-	@Test(priority = 3, enabled = false, groups = {"mainPage_menu_functional"})
+	@Test(priority = 3, enabled = true, groups = {"mainPage_menu_functional"})
 	@Severity(SeverityLevel.NORMAL)
 	@Description("Test case description: verifying search functionality on the Main Page")
 	@Story("Story name: To check search module functionality of the main page")
@@ -50,7 +50,7 @@ public class MainPageTest extends Base{
 		mainPage.mainMenu_FUNCTIONAL();
 	}
 	
-	@Test(priority = 4, enabled = false, groups = {"mainPage_menu_regression"}, dataProvider = "getTestData")
+	@Test(priority = 4, enabled = true, groups = {"mainPage_menu_regression"}, dataProvider = "getTestData")
 	@Severity(SeverityLevel.CRITICAL)
 	@Description("Test case description: verifying search function on the Main Page")
 	@Story("Story name: To check search functionality of the main page")

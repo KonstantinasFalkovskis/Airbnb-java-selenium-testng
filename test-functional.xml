@@ -7,7 +7,6 @@
   <groups>
 	<define name="all">
 		<include name="mainPage_menu_functional"></include>
-		<include name="staysPage_menu_functional"></include>
 	</define>
 	<define name="mainpage">
 		<include name="mainPage_menu_functional"></include>
@@ -17,7 +16,7 @@
 		<include name="staysPage_menu_functional"></include>
 	</define>
 	<run>
-		<include name="mainpage"></include>
+		<include name="all"></include>
 	</run>
 </groups>
     <classes>
