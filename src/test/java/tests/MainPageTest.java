@@ -22,35 +22,7 @@ public class MainPageTest extends Base{
 	
 	MainPage mainPage;
 	String sheetName = "search";
-	
-	//--------------------------------------------------->
-	/**
-	 *  -- Documentation --
-	 *  Pretest method for framework activity validation
-	 */
-	@Test(priority = 1, enabled = false)
-	public void mainPageTest() {
-		mainPage = new MainPage();
-		mainPage.test();
-	}
-	
-	@Test(priority = 2, enabled = false)
-	public void keys() {
-		mainPage = new MainPage();
-		//mainPage.sendtext();
-	}
-	
-	@Test(priority = 5, enabled = false, groups = {"regression"}, dataProvider = "getTestData")
-	public void test(String smb) {
-		mainPage = new MainPage();
-		mainPage.sendtext(smb);
-	}
-	//---------------------------------------------------->
-	
-	/**
-	 *            -- Documentation --
-	 *   Test for Main Page main menu smoke test
-	 */
+		
 	@Test(priority = 1, enabled = true, groups = {"mainPage_menu_smoke"}, description = "Verifying main page menu")
 	@Severity(SeverityLevel.NORMAL)
 	@Description("Test case description : verifying menu on the Main Page")
@@ -60,10 +32,6 @@ public class MainPageTest extends Base{
 		mainPage.mainMenu_SMOKE();
 	}
 	
-	/**
-	 *            -- Documentation --
-	 *   Test for Main Page search module smoke test
-	 */
 	@Test(priority = 2, enabled = true, groups = {"mainPage_search_smoke"}, description = "Verifying main page search")
 	@Severity(SeverityLevel.NORMAL)
 	@Description("Test case description: verifying search visibility on the Main Page")
@@ -73,10 +41,6 @@ public class MainPageTest extends Base{
 		mainPage.search_SMOKE();
 	}
 	
-	/**
-	 *            -- Documentation --
-	 *   Test for Main Page main menu functional test
-	 */
 	@Test(priority = 3, enabled = false, groups = {"mainPage_menu_functional"})
 	@Severity(SeverityLevel.NORMAL)
 	@Description("Test case description: verifying search functionality on the Main Page")
@@ -86,12 +50,6 @@ public class MainPageTest extends Base{
 		mainPage.mainMenu_FUNCTIONAL();
 	}
 	
-	/**
-	 *            -- Documentation --
-	 *   Test for Main Page search module regression test
-	 *   Data are coming from data.xlsx file
-	 * @throws InterruptedException 
-	 */
 	@Test(priority = 4, enabled = false, groups = {"mainPage_menu_regression"}, dataProvider = "getTestData")
 	@Severity(SeverityLevel.CRITICAL)
 	@Description("Test case description: verifying search function on the Main Page")
