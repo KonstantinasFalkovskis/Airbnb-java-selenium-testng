@@ -27,7 +27,7 @@ public class MainPage extends Base{
 	Actions builder = new Actions(driver);
 	
 	//-------------------------------------------------------->	
-	@FindBy(xpath = "//input[@id='Koan-magic-carpet-koan-search-bar__input']")
+	@FindBy(xpath = "//input[@id='Koan-magic-carpet-koan-search-bar__input_TEST']")
 	WebElement placeToGo;
 	
 	@FindBy(id = "checkin_input")
