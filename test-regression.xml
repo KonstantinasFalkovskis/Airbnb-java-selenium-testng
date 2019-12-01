@@ -12,12 +12,7 @@
 	<define name="all">
 		<include name="mainPage_menu_regression"></include>
 	</define>
-	<define name="mainpage">
-		<include name="mainPage_menu_regression"></include>
-	</define>
-	<define name="stayspage">
-		<include name="staysPage_menu_regression"></include>
-	</define>
+	 
 	<run>
 		<include name="all"></include>
 	</run>
