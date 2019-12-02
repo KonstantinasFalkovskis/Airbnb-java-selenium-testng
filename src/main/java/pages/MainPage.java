@@ -13,6 +13,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import base.Base;
+import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import utils.ClickUtils;
 
@@ -165,19 +166,14 @@ public class MainPage extends Base{
 	public void searchSmoke() {
 		Assert.assertTrue(placeToGo.isDisplayed());
 		log.info(placeToGo.getText() + " - is visible");
-		System.out.println(placeToGo.getText() + " - is visible");
 		Assert.assertTrue(checkinInputField.isDisplayed());
 		log.info(checkinInputField.getText() + " - is visible");
-		System.out.println(checkinInputField.getText() + " - is visible");
 		Assert.assertTrue(checkoutInputField.isDisplayed());
 		log.info(checkoutInputField.getText() + " - is visible");
-		System.out.println(checkoutInputField.getText() + " - is visible");
 		Assert.assertTrue(guestPicker.isDisplayed());
 		log.info(guestPicker.getText() + " - is visible");
-		System.out.println(guestPicker.getText() + " - is visible");
 		Assert.assertTrue(searchBtn.isDisplayed());
 		log.info(searchBtn.getText() + " - is visible");
-		System.out.println(searchBtn.getText() + " - is visible");
 	}
 	
 	 /**
@@ -230,20 +226,11 @@ public class MainPage extends Base{
 		
 	}
 	
-	
-	/**
-	 *                 -- Documentation --
-	 * Method for stay places searching. 
-	 * 1. User place the destination
-	 * 2. CalendarUtil.java class is calling twice. User select check-in and check-out terms 
-	 *    (check-in starts from any day of next month and check-out is defining 
-	 *    for one week - 7 days)
-	 * 3. Guest section will be fill-out (Adults shall be filled. Children and infants are optional)
-	 * 4. Data for search module is coming from data.xlsx file search sheet
-	 * @param place
-	 * @throws InterruptedException 
-	 */
 	@Step("Validate search module functionality by provided data: short name {0}, destination {1}, checkin {2}, checkout {3}")
+	@Description("Method for stay places searching: 1. User place the destination\n "
+			+ "2. CalendarUtil.java class is calling twice. User select check-in and check-out terms\n "
+			+ "3. Guest section will be fill-out (Adults shall be filled. Children and infants are optional)\n"
+			+ "4. Data for search module is coming from data.xlsx file search sheet")
 	public void mainPageSearchModulRegression(String shortname, String destination, String checkin, String checkout){
 		placeToGo.clear();
 		placeToGo.sendKeys(shortname);
