@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="SMOKE_TEST_SUITE">
-  
-  <test name="Main_Page_Smoke_Chrome">
+<suite name="SMOKE-TEST-SUITE">
+  <test name="MainPageSmokeTestChromeBrowser">
   <parameter name="browserName" value ="chrome"/>
   <groups>
 	<define name="all">
-		<include name="mainPage_menu_smoke"></include>
-		<include name="mainPage_search_smoke"></include>
+		<include name="mainPageSmoke"></include>
 	</define>
-	
 	<run>
 		<include name="all"></include>
 	</run>
-</groups>
-    <classes>
-      <class name="tests.MainPageTest"/>
-    </classes>
+	</groups>
+	    <classes>
+	      <class name="tests.MainPageTest"/>
+	    </classes>
     </test>
-</suite> 
+</suite>

@@ -146,7 +146,7 @@ public class MainPage extends Base{
 	 *    Main menu shall be visible
 	 */
 	@Step("Getting during main page main menu and validate visibility")
-	public void mainMenu_SMOKE() {
+	public void mainMenuSmoke() {
 		List<WebElement> menuArr = driver.findElements(By.xpath("/html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li"));
 		for(WebElement element : menuArr) {
 			if(element.isDisplayed()) {
@@ -162,7 +162,7 @@ public class MainPage extends Base{
 	 *    All elements in search module shall be visible
 	 */
 	@Step("Getting during search module and varifying search elements visibility")
-	public void search_SMOKE() {
+	public void searchSmoke() {
 		Assert.assertTrue(placeToGo.isDisplayed());
 		log.info(placeToGo.getText() + " - is visible");
 		System.out.println(placeToGo.getText() + " - is visible");
@@ -187,7 +187,7 @@ public class MainPage extends Base{
 	 *    Windows shall to have possibility to be closed
 	 */
 	@Step("Verifying main page main menu functionality is it clickable or not")
-	public void mainMenu_FUNCTIONAL() {
+	public void mainMenuFunctional() {
 		List<WebElement> menuArr = driver.findElements(By.xpath("/html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li"));
 		for(int index = 1; index <= menuArr.size(); index++) {
 			WebElement element = driver.findElement(By.xpath("/html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li[" + index +"]"));
@@ -244,7 +244,7 @@ public class MainPage extends Base{
 	 * @throws InterruptedException 
 	 */
 	@Step("Validate search module functionality by provided data: short name {0}, destination {1}, checkin {2}, checkout {3}")
-	public void mainPageSearchModul_REGRESSION(String shortname, String destination, String checkin, String checkout){
+	public void mainPageSearchModulRegression(String shortname, String destination, String checkin, String checkout){
 		placeToGo.clear();
 		placeToGo.sendKeys(shortname);
 		destination(destination);
@@ -309,10 +309,10 @@ public class MainPage extends Base{
 		for(int i = 0; i <= rowsArr.size(); i++) {
 			List<WebElement> colsArr = driver.findElements(By.xpath("html/body/div[3]/div/main/section/div/div/div[1]/div/div/div/div/div/div[2]/div/form/div[2]/div/div/div/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/table/tbody/tr[" + i + "]/td"));	
 				for(int j = 1; j <= colsArr.size(); j++) {
-					WebElement col_element = driver.findElement(By.xpath("html/body/div[3]/div/main/section/div/div/div[1]/div/div/div/div/div/div[2]/div/form/div[2]/div/div/div/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/table/tbody/tr[" + i + "]/td[" + j +"]"));
-					System.out.println(" >> " + col_element.getText());	
-					if(col_element.getText().equals(checkin)) {
-						col_element.click();
+					WebElement colElement = driver.findElement(By.xpath("html/body/div[3]/div/main/section/div/div/div[1]/div/div/div/div/div/div[2]/div/form/div[2]/div/div/div/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/table/tbody/tr[" + i + "]/td[" + j +"]"));
+					System.out.println(" >> " + colElement.getText());	
+					if(colElement.getText().equals(checkin)) {
+						colElement.click();
 						break;
 					}	
 				}
@@ -330,9 +330,9 @@ public class MainPage extends Base{
 			for(int i = 1; i <= rowsArr.size(); i++) {
 				List<WebElement> colsArr = driver.findElements(By.xpath("html/body/div[3]/div/main/section/div/div/div[1]/div/div/div/div/div/div[2]/div/form/div[2]/div/div/div/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/table/tbody/tr[" + i + "]/td"));	
 					for(int j = 1; j <= colsArr.size(); j++) {
-						WebElement col_element = driver.findElement(By.xpath("html/body/div[3]/div/main/section/div/div/div[1]/div/div/div/div/div/div[2]/div/form/div[2]/div/div/div/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/table/tbody/tr[" + i + "]/td[" + j +"]"));
-							if(col_element.getText().equals(checkout)) {
-							col_element.click();
+						WebElement colElement = driver.findElement(By.xpath("html/body/div[3]/div/main/section/div/div/div[1]/div/div/div/div/div/div[2]/div/form/div[2]/div/div/div/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/table/tbody/tr[" + i + "]/td[" + j +"]"));
+							if(colElement.getText().equals(checkout)) {
+								colElement.click();
 							break;
 						} 
 					}

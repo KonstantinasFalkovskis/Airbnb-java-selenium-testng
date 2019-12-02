@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="REGRESSION_TEST_SUITE">
-<!-- 
-<listeners>
-	<listener class-name="src.main.java.utils.TestAllureListener"></listener>
-</listeners>
-  -->
-  <test name="Main_Page_Regression_Chrome">
+<suite name="REGRESSION-TEST-SUITE">
+  <test name="MainPageRegressionTestChromeBrowser">
   <parameter name="browserName" value ="chrome"/>
   <groups>
 	<define name="all">
-		<include name="mainPage_menu_regression"></include>
+		<include name="mainPageRegression"></include>
 	</define>
-	 
 	<run>
 		<include name="all"></include>
 	</run>
-</groups>
-    <classes>
-      <class name="tests.MainPageTest"/>
-    </classes>
+	</groups>
+	    <classes>
+	      <class name="tests.MainPageTest"/>
+	    </classes>
     </test>
 </suite> 
