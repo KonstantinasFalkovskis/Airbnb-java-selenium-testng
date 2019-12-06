@@ -245,11 +245,7 @@ public class MainPage extends Base{
 	}
 
 	
-	/**
-	 *         -- Documentation --
-	 * Main destination selecting method     
-	 * @param place
-	 */
+	@Description("Main destination selecting method")
 	public void destination(String destination) {
 		List<WebElement> placesArr = driver.findElements(By.xpath("/html/body/div[3]/div/main/section/div/div/div[1]/div/div/div/div/div/div[2]/div/form/div[1]/div/div/ul/li/ul/li"));
 		for(int i = 1; i <= placesArr.size(); i++) {
@@ -261,23 +257,15 @@ public class MainPage extends Base{
 		}
 	}
 	
-	/**
-	 *         -- Documentation --
-	 * Updated method for destination list selecting
-	 * cause of List of WebElements could not to find and match
-	 * the names of element and given destination name     
-	 * @param place
-	 */
+	@Description("Updated method for destination list selecting\r\n" + 
+			"cause of List of WebElements could not to find and match\r\n" + 
+			"the names of element and given destination name")
 	public void destinationUpdated() {
 		builder.moveToElement(placeToGo).sendKeys(Keys.ENTER).build().perform();
 		//builder.keyDown(Keys.ENTER).keyUp(Keys.ENTER).build().perform();
 	}
 	
-	/**
-	 *            -- Documentation --
-	 * Method for particular destination selecting
-	 * @param element
-	 */
+	@Description("Method for particular destination selecting")
 	public void selectDestination(WebElement element) {
 		//1. could be click on element from list
 		builder.moveToElement(element).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).build().perform(); //
@@ -285,12 +273,7 @@ public class MainPage extends Base{
 		//builder.keyDown(Keys.ARROW_DOWN).keyUp(Keys.ARROW_DOWN).keyDown(Keys.ENTER).keyUp(Keys.ENTER).build().perform();
 	}
 	
-	/**
-	 * 		 -- Documentation --
-	 * Method for calendar value selecting
-	 * from table according check-in value
-	 * @param checkin
-	 */
+	@Description("Method for calendar value selecting from table according check-in value")
 	public void dataPicker(String checkin) {
 	List<WebElement> rowsArr = driver.findElements(By.xpath("/html/body/div[3]/div/main/section/div/div/div[1]/div/div/div/div/div/div[2]/div/form/div[2]/div/div/div/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/table/tbody/tr"));
 		for(int i = 0; i <= rowsArr.size(); i++) {
@@ -306,12 +289,8 @@ public class MainPage extends Base{
 			}
 		}
 	
-	/**
-	 * 		 -- Documentation --
-	 * Method for calendar value selecting
-	 * from table according check-out value
-	 * @param checkout
-	 */
+	@Description("Method for calendar value selecting\r\n" + 
+			"from table according check-out value")
 	public void dataPicker2(String checkout) {
 		List<WebElement> rowsArr = driver.findElements(By.xpath("/html/body/div[3]/div/main/section/div/div/div[1]/div/div/div/div/div/div[2]/div/form/div[2]/div/div/div/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/table/tbody/tr"));
 			for(int i = 1; i <= rowsArr.size(); i++) {
@@ -327,11 +306,7 @@ public class MainPage extends Base{
 				}
 			}
 	
-	
-	/**
-	 * 				-- Documentation --
-	 *  Method for guest pick from drop down list 
-	 */
+	@Description("Method for guest pick from drop down list")
 	public void guestPicker() {
 		List<WebElement> elemArr = driver.findElements(By.xpath("/html[1]/body[1]/div[3]/div[1]/main[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div"));
 		for(int i = 1; i <= elemArr.size(); i++) {   
@@ -340,13 +315,9 @@ public class MainPage extends Base{
 		}
 	}
 	
-	/**
-	 * -- Documentation --
-	 * 1. Method for helpful articles finding
-	 *    by given word or sentence
-	 * 2. Validate article header
-	 * @param article
-	 */
+	@Description("1. Method for helpful articles finding\r\n" + 
+			"by given word or sentence\r\n" + 
+			"2. Validate article header")
 	public void helpDescArticlesList(String article) {
 		List<WebElement> articlesArr = driver.findElements(By.xpath("/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/section[1]/div"));
 		for (WebElement element : articlesArr) {
@@ -359,5 +330,5 @@ public class MainPage extends Base{
 		}
 	}
 
-			
+	
 }
