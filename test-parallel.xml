@@ -5,7 +5,7 @@
    <parameter name="environment" value ="grid"></parameter>
   
   <test name="Parallel tests in FF">
-		  <parameter name="platform" value ="WINDOWS"></parameter>
+		  <parameter name="platform" value ="MAC"></parameter>
 		  <parameter name="browserName" value ="firefox"></parameter>
 		  <parameter name="url" value ="https://www.airbnb.com/?locale=en"></parameter>
    <groups>
@@ -22,7 +22,7 @@
   </test>
   
   <test name="Parallel tests in Chrome">
-		  <parameter name="platform" value ="WINDOWS"></parameter>
+		  <parameter name="platform" value ="MAC"></parameter>
 	      <parameter name="browserName" value ="chrome"></parameter>
 	      <parameter name="url" value ="https://www.airbnb.com/?locale=en"></parameter>
      <groups>

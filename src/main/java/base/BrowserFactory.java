@@ -73,7 +73,7 @@ public class BrowserFactory {
 			if (platform.equals("VISTA")) {
 				caps.setPlatform(Platform.VISTA);
 			}
-			if (platform.equalsIgnoreCase("Mac")) {
+			if (platform.equalsIgnoreCase("MAC")) {
 				caps.setPlatform(Platform.MAC);
 			} 
 			if (platform.equalsIgnoreCase("Linux")) {
