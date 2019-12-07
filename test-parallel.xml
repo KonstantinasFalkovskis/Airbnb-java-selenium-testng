@@ -1,19 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="PARALLEL-TEST-SUITE" parallel="tests" thread-count="2">
+<suite name="Parallel test suite" parallel="tests" thread-count="2">
   
-  <test name="TestInParallelChrome" parallel="methods">
-  <parameter name="browserName" value ="chrome"/>
-    <classes>
-      <class name="tests.MainPageTest"/>
-        
-    </classes>
-    </test>
-        
-    <test name="TestsInParallelFirefox" parallel="methods">
-     <parameter name="browserName" value="firefox"/>
-    <classes>
-      <class name="tests.MainPageTest"/>
-          </classes>
-    </test>
+   <parameter name="environment" value ="grid"></parameter>
+  
+  <test name="Parallel tests in FF">
+		  <parameter name="platform" value ="WINDOWS"></parameter>
+		  <parameter name="browserName" value ="firefox"></parameter>
+		  <parameter name="url" value ="https://www.airbnb.com/?locale=en"></parameter>
+   <groups>
+	<define name="all">
+		<include name="mainPageFunc"></include>
+	</define>
+	<run>
+		<include name="all"></include>
+	</run>
+	</groups>
+	    <classes>
+	      <class name="tests.MainPageTest"/>
+	    </classes>
+  </test>
+  
+  <test name="Parallel tests in Chrome">
+		  <parameter name="platform" value ="WINDOWS"></parameter>
+	      <parameter name="browserName" value ="chrome"></parameter>
+	      <parameter name="url" value ="https://www.airbnb.com/?locale=en"></parameter>
+     <groups>
+	<define name="all">
+		<include name="mainPageFunc"></include>
+	</define>
+	<run>
+		<include name="all"></include>
+	</run>
+	</groups>
+	    <classes>
+	      <class name="tests.MainPageTest"/>
+	    </classes>
+  </test>
 </suite> 

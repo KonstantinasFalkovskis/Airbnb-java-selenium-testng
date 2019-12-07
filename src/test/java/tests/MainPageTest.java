@@ -28,6 +28,7 @@ public class MainPageTest extends Base{
 	@Description("Test case description : verifying menu on the Main Page")
 	@Story("Story name: To check main page main menu functionality on the top of main page")
 	public void mainPageMenuTestSmoke() {
+		log.info("-- MainPage menu smoke test starts --");
 		mainPage = new MainPage();
 		mainPage.mainMenuSmoke();
 	}
@@ -37,6 +38,7 @@ public class MainPageTest extends Base{
 	@Description("Test case description: verifying search visibility on the Main Page")
 	@Story("Story name: To check search module visibility of the main page")
 	public void mainPageStaysSearchTestSmoke() {
+		log.info("-- MainPage search module smoke test starts --");
 		mainPage = new MainPage();
 		mainPage.searchSmoke();
 	}
@@ -46,6 +48,7 @@ public class MainPageTest extends Base{
 	@Description("Test case description: verifying search functionality on the Main Page")
 	@Story("Story name: To check search module functionality of the main page")
 	public void mainPageMenuTestFunctional() {
+		log.info("-- MainPage functionsl test starts --");
 		mainPage = new MainPage();
 		mainPage.mainMenuFunctional();
 	}
@@ -55,6 +58,7 @@ public class MainPageTest extends Base{
 	@Description("Test case description: verifying search function on the Main Page")
 	@Story("Story name: To check search functionality of the main page")
 	public void mainPageSearchModuleTestRegression(String shortname, String destination, String checkin, String checkout) {
+		log.info("-- MainPage regression test starts --");
 		mainPage = new MainPage();
 		mainPage.mainPageSearchModulRegression(shortname, destination, checkin, checkout);
 	}

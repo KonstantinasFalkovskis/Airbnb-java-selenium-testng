@@ -2,7 +2,7 @@ package pages;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -19,7 +19,7 @@ import utils.ClickUtils;
 
 public class MainPage extends Base{
 	
-	Logger log = Logger.getLogger(MainPage.class.getName());
+	//Logger log = Logger.getLogger(MainPage.class.getName());
 	
 	LanguagePage langPage = new LanguagePage();
 	ClickUtils clickUtils = new ClickUtils();
@@ -122,31 +122,24 @@ public class MainPage extends Base{
 	@FindBy(xpath = "//button[@class='_98kere2']")
 	WebElement helpCloseBtn; 
 	
-	
-	
 	public MainPage() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	/**
-	 *          -- Documentation --
-	 *   Methods for framework activity validation
-	 */
+	@Description("Method page title getting")
 	public void test() {
 		driver.getTitle();
 	}
 	
+	@Description("Method for data sending to locator")
 	public void sendtext(String smb) {
 		placeToGo.clear();
 		placeToGo.sendKeys(smb);
 	}
 	
-	/**
-	 *         -- Documentation --
-	 *    Method for main menu smoke test
-	 *    Main menu shall be visible
-	 */
+
 	@Step("Getting during main page main menu and validate visibility")
+	@Description("Method for main menu smoke test. Main menu shall be visible.")
 	public void mainMenuSmoke() {
 		List<WebElement> menuArr = driver.findElements(By.xpath("/html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li"));
 		for(WebElement element : menuArr) {
@@ -157,32 +150,28 @@ public class MainPage extends Base{
 		}
 	}
 	
-	/**
-	 *             -- Documentation --
-	 *    Method for stay places search smoke test
-	 *    All elements in search module shall be visible
-	 */
 	@Step("Getting during search module and varifying search elements visibility")
+	@Description("Method for stay places search smoke test. All elements in search module shall be visible.")
 	public void searchSmoke() {
 		Assert.assertTrue(placeToGo.isDisplayed());
-		log.info(placeToGo.getText() + " - is visible");
+//		log.info(placeToGo.getText() + " - is visible");
+		System.out.println(placeToGo.getText() + " - is visible");
 		Assert.assertTrue(checkinInputField.isDisplayed());
-		log.info(checkinInputField.getText() + " - is visible");
+//		log.info(checkinInputField.getText() + " - is visible");
+		System.out.println(checkinInputField.getText() + " - is visible");
 		Assert.assertTrue(checkoutInputField.isDisplayed());
-		log.info(checkoutInputField.getText() + " - is visible");
+//		log.info(checkoutInputField.getText() + " - is visible");
+		System.out.println(checkoutInputField.getText() + " - is visible");
 		Assert.assertTrue(guestPicker.isDisplayed());
-		log.info(guestPicker.getText() + " - is visible");
+//		log.info(guestPicker.getText() + " - is visible");
+		System.out.println(guestPicker.getText() + " - is visible");
 		Assert.assertTrue(searchBtn.isDisplayed());
-		log.info(searchBtn.getText() + " - is visible");
+//		log.info(searchBtn.getText() + " - is visible");
+		System.out.println(searchBtn.getText() + " - is visible");
 	}
-	
-	 /**
-	 *            -- Documentation --
-	 *    Method for main menu functional test
-	 *    Every main menu tab shall be clickable
-	 *    Windows shall to have possibility to be closed
-	 */
+
 	@Step("Verifying main page main menu functionality is it clickable or not")
+	@Description("Method for main menu functional test. Every main menu tab shall be clickable. Windows shall to have possibility to be closed. ")
 	public void mainMenuFunctional() {
 		List<WebElement> menuArr = driver.findElements(By.xpath("/html/body/div[3]/div/div[2]/header/div/div/div[3]/div/div/nav/ul/li"));
 		for(int index = 1; index <= menuArr.size(); index++) {
@@ -223,7 +212,7 @@ public class MainPage extends Base{
 	}
 	
 	public void selectGuests() {
-		
+		System.out.println("some function gonna be here");
 	}
 	
 	@Step("Validate search module functionality by provided data: short name {0}, destination {1}, checkin {2}, checkout {3}")

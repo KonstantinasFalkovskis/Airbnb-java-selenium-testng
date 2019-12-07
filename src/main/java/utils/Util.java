@@ -18,8 +18,8 @@ import base.Base;
 
 public class Util extends Base{
 	
-	public static long PAGE_LOAD_WAIT = 20;
-	public static long IMPLICIT_WAIT = 15;
+	public static long PAGE_LOAD_WAIT = 30;
+	public static long IMPLICIT_WAIT = 20;
 	static String currentDir = System.getProperty("user.dir");
 	public static String TESTDATA_SHEET_PATH = currentDir + "/src/main/java/data/data.xlsx";
 

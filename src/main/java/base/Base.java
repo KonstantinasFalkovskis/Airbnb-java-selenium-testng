@@ -1,30 +1,23 @@
-/**
- *   Base.class contains:
- *    - WebDriver definition
- *    - Browsers definitions
- *    - Properties definition
- *    
- *    @author FalcoConstantine
- */
 package base;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import utils.Util;
 import utils.WebEventListener;
 
@@ -35,10 +28,7 @@ public class Base {
 	public WebDriverWait wait;
 	public EventFiringWebDriver e_driver;
 	public WebEventListener eventListener;
-	
-	public static ThreadLocal<WebDriver> tdriver = new ThreadLocal<WebDriver>();
-	
-	String browserName;
+	public Logger log;
 	
 	public Base() {
 		try {
@@ -52,55 +42,54 @@ public class Base {
 			e.printStackTrace();
 		}
 	}
-	//----
-	public static synchronized WebDriver getDriver() {
-		return tdriver.get();
-	}
-	//---
+
 	@BeforeMethod(alwaysRun = true)
-	public WebDriver initialization() {
-		browserName = prop.getProperty("browser");
-		if (browserName.equals("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
-		} else if (browserName.equals("firefox")) {
-			WebDriverManager.firefoxdriver().setup();
-				driver = new FirefoxDriver();
-				} else if(browserName.equalsIgnoreCase("opera")) {
-					WebDriverManager.operadriver().setup();
-					driver = new OperaDriver();
-						} else if(browserName.equalsIgnoreCase("iexplorer")) {
-						WebDriverManager.iedriver().setup();	
-						driver = new InternetExplorerDriver();
-					} else {					
-						System.out.println("no browser defined");
-					}
+	@Parameters({"environment","platform","browserName","url"})
+	public void selectRunningSource(@Optional("local") String environment, @Optional("VISTA") String platform, @Optional("chrome") String browserName, String url, ITestContext ctx) throws MalformedURLException {
+		BrowserFactory factory = new BrowserFactory(browserName);
+		if(environment.equals("grid")) {
+				driver = factory.parallelRun(platform,browserName);
+		} else {
+				driver = factory.initialization(browserName);
+		}
 		
-			e_driver = new EventFiringWebDriver(driver);
-			eventListener = new WebEventListener();
-			e_driver.register(eventListener);
-			driver = e_driver;
-			
-			
-			driver.manage().window().maximize();
-			//driver.manage().window().fullscreen();
-			driver.manage().deleteAllCookies();
-			driver.manage().timeouts().pageLoadTimeout(Util.PAGE_LOAD_WAIT, TimeUnit.SECONDS);
-			driver.manage().timeouts().implicitlyWait(Util.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		e_driver = new EventFiringWebDriver(driver);
+		eventListener = new WebEventListener();
+		e_driver.register(eventListener);
+		driver = e_driver;
 		
-			driver.get(prop.getProperty("url"));
-			//---
-			tdriver.set(driver);
-			return getDriver();
-			//---
+		
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().pageLoadTimeout(Util.PAGE_LOAD_WAIT, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Util.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		
+		//driver.get(prop.getProperty("url"));
+		driver.get(url);
+		
+		setCurrentThreadName();
+		String testName = ctx.getCurrentXmlTest().getName();
+		log = LogManager.getLogger(testName);
+	}
+	
+	private void setCurrentThreadName() {
+		Thread thread = Thread.currentThread();
+		String threadName = thread.getName();
+		String threadId = String.valueOf(thread.getId());
+		if (!threadName.contains(threadId)) {
+			thread.setName(threadName + " " + threadId);
+			System.out.println(threadName + " " + threadId);
+		}
 	}
 	
 	@AfterMethod(alwaysRun = true)
-	public void tearDown() {
+	protected void tearDown() {
 		try {
-			driver.close();
+			driver.quit();
+			log.info("[Closing driver]");
 		} catch (Exception e) {
 			System.out.println("Some exception occurred while quitting the browser");
+			log.info("[Some exception occurred while quitting the browser]");
 		}
 	}
 
