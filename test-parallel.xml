@@ -6,7 +6,7 @@
   
   <test name="Parallel tests in Chrome">
 		  <parameter name="platform" value ="MAC"></parameter>
-		  <parameter name="browserName" value ="chrome"></parameter>
+		  <parameter name="browserName" value ="safari"></parameter>
 		  <parameter name="url" value ="https://www.airbnb.com/?locale=en"></parameter>
    <groups>
 	<define name="all">

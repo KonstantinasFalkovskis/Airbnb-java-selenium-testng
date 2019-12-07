@@ -98,7 +98,7 @@ public class BrowserFactory {
 				//caps = DesiredCapabilities.edge();
 				caps.setBrowserName(new EdgeOptions().getBrowserName());
 			}
-			if (browserName.equalsIgnoreCase("safari")) {
+			if (browserName.equals("safari")) {
 				//caps = DesiredCapabilities.safari();
 				//caps.setBrowserName(DesiredCapabilities.safari().getBrowserName());
 				caps.setBrowserName(new SafariOptions().getBrowserName());
