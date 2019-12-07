@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
+//import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
@@ -19,15 +19,15 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import utils.Util;
-import utils.WebEventListener;
+//import utils.WebEventListener;
 
 public class Base {
 	
 	public static WebDriver driver;
 	public Properties prop;
 	public WebDriverWait wait;
-	public EventFiringWebDriver e_driver;
-	public WebEventListener eventListener;
+//	public EventFiringWebDriver e_driver;
+//	public WebEventListener eventListener;
 	public Logger log;
 	
 	public Base() {
@@ -45,7 +45,7 @@ public class Base {
 
 	@BeforeMethod(alwaysRun = true)
 	@Parameters({"environment","platform","browserName","url"})
-	public void selectRunningSource(@Optional("local") String environment, @Optional("VISTA") String platform, @Optional("chrome") String browserName, String url, ITestContext ctx) throws MalformedURLException {
+	public void selectRunningSource(@Optional("local") String environment, @Optional("ANY") String platform, @Optional("chrome") String browserName, String url, ITestContext ctx) throws MalformedURLException {
 		BrowserFactory factory = new BrowserFactory(browserName);
 		if(environment.equals("grid")) {
 				driver = factory.parallelRun(platform,browserName);
@@ -53,10 +53,10 @@ public class Base {
 				driver = factory.initialization(browserName);
 		}
 		
-		e_driver = new EventFiringWebDriver(driver);
-		eventListener = new WebEventListener();
-		e_driver.register(eventListener);
-		driver = e_driver;
+//		e_driver = new EventFiringWebDriver(driver);
+//		eventListener = new WebEventListener();
+//		e_driver.register(eventListener);
+//		driver = e_driver;
 		
 		
 		driver.manage().window().maximize();
