@@ -74,7 +74,7 @@ public class BrowserFactory {
 				caps.setPlatform(Platform.VISTA);
 			}
 			if (platform.equals("MAC")) {
-				caps.setPlatform(Platform.MAC);
+				caps.setPlatform(Platform.HIGH_SIERRA);
 			} 
 			if (platform.equalsIgnoreCase("Linux")) {
 				caps.setPlatform(Platform.LINUX);
