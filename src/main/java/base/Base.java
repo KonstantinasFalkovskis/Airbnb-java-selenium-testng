@@ -85,11 +85,11 @@ public class Base {
 	@AfterMethod(alwaysRun = true)
 	protected void tearDown() {
 		try {
-			driver.quit();
 			log.info("[Closing driver]");
+			driver.quit();
 		} catch (Exception e) {
-			System.out.println("Some exception occurred while quitting the browser");
-			log.info("[Some exception occurred while quitting the browser]");
+			System.out.println("Some exception occurred while quitting the browser" + e);
+			log.info("[Some exception occurred while quitting the browser]" + e);
 		}
 	}
 
