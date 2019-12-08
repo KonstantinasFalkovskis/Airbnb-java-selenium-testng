@@ -27,7 +27,7 @@
 	      <parameter name="url" value ="https://www.airbnb.com/?locale=en"></parameter>
      <groups>
 	<define name="all">
-		<include name="mainPageFunc"></include>
+		<include name="mainPageSmoke"></include>
 	</define>
 	<run>
 		<include name="all"></include>

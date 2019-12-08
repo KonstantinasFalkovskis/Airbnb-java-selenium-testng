@@ -108,12 +108,12 @@ public class BrowserFactory {
 			// Version
 			//caps.setVersion(version);
 			
-			ChromeOptions options = new ChromeOptions();
-			options.merge(caps);
+//			ChromeOptions options = new ChromeOptions();
+//			options.merge(caps);
 			
 			try {
 				//tdriver.set(new RemoteWebDriver(new URL(hubURLWin), caps));
-				tdriver.set(new RemoteWebDriver(new URL(hubURLMac), options));
+				tdriver.set(new RemoteWebDriver(new URL(hubURLMac), caps));
 			} catch (MalformedURLException e) {
 				e.printStackTrace();
 			}
