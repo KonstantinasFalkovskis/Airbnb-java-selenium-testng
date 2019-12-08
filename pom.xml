@@ -13,10 +13,12 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <aspectj.version>1.8.10</aspectj.version>
+    <!-- 
     <suiteXmlFile>test-regression.xml</suiteXmlFile>  
 	<suiteXmlFile>test-functional.xml</suiteXmlFile>
 	<suiteXmlFile>test-smoke.xml</suiteXmlFile>
 	<suiteXmlFile>test-parallel.xml</suiteXmlFile>
+	 -->
   </properties>
   
   <build>
@@ -42,11 +44,12 @@
 					<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
 					<suiteXmlFiles>
 					<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
-					<!--
+					 
+					    <suiteXmlFile>test-parallel.xml</suiteXmlFile>
 						<suiteXmlFile>test-regression.xml</suiteXmlFile>  
 						<suiteXmlFile>test-functional.xml</suiteXmlFile>
 						<suiteXmlFile>test-smoke.xml</suiteXmlFile>
-						-->
+						 
 					</suiteXmlFiles>
 					<argLine>
 						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
@@ -74,7 +77,7 @@
 				</executions>
 			</plugin>
 
-		
+			<!--
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.7.0</version>
@@ -83,7 +86,7 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-		
+			-->
 
 		</plugins>
 		<!--  
