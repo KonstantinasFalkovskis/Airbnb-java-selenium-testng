@@ -90,20 +90,9 @@ public class Base {
 			//Thread.sleep(10000);
 			driver.close();
 		} catch (Exception e) {
-			System.out.println(e);
-			log.info(e);
+			driver.quit();
 		}
 	}
 	
-	@AfterClass(alwaysRun = true)
-	protected void tearDownClass() {
-		try {
-			//Thread.sleep(10000);
-			driver.quit();
-		} catch (Exception e) {
-			System.out.println(e);
-			log.info(e);
-		}
-	}
 	
 }

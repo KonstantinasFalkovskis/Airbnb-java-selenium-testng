@@ -21,7 +21,7 @@
 	    </classes>
   </test>
   
-  <test name="Parallel tests for FUNCTIONAL in MacOS HIGH SIERRA FireFox browser">
+  <test name="Parallel tests for SMOKE in MacOS FireFox browser">
 		  <parameter name="platform" value ="MAC"></parameter>
 	      <parameter name="browserName" value ="firefox"></parameter>
 	      <parameter name="url" value ="https://www.airbnb.com/?locale=en"></parameter>
