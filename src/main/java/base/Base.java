@@ -87,16 +87,8 @@ public class Base {
 	@AfterMethod(alwaysRun = true)
 	protected void tearDown() {
 		try {
-			log.info("[Closing window]");
-			System.out.println("[Closing window]");
-			driver.close();
-		} catch(Exception e) {
-			log.info(e);
-			System.out.println("ERROR: " + e);
-		}
-		try {
-			log.info("[Exit session]");
-			System.out.println("[Exit session]");
+			log.info("[Closing session]");
+			System.out.println("[Closing session]");
 			driver.quit();
 		} catch(Exception e) {
 			log.info(e);
