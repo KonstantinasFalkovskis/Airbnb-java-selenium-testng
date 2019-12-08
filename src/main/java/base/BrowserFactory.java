@@ -108,12 +108,20 @@ public class BrowserFactory {
 			// Version
 			//caps.setVersion(version);
 			
-//			ChromeOptions options = new ChromeOptions();
-//			options.merge(caps);
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("headless");
+//			options.addArguments("windows-size=1280,1024");
+			options.addArguments("enable-automation");
+			options.addArguments("start-maximized");
+//			options.addArguments("disable-popup-blocking");
+//			options.addArguments("disable-default-apps"); 
+//			options.addArguments("--no-sandbox");
+//			options.addArguments("ignore-certificate-errors");
+			options.merge(caps);
 			
 			try {
 				//tdriver.set(new RemoteWebDriver(new URL(hubURLWin), caps));
-				tdriver.set(new RemoteWebDriver(new URL(hubURLMac), caps));
+				tdriver.set(new RemoteWebDriver(new URL(hubURLMac), options));
 			} catch (MalformedURLException e) {
 				e.printStackTrace();
 			}
