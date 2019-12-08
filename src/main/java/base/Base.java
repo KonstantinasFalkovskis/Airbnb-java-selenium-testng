@@ -86,8 +86,22 @@ public class Base {
 	
 	@AfterMethod(alwaysRun = true)
 	protected void tearDown() {
-			log.info("[Closing driver]");
+		try {
+			log.info("[Closing window]");
+			System.out.println("[Closing window]");
 			driver.quit();
+		} catch(Exception e) {
+			log.info(e);
+			System.out.println("ERROR: " + e);
+		}
+		try {
+			log.info("[Exit session]");
+			System.out.println("[Exit session]");
+			driver.quit();
+		} catch(Exception e) {
+			log.info(e);
+			System.out.println("ERROR: " + e);
+		}
 	}
 	
 	
