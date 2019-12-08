@@ -6,7 +6,7 @@
   
   <test name="Parallel tests in MacOS HIGH SIERRA Chrome browser">
 		  <parameter name="platform" value ="MAC"></parameter>
-		  <parameter name="browserName" value ="chrome"></parameter>
+		  <parameter name="browserName" value ="firefox"></parameter>
 		  <parameter name="url" value ="https://www.airbnb.com/?locale=en"></parameter>
    <groups>
 	<define name="all">
@@ -27,7 +27,7 @@
 	      <parameter name="url" value ="https://www.airbnb.com/?locale=en"></parameter>
      <groups>
 	<define name="all">
-		<include name="mainPageSmoke"></include>
+		<include name="mainPageFunc"></include>
 	</define>
 	<run>
 		<include name="all"></include>
