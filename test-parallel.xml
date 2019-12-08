@@ -4,7 +4,7 @@
   
    <parameter name="environment" value ="grid"></parameter>
   
-  <test name="Parallel tests in Windows OS Chrome browser">
+  <test name="Parallel tests in MacOS HIGH SIERRA Chrome browser">
 		  <parameter name="platform" value ="MAC"></parameter>
 		  <parameter name="browserName" value ="chrome"></parameter>
 		  <parameter name="url" value ="https://www.airbnb.com/?locale=en"></parameter>
@@ -21,13 +21,13 @@
 	    </classes>
   </test>
   
-  <test name="Parallel tests in MAC OS HIGH SIERRA FireFox browser">
+  <test name="Parallel tests in MacOS HIGH SIERRA FireFox browser">
 		  <parameter name="platform" value ="MAC"></parameter>
 	      <parameter name="browserName" value ="firefox"></parameter>
 	      <parameter name="url" value ="https://www.airbnb.com/?locale=en"></parameter>
      <groups>
 	<define name="all">
-		<include name="mainPageFunc"></include>
+		<include name="mainPageSmoke"></include>
 	</define>
 	<run>
 		<include name="all"></include>
