@@ -89,7 +89,7 @@ public class Base {
 		try {
 			log.info("[Closing window]");
 			System.out.println("[Closing window]");
-			driver.quit();
+			driver.close();
 		} catch(Exception e) {
 			log.info(e);
 			System.out.println("ERROR: " + e);
