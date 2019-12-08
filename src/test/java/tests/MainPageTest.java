@@ -33,7 +33,7 @@ public class MainPageTest extends Base{
 		mainPage.mainMenuSmoke();
 	}
 	
-	@Test(priority = 2, enabled = true, groups = {"mainPageSmoke"}, description = "Verifying main page search")
+	@Test(priority = 2, enabled = false, groups = {"mainPageSmoke"}, description = "Verifying main page search")
 	@Severity(SeverityLevel.NORMAL)
 	@Description("Test case description: verifying search visibility on the Main Page")
 	@Story("Story name: To check search module visibility of the main page")
