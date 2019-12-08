@@ -38,20 +38,4 @@
 	    </classes>
   </test>
   
-  <test name="Parallel tests for SMOKE in MacOS Safari browser">
-		  <parameter name="platform" value ="MAC"></parameter>
-	      <parameter name="browserName" value ="safari"></parameter>
-	      <parameter name="url" value ="https://www.airbnb.com/?locale=en"></parameter>
-     <groups>
-	<define name="all">
-		<include name="mainPageSmoke"></include>
-	</define>
-	<run>
-		<include name="all"></include>
-	</run>
-	</groups>
-	    <classes>
-	      <class name="tests.MainPageTest"/>
-	    </classes>
-  </test>
 </suite> 
