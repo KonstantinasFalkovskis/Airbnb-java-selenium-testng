@@ -86,12 +86,8 @@ public class Base {
 	
 	@AfterMethod(alwaysRun = true)
 	protected void tearDown() {
-		try {
-			//Thread.sleep(10000);
-			driver.close();
-		} catch (Exception e) {
+			log.info("[Closing driver]");
 			driver.quit();
-		}
 	}
 	
 	
