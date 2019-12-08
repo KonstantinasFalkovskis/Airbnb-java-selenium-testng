@@ -47,6 +47,7 @@ public class Base {
 	@BeforeMethod(alwaysRun = true)
 	@Parameters({"environment","platform","browserName","url"})
 	public void selectRunningSource(@Optional("local") String environment, @Optional("ANY") String platform, @Optional("chrome") String browserName, String url, ITestContext ctx) throws MalformedURLException {
+		
 		BrowserFactory factory = new BrowserFactory(browserName);
 		if(environment.equals("grid")) {
 				driver = factory.parallelRun(platform,browserName);
@@ -86,17 +87,23 @@ public class Base {
 	@AfterMethod(alwaysRun = true)
 	protected void tearDown() {
 		try {
-			log.info("[Closing driver]");
-			driver.quit();
+			//Thread.sleep(10000);
+			driver.close();
 		} catch (Exception e) {
-			System.out.println("Some exception occurred while quitting the browser" + e);
-			log.info("[Some exception occurred while quitting the browser]" + e);
+			System.out.println(e);
+			log.info(e);
 		}
 	}
 	
-	@AfterClass()
-	public void closingAll() {
-		driver.close();
+	@AfterClass(alwaysRun = true)
+	protected void tearDownClass() {
+		try {
+			//Thread.sleep(10000);
+			driver.quit();
+		} catch (Exception e) {
+			System.out.println(e);
+			log.info(e);
+		}
 	}
-
+	
 }
