@@ -4,9 +4,9 @@
   
    <parameter name="environment" value ="grid"></parameter>
   
-  <test name="Parallel tests in MacOS HIGH SIERRA Chrome browser">
+  <test name="Parallel tests in MacOS HIGH SIERRA FF browser">
 		  <parameter name="platform" value ="MAC"></parameter>
-		  <parameter name="browserName" value ="chrome"></parameter>
+		  <parameter name="browserName" value ="firefox"></parameter>
 		  <parameter name="url" value ="https://www.airbnb.com/?locale=en"></parameter>
    <groups>
 	<define name="all">
@@ -21,9 +21,9 @@
 	    </classes>
   </test>
   
-  <test name="Parallel tests in MacOS HIGH SIERRA FireFox browser">
+  <test name="Parallel tests in MacOS HIGH SIERRA CH browser">
 		  <parameter name="platform" value ="MAC"></parameter>
-	      <parameter name="browserName" value ="firefox"></parameter>
+	      <parameter name="browserName" value ="chrome"></parameter>
 	      <parameter name="url" value ="https://www.airbnb.com/?locale=en"></parameter>
      <groups>
 	<define name="all">
