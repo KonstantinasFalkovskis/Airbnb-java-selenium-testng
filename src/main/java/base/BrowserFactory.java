@@ -110,24 +110,24 @@ public class BrowserFactory {
 			//caps.setVersion(version);
 
 			//Headless options
-//			ChromeOptions options = new ChromeOptions();
-//			options.addArguments("headless");
-////			options.addArguments("windows-size=1280,1024");
-//			options.addArguments("enable-automation");
-//			options.addArguments("start-maximized");
-////			options.addArguments("disable-popup-blocking");
-////			options.addArguments("disable-default-apps"); 
-////			options.addArguments("--no-sandbox");
-////			options.addArguments("ignore-certificate-errors");
-//			options.merge(caps);
-//			
-//			FirefoxBinary ffbin = new FirefoxBinary();
-//			ffbin.addCommandLineOptions("--headless");
-//			FirefoxOptions ffoptions = new FirefoxOptions();
-//			ffoptions.setBinary(ffbin);
-//			ffoptions.merge(caps);
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("headless");
+//			options.addArguments("windows-size=1280,1024");
+			options.addArguments("enable-automation");
+			options.addArguments("start-maximized");
+//			options.addArguments("disable-popup-blocking");
+//			options.addArguments("disable-default-apps"); 
+//			options.addArguments("--no-sandbox");
+//			options.addArguments("ignore-certificate-errors");
+			options.merge(caps);
 			
+			FirefoxBinary ffbin = new FirefoxBinary();
+			ffbin.addCommandLineOptions("--headless");
+			FirefoxOptions ffoptions = new FirefoxOptions();
+			ffoptions.setBinary(ffbin);
+			ffoptions.merge(caps);
 			
+		
 			try {
 				//tdriver.set(new RemoteWebDriver(new URL(hubURLWin), caps));
 				tdriver.set(new RemoteWebDriver(new URL(hubURLMac), caps));
