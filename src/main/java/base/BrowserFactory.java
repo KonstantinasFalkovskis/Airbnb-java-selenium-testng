@@ -62,7 +62,11 @@ public class BrowserFactory {
 		}
 		
 //		public WebDriver parallelRun(String platform, String browserName, String version) throws MalformedURLException {
+<<<<<<< HEAD
 		public WebDriver parallelRun(String platform, String browserName) throws MalformedURLException {
+=======
+		public WebDriver parallelRun(String platform, String browserName) throws MalformedURLException {				
+>>>>>>> 731c3946410233767ecf3a5327d02a987c30fb46
 			String hubURLWin = "http://192.168.0.161:4444/wd/hub";
 			String hubURLMac = "http://192.168.0.129:4444/wd/hub";
 			String hubURLLinux = "http://192.168.0.106:4444/wd/hub";
@@ -129,9 +133,15 @@ public class BrowserFactory {
 			
 		
 			try {
+<<<<<<< HEAD
 				//tdriver.set(new RemoteWebDriver(new URL(hubURLWin), caps));
 				//tdriver.set(new RemoteWebDriver(new URL(hubURLMac), caps));
 				tdriver.set(new RemoteWebDriver(new URL(hubURLLinux), caps));
+=======
+			    //tdriver.set(new RemoteWebDriver(new URL(hubURLWin), caps));
+			    //tdriver.set(new RemoteWebDriver(new URL(hubURLMac), caps));
+			    tdriver.set(new RemoteWebDriver(new URL(hubURLLinux), caps));
+>>>>>>> 731c3946410233767ecf3a5327d02a987c30fb46
 			} catch (MalformedURLException e) {
 				e.printStackTrace();
 			}
