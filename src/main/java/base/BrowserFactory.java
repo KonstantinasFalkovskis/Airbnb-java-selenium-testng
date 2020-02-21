@@ -67,6 +67,7 @@ public class BrowserFactory {
 			String hubURLWin = "http://192.168.0.161:4444/wd/hub";
 			String hubURLMac = "http://192.168.0.129:4444/wd/hub";
 			String hubURLLinux = "http://192.168.0.106:4444/wd/hub";
+
 			DesiredCapabilities caps = new DesiredCapabilities();
 			System.out.println("Starting " + browserName + " on grid");
 			
