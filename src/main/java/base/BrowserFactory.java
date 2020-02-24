@@ -42,6 +42,7 @@ public class BrowserFactory {
 			if (browserName.equals("chrome")) {
 				WebDriverManager.chromedriver().setup();
 				tdriver.set(new ChromeDriver());
+				//driver = webdriver.Chrome(executable_path='/path/to/driver/chromedriver')
 			} else if (browserName.equals("firefox")) {
 				WebDriverManager.firefoxdriver().setup();
 					tdriver.set(new FirefoxDriver());
