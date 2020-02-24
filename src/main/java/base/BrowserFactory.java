@@ -65,7 +65,7 @@ public class BrowserFactory {
 		public WebDriver parallelRun(String platform, String browserName) throws MalformedURLException {
 			String hubURLWin = "http://192.168.0.161:4444/wd/hub";
 			String hubURLMac = "http://192.168.0.129:4444/wd/hub";
-			String hubURLLinux = "http://192.168.0.106:4444/wd/hub";
+			String hubURLLinux = "http://192.168.0.129:4444/grid/console";
 			DesiredCapabilities caps = new DesiredCapabilities();
 			System.out.println("Starting " + browserName + " on grid");
 			
@@ -78,7 +78,7 @@ public class BrowserFactory {
 			if (platform.equals("MAC")) {
 				caps.setPlatform(Platform.ANY);
 			} 
-			if (platform.equalsIgnoreCase("Linux")) {
+			if (platform.equalsIgnoreCase("LINUX")) {
 				caps.setPlatform(Platform.LINUX);
 			}
 
