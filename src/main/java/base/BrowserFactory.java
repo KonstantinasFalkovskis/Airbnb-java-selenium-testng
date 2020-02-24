@@ -111,7 +111,7 @@ public class BrowserFactory {
 
 			//Headless options
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("headless");
+//			options.addArguments("headless");
 //			options.addArguments("windows-size=1280,1024");
 			options.addArguments("enable-automation");
 			options.addArguments("start-maximized");
@@ -122,7 +122,7 @@ public class BrowserFactory {
 			options.merge(caps);
 			
 			FirefoxBinary ffbin = new FirefoxBinary();
-			ffbin.addCommandLineOptions("--headless");
+//			ffbin.addCommandLineOptions("--headless");
 			FirefoxOptions ffoptions = new FirefoxOptions();
 			ffoptions.setBinary(ffbin);
 			ffoptions.merge(caps);
