@@ -83,7 +83,7 @@ public class BrowserFactory {
 				caps.setPlatform(Platform.LINUX);
 			}
 			if (platform.equalsIgnoreCase("VISTA")) {
-				caps.setPlatform(Platform.Mixed OS);
+				caps.setPlatform(Platform.MIXED);
 			}
 
 			if (browserName.equals("chrome")) {
