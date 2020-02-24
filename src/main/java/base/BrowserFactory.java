@@ -119,6 +119,15 @@ public class BrowserFactory {
 //			options.addArguments("disable-default-apps"); 
 //			options.addArguments("--no-sandbox");
 //			options.addArguments("ignore-certificate-errors");
+			
+// 			    options.addArguments("--headless"); // executing the scripts without interface
+// 				options.addArguments("start-maximized");  // open maximized browser
+// 				options.addArguments("disable-infobars");  // disabling info-bars
+// 				options.addArguments("--disable-extensions");  // disabling extensions
+// 				options.addArguments("--disable-gpu");  // applicable for windows OS only
+// 				options.addArguments("--disable-dev-shm-usage");  // fix limited rsc issues
+// 				options.addArguments("--no-sandbox"); // pass OS security model
+
 			options.merge(caps);
 			
 			FirefoxBinary ffbin = new FirefoxBinary();
