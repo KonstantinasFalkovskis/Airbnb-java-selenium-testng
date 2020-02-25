@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Smoke tests suite" duration-ms="41999" started-at="2020-02-25T21:21:08 EET" finished-at="2020-02-25T21:21:50 EET">
+    <groups>
+      <group name="mainPageSmoke">
+        <method signature="MainPageTest.mainPageMenuTestSmoke()[pri:1, instance:tests.MainPageTest@3aee3976]" name="mainPageMenuTestSmoke" class="tests.MainPageTest"/>
+        <method signature="MainPageTest.mainPageStaysSearchTestSmoke()[pri:2, instance:tests.MainPageTest@3aee3976]" name="mainPageStaysSearchTestSmoke" class="tests.MainPageTest"/>
+      </group> <!-- mainPageSmoke -->
+    </groups>
+    <test name="MainPage smoke tests in chrome browser" duration-ms="41999" started-at="2020-02-25T21:21:08 EET" finished-at="2020-02-25T21:21:50 EET">
+      <class name="tests.MainPageTest">
+        <test-method status="PASS" signature="selectRunningSource(java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:tests.MainPageTest@3aee3976]" name="selectRunningSource" is-config="true" duration-ms="9087" started-at="2020-02-25T21:21:08 EET" finished-at="2020-02-25T21:21:17 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ANY]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[https://www.airbnb.com/?locale=en]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[org.testng.TestRunner@79cb8ffa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectRunningSource -->
+        <test-method status="PASS" signature="mainPageMenuTestSmoke()[pri:1, instance:tests.MainPageTest@3aee3976]" name="mainPageMenuTestSmoke" duration-ms="20865" started-at="2020-02-25T21:21:18 EET" description="Verifying main page menu" finished-at="2020-02-25T21:21:39 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mainPageMenuTestSmoke -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MainPageTest@3aee3976]" name="tearDown" is-config="true" duration-ms="737" started-at="2020-02-25T21:21:39 EET" finished-at="2020-02-25T21:21:39 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="selectRunningSource(java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:tests.MainPageTest@3aee3976]" name="selectRunningSource" is-config="true" duration-ms="7569" started-at="2020-02-25T21:21:39 EET" finished-at="2020-02-25T21:21:47 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ANY]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[https://www.airbnb.com/?locale=en]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[org.testng.TestRunner@79cb8ffa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectRunningSource -->
+        <test-method status="PASS" signature="mainPageStaysSearchTestSmoke()[pri:2, instance:tests.MainPageTest@3aee3976]" name="mainPageStaysSearchTestSmoke" duration-ms="2610" started-at="2020-02-25T21:21:47 EET" description="Verifying main page search" finished-at="2020-02-25T21:21:50 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mainPageStaysSearchTestSmoke -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.MainPageTest@3aee3976]" name="tearDown" is-config="true" duration-ms="667" started-at="2020-02-25T21:21:50 EET" finished-at="2020-02-25T21:21:50 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.MainPageTest -->
+    </test> <!-- MainPage smoke tests in chrome browser -->
+  </suite> <!-- Smoke tests suite -->
+</testng-results>

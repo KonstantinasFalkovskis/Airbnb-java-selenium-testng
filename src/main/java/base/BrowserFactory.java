@@ -132,9 +132,9 @@ public class BrowserFactory {
 		
 			try {
 
-				//tdriver.set(new RemoteWebDriver(new URL(hubURLWin), caps));
+				tdriver.set(new RemoteWebDriver(new URL(hubURLWin), caps));
 				//tdriver.set(new RemoteWebDriver(new URL(hubURLMac), caps));
-				tdriver.set(new RemoteWebDriver(new URL(hubURLLinux), caps));
+				//tdriver.set(new RemoteWebDriver(new URL(hubURLLinux), caps));
 
 			} catch (MalformedURLException e) {
 				e.printStackTrace();
