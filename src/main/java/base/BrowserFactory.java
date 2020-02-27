@@ -113,14 +113,14 @@ public class BrowserFactory {
 
 			//Headless options
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("headless");
-//			options.addArguments("windows-size=1280,1024");
+			options.addArguments("--headless");
+			options.addArguments("windows-size=1024,800");
 			options.addArguments("enable-automation");
 			options.addArguments("start-maximized");
-//			options.addArguments("disable-popup-blocking");
-//			options.addArguments("disable-default-apps"); 
-//			options.addArguments("--no-sandbox");
-//			options.addArguments("ignore-certificate-errors");
+			options.addArguments("disable-popup-blocking");
+			options.addArguments("disable-default-apps"); 
+			options.addArguments("--no-sandbox");
+			options.addArguments("ignore-certificate-errors");
 			options.merge(caps);
 			
 			FirefoxBinary ffbin = new FirefoxBinary();
