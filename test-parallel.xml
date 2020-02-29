@@ -21,7 +21,7 @@
 	    </classes>
   </test>
   
-  <test name="Parallel tests for SMOKE in Windows FireFox browser">
+  <test name="Parallel tests for SMOKE in Windows Chrome browser">
 		  <parameter name="platform" value ="WINDOWS"></parameter>
 	      <parameter name="browserName" value ="chrome"></parameter>
 	      <parameter name="url" value ="https://www.airbnb.com/?locale=en"></parameter>
