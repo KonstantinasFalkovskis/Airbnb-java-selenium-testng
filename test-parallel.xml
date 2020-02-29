@@ -20,7 +20,7 @@
 	      <class name="tests.MainPageTest"/>
 	    </classes>
   </test>
-  
+  <!-- 
   <test name="Parallel tests for SMOKE in Windows Chrome browser">
 		  <parameter name="platform" value ="WINDOWS"></parameter>
 	      <parameter name="browserName" value ="chrome"></parameter>
@@ -37,5 +37,5 @@
 	      <class name="tests.MainPageTest"/>
 	    </classes>
   </test>
-  
+   -->
 </suite> 
