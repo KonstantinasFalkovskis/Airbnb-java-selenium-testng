@@ -40,17 +40,15 @@ public class BrowserFactory {
 		public WebDriver initialization(String browserName) {
 			System.out.println("Starting " + browserName + " locally");
 			if (browserName.equals("chrome")) {
-				System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-				//tdriver = new ChromeDriver();
-				tdriver.set(new ChromeDriver());
-				//WebDriverManager.chromedriver().setup();
+				//System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 				//tdriver.set(new ChromeDriver());
+				WebDriverManager.chromedriver().setup();
+				tdriver.set(new ChromeDriver());
 			} else if (browserName.equals("firefox")) {
-				//WebDriverManager.firefoxdriver().setup();
-				//	tdriver.set(new FirefoxDriver());
-					System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
-					//tdriver = new FirefoxDriver();
+				WebDriverManager.firefoxdriver().setup();
 					tdriver.set(new FirefoxDriver());
+//					System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
+//					tdriver.set(new FirefoxDriver());
 					} else if(browserName.equalsIgnoreCase("opera")) {
 						WebDriverManager.operadriver().setup();
 						tdriver.set(new OperaDriver());
