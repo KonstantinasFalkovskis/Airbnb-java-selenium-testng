@@ -3,7 +3,7 @@
 <suite name="Smoke tests suite">
 <parameter name="environment" value ="local"></parameter>
   <test name="MainPage smoke tests in FF browser">
-         <parameter name="browserName" value ="firefox"></parameter>
+         <parameter name="browserName" value ="chrome"></parameter>
          <parameter name="url" value ="https://www.airbnb.com/?locale=en"></parameter>
   <groups>
 	<define name="all">
