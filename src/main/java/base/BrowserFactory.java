@@ -40,10 +40,10 @@ public class BrowserFactory {
 		public WebDriver initialization(String browserName) {
 			System.out.println("Starting " + browserName + " locally");
 			if (browserName.equals("chrome")) {
-				//System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-				//tdriver.set(new ChromeDriver());
-				WebDriverManager.chromedriver().setup();
+				System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 				tdriver.set(new ChromeDriver());
+				//WebDriverManager.chromedriver().setup();
+				//tdriver.set(new ChromeDriver());
 			} else if (browserName.equals("firefox")) {
 				WebDriverManager.firefoxdriver().setup();
 					tdriver.set(new FirefoxDriver());
@@ -84,7 +84,7 @@ public class BrowserFactory {
 			if (platform.equals("MAC")) {
 				caps.setPlatform(Platform.ANY);
 			} 
-			if (platform.equalsIgnoreCase("Linux")) {
+			if (platform.equalsIgnoreCase("LINUX")) {
 				caps.setPlatform(Platform.LINUX);
 			}
 
@@ -119,8 +119,8 @@ public class BrowserFactory {
 			//Headless options
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--headless");
-			options.addArguments("windows-size=1024,800");
-			options.addArguments("enable-automation");
+			//options.addArguments("windows-size=1024,800");
+			//options.addArguments("enable-automation");
 			options.addArguments("start-maximized");
 			options.addArguments("disable-popup-blocking");
 			options.addArguments("disable-default-apps"); 
@@ -137,9 +137,9 @@ public class BrowserFactory {
 		
 			try {
 
-				tdriver.set(new RemoteWebDriver(new URL(hubURLWin), caps));
+				//tdriver.set(new RemoteWebDriver(new URL(hubURLWin), caps));
 				//tdriver.set(new RemoteWebDriver(new URL(hubURLMac), caps));
-				//tdriver.set(new RemoteWebDriver(new URL(hubURLLinux), caps));
+				tdriver.set(new RemoteWebDriver(new URL(hubURLLinux), caps));
 
 			} catch (MalformedURLException e) {
 				e.printStackTrace();
