@@ -40,7 +40,7 @@ public class BrowserFactory {
 		public WebDriver initialization(String browserName) {
 			System.out.println("Starting " + browserName + " locally");
 			if (browserName.equals("chrome")) {
-				System.setProperty("webdriver.chrome.driver", "/home/hiperion/usr/bin/chromedriver");
+				System.setProperty("webdriver.chrome.driver", ".chromedriver");
 				tdriver.set(new ChromeDriver());
 				//WebDriverManager.chromedriver().setup();
 				//tdriver.set(new ChromeDriver());
