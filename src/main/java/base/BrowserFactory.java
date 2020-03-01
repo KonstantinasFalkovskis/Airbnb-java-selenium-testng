@@ -40,7 +40,7 @@ public class BrowserFactory {
 		public WebDriver initialization(String browserName) {
 			System.out.println("Starting " + browserName + " locally");
 			if (browserName.equals("chrome")) {
-				System.setProperty("webdriver.chrome.driver", "/usr/lib/chromium-browser/chromedriver");
+				System.setProperty("webdriver.chrome.driver", "/usr/bin/chromium-browser");
 				tdriver.set(new ChromeDriver());
 				WebDriverManager.chromedriver().setup();
 				tdriver.set(new ChromeDriver());
